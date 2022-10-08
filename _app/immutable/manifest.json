@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-eb7a63a1.js",
+    "file": "start-9d76e302.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -49,7 +49,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-d01a925c.js",
+    "file": "pages/__layout.svelte-9f93c796.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -57,11 +57,10 @@
       "_index-e0b1e98d.js",
       "_menuContextStore-5a816532.js",
       "_accountStore-d1ce1b56.js",
-      "_MediaQuery-be7a5bad.js",
       "_index-76d00b59.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-ee653bd6.css"
+      "assets/pages/__layout.svelte-07379bac.css"
     ],
     "assets": [
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
@@ -234,17 +233,16 @@
     ]
   },
   "src/routes/account/new/index.svelte": {
-    "file": "pages/account/new/index.svelte-302e3d85.js",
+    "file": "pages/account/new/index.svelte-8b7e3b13.js",
     "src": "src/routes/account/new/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-e0b1e98d.js",
       "_env-859c48a7.js",
-      "_StarField-f98caa31.js",
+      "_StarField-09d32d57.js",
       "_accountStore-d1ce1b56.js",
       "_navigation-0e6511d1.js",
-      "_MediaQuery-be7a5bad.js",
       "_index-76d00b59.js",
       "_singletons-d1fb5791.js"
     ],
@@ -469,7 +467,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-ed79dec6.js",
+    "file": "pages/index.svelte-9e334d1b.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -478,8 +476,7 @@
       "_navigation-0e6511d1.js",
       "_index-76d00b59.js",
       "_accountStore-d1ce1b56.js",
-      "_StarField-f98caa31.js",
-      "_MediaQuery-be7a5bad.js",
+      "_StarField-09d32d57.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -534,12 +531,6 @@
       "_index-76d00b59.js"
     ]
   },
-  "_MediaQuery-be7a5bad.js": {
-    "file": "chunks/MediaQuery-be7a5bad.js",
-    "imports": [
-      "_index-e0b1e98d.js"
-    ]
-  },
   "_menuContextStore-5a816532.js": {
     "file": "chunks/menuContextStore-5a816532.js",
     "imports": [
@@ -589,11 +580,10 @@
       "_index-76d00b59.js"
     ]
   },
-  "_StarField-f98caa31.js": {
-    "file": "chunks/StarField-f98caa31.js",
+  "_StarField-09d32d57.js": {
+    "file": "chunks/StarField-09d32d57.js",
     "imports": [
       "_index-e0b1e98d.js",
-      "_MediaQuery-be7a5bad.js",
       "_accountStore-d1ce1b56.js"
     ],
     "css": [

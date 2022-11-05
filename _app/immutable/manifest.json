@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-b58cc11e.js",
+    "file": "start-ec30fb64.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -251,7 +251,7 @@
     ]
   },
   "src/routes/account/privacy.md": {
-    "file": "pages/account/privacy.md-b29638c4.js",
+    "file": "pages/account/privacy.md-2eff8161.js",
     "src": "src/routes/account/privacy.md",
     "isEntry": true,
     "isDynamicEntry": true,

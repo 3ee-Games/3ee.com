@@ -1,0 +1,287 @@
+WEBVTT
+
+00:00:02.780 --> 00:00:05.310
+this is a prototype of a game on
+
+00:00:05.310 --> 00:00:08.849
+building all the tiles are designed by
+
+00:00:08.849 --> 00:00:12.990
+cert over at open game art org the link
+
+00:00:12.990 --> 00:00:15.660
+is in the description you can see this
+
+00:00:15.660 --> 00:00:18.270
+game is a platformer there's a lot of
+
+00:00:18.270 --> 00:00:22.619
+vertical places that you can jump to and
+
+00:00:22.619 --> 00:00:26.930
+this entire level is built with tile
+
+00:00:26.930 --> 00:00:30.810
+which is a level editor I'm building
+
+00:00:30.810 --> 00:00:38.120
+this game super jump
+
+00:00:41.149 --> 00:00:46.620
+see I've got a some sound effects when
+
+00:00:46.620 --> 00:00:50.340
+the player is on a ladder or a rover -
+
+00:00:50.340 --> 00:00:54.180
+different sound effects for that and
+
+00:00:54.180 --> 00:00:57.239
+this game is very out for so the jumpy
+
+00:00:57.239 --> 00:01:01.230
+needs a lot of work and the AI is kind
+
+00:01:01.230 --> 00:01:01.820
+of basic
+
+00:01:01.820 --> 00:01:06.760
+[Music]
+
+00:01:10.800 --> 00:01:14.440
+and then here's a boss like a mini boss
+
+00:01:14.440 --> 00:01:17.110
+that comes out and so scripted event she
+
+00:01:17.110 --> 00:01:18.790
+resurrects all the skills and said I
+
+00:01:18.790 --> 00:01:23.250
+killed she summons the creepy horror and
+
+00:01:23.250 --> 00:01:25.720
+and this gives the player sense of
+
+00:01:25.720 --> 00:01:38.580
+urgency jumping puzzles and this is all
+
+00:01:38.580 --> 00:01:42.510
+built-in piled so I can focus on
+
+00:01:42.510 --> 00:01:46.210
+designing the Goblin and not worry so
+
+00:01:46.210 --> 00:01:49.570
+much about any integration with level
+
+00:01:49.570 --> 00:01:52.210
+beta everything serialized and comes in
+
+00:01:52.210 --> 00:01:55.110
+two days already
+
+00:01:55.860 --> 00:01:59.290
+here's an example the super jump needs a
+
+00:01:59.290 --> 00:02:02.800
+lot of work I can skip that whole area I
+
+00:02:02.800 --> 00:02:11.200
+design and the game has some looting
+
+00:02:11.200 --> 00:02:13.239
+mechanics when I'm filling this down
+
+00:02:13.239 --> 00:02:15.430
+instead of dropping into some arrows at
+
+00:02:15.430 --> 00:02:18.190
+heart there's a kind of air
+
+00:02:18.190 --> 00:02:23.620
+oh well I died so I'll show you the game
+
+00:02:23.620 --> 00:02:29.110
+of tile and here's all the tiles I work
+
+00:02:29.110 --> 00:02:31.420
+in layers so I have my background ground
+
+00:02:31.420 --> 00:02:34.120
+and objects so I'll go over the ground
+
+00:02:34.120 --> 00:02:36.490
+first these are all the platforms the
+
+00:02:36.490 --> 00:02:40.000
+player can collide with and in any place
+
+00:02:40.000 --> 00:02:41.980
+where I don't want the player to go I
+
+00:02:41.980 --> 00:02:43.510
+can block them off and there's where I
+
+00:02:43.510 --> 00:02:48.280
+die so here you can see this is where I
+
+00:02:48.280 --> 00:02:50.140
+work on the placement and here's the
+
+00:02:50.140 --> 00:02:54.100
+background and you can see how I'm using
+
+00:02:54.100 --> 00:02:56.020
+a black background in my game engine
+
+00:02:56.020 --> 00:02:57.880
+instead of painting those tiles again
+
+00:02:57.880 --> 00:03:02.110
+here's where I died and even the ladders
+
+00:03:02.110 --> 00:03:04.720
+are background and I'll get into that
+
+00:03:04.720 --> 00:03:09.880
+with objects so objects are markers that
+
+00:03:09.880 --> 00:03:11.800
+I can put properties on and load them in
+
+00:03:11.800 --> 00:03:14.670
+in the level data in the game engine so
+
+00:03:14.670 --> 00:03:17.680
+here is an enemy spawn and it's a type
+
+00:03:17.680 --> 00:03:19.120
+of skeleton so here's where that
+
+00:03:19.120 --> 00:03:22.000
+skeleton spawns here's the player spawn
+
+00:03:22.000 --> 00:03:24.100
+you can see the creeping Horak spawn
+
+00:03:24.100 --> 00:03:28.180
+down at the bottom and then here's enemy
+
+00:03:28.180 --> 00:03:32.470
+spawns here's the ladder spawn and this
+
+00:03:32.470 --> 00:03:35.110
+is a type of rope and then this is a
+
+00:03:35.110 --> 00:03:39.010
+type of vine so here is where I can use
+
+00:03:39.010 --> 00:03:42.160
+the level data into the game engine to
+
+00:03:42.160 --> 00:03:44.020
+play those sound effects so here's how I
+
+00:03:44.020 --> 00:03:47.440
+I'm doing the sound effects I have an
+
+00:03:47.440 --> 00:03:49.630
+object full of parameters that have an
+
+00:03:49.630 --> 00:03:51.880
+array of sound effects so on ladder on
+
+00:03:51.880 --> 00:03:53.050
+vine on rope
+
+00:03:53.050 --> 00:03:55.090
+it picks one of those random sound
+
+00:03:55.090 --> 00:03:57.850
+effects in there to play so when the
+
+00:03:57.850 --> 00:04:01.000
+player is on either one of those I'm
+
+00:04:01.000 --> 00:04:02.530
+just looking at the level data and
+
+00:04:02.530 --> 00:04:04.450
+playing that sound effect
+
+00:04:04.450 --> 00:04:06.670
+here's the where the boss spawns right
+
+00:04:06.670 --> 00:04:13.690
+there and so objects can be used for
+
+00:04:13.690 --> 00:04:16.130
+little markers
+
+00:04:16.130 --> 00:04:20.630
+and they're pretty easy to get get it
+
+00:04:20.630 --> 00:04:23.810
+into your game here's where I died and
+
+00:04:23.810 --> 00:04:27.020
+again here's here's the tiles there's
+
+00:04:27.020 --> 00:04:29.000
+not very many but you can build some
+
+00:04:29.000 --> 00:04:35.030
+great levels just with limiting yourself
+
+00:04:35.030 --> 00:04:37.400
+so here I'm gonna show you how easy it
+
+00:04:37.400 --> 00:04:40.460
+is just just to just copy and paste a
+
+00:04:40.460 --> 00:04:42.320
+bunch of objects and have a bunch of
+
+00:04:42.320 --> 00:04:45.080
+skeletons spawn and so I would encourage
+
+00:04:45.080 --> 00:04:47.930
+developers to find points in your game
+
+00:04:47.930 --> 00:04:50.480
+where you can integrate a proven tool
+
+00:04:50.480 --> 00:04:54.440
+that works like tiled and integrated
+
+00:04:54.440 --> 00:04:57.050
+into your game and you can build levels
+
+00:04:57.050 --> 00:04:59.720
+fairly fast and prototype quickly and
+
+00:04:59.720 --> 00:05:03.080
+you can focus on a tool like tiled that
+
+00:05:03.080 --> 00:05:05.930
+allows you to really think about how
+
+00:05:05.930 --> 00:05:09.200
+you're designing your level and then you
+
+00:05:09.200 --> 00:05:11.360
+can load it in and just like you saw
+
+00:05:11.360 --> 00:05:13.400
+with the Medusa I can script in events
+
+00:05:13.400 --> 00:05:16.400
+based on different objects that I place
+
+00:05:16.400 --> 00:05:25.430
+in the level hope I don't die thanks for
+
+00:05:25.430 --> 00:05:27.880
+watching
+

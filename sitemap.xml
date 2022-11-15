@@ -5,10 +5,10 @@
     <loc>https://3ee.com</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account</loc>
+    <loc>https://3ee.com/about</loc>
   </url>
   <url>
-    <loc>https://3ee.com/about</loc>
+    <loc>https://3ee.com/account</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog</loc>
@@ -71,13 +71,16 @@
     <loc>https://3ee.com/blog/shenanijam2018</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/games/cupids-balance</loc>
   </url>
   <url>
     <loc>https://3ee.com/games/flappy-jacob</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
+    <loc>https://3ee.com/games/palooza</loc>
   </url>
   <url>
     <loc>https://3ee.com/games/spin2win</loc>
@@ -86,13 +89,13 @@
     <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/palooza</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ddraw</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/messages/response</loc>
@@ -105,9 +108,6 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game jams</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/games</loc>

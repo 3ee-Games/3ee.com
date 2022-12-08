@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-54019f6b.js",
+    "file": "start-4d04eea4.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -32,6 +32,7 @@
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
       "src/routes/blog/no-ads-in-our-games.md",
+      "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
       "src/routes/blog/pong-kombat-2.md",
       "src/routes/blog/shenanijam2018.md",
@@ -50,7 +51,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-aaf78f10.js",
+    "file": "pages/__layout.svelte-ef834b42.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -92,14 +93,14 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-3f1af7a0.js",
+    "file": "pages/about.svelte-9609ae72.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ed4e8f84.js",
       "_env-859c48a7.js",
-      "_svgMapper-d9cc7a48.js",
+      "_svgMapper-49556cd2.js",
       "_paths-396f020f.js"
     ],
     "css": [
@@ -119,14 +120,14 @@
     ]
   },
   "src/routes/account/conduct.md": {
-    "file": "pages/account/conduct.md-e644d680.js",
+    "file": "pages/account/conduct.md-7e694b51.js",
     "src": "src/routes/account/conduct.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ed4e8f84.js",
       "__post-f46fa29e.js",
-      "_svgMapper-d9cc7a48.js",
+      "_svgMapper-49556cd2.js",
       "_menuContextStore-c730dc95.js",
       "_index-7c4279d2.js"
     ],
@@ -216,13 +217,13 @@
     ]
   },
   "src/routes/account/messages/response/index.svelte": {
-    "file": "pages/account/messages/response/index.svelte-8bfc3d4f.js",
+    "file": "pages/account/messages/response/index.svelte-cc3cb2e0.js",
     "src": "src/routes/account/messages/response/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ed4e8f84.js",
-      "_svgMapper-d9cc7a48.js",
+      "_svgMapper-49556cd2.js",
       "_accountStore-f295046e.js",
       "_messagingStore-3e861254.js",
       "_navigation-0e6511d1.js",
@@ -302,14 +303,14 @@
     ]
   },
   "src/routes/blog/3ee-games-youtube-channel.md": {
-    "file": "pages/blog/3ee-games-youtube-channel.md-592b8658.js",
+    "file": "pages/blog/3ee-games-youtube-channel.md-fcc24bb7.js",
     "src": "src/routes/blog/3ee-games-youtube-channel.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ed4e8f84.js",
       "__post-93f511db.js",
-      "_svgMapper-d9cc7a48.js"
+      "_svgMapper-49556cd2.js"
     ],
     "css": [
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
@@ -335,7 +336,7 @@
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-010bf467.js",
+    "file": "pages/blog/index.svelte-700d3bf7.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -343,7 +344,7 @@
       "_index-ed4e8f84.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
-      "_svgMapper-d9cc7a48.js",
+      "_svgMapper-49556cd2.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -353,6 +354,16 @@
   "src/routes/blog/no-ads-in-our-games.md": {
     "file": "pages/blog/no-ads-in-our-games.md-71c65d50.js",
     "src": "src/routes/blog/no-ads-in-our-games.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-ed4e8f84.js",
+      "__post-93f511db.js"
+    ]
+  },
+  "src/routes/blog/ornamental-santa-diffusion.md": {
+    "file": "pages/blog/ornamental-santa-diffusion.md-eb599aa4.js",
+    "src": "src/routes/blog/ornamental-santa-diffusion.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -553,8 +564,8 @@
   "_env-859c48a7.js": {
     "file": "chunks/env-859c48a7.js"
   },
-  "_svgMapper-d9cc7a48.js": {
-    "file": "chunks/svgMapper-d9cc7a48.js",
+  "_svgMapper-49556cd2.js": {
+    "file": "chunks/svgMapper-49556cd2.js",
     "imports": [
       "_index-ed4e8f84.js"
     ],

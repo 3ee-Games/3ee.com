@@ -23,10 +23,10 @@
     <loc>https://3ee.com/games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/accessibility</loc>
+    <loc>https://3ee.com/spacelab</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/britelite</loc>
+    <loc>https://3ee.com/account/accessibility</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/conduct</loc>
@@ -50,6 +50,9 @@
     <loc>https://3ee.com/account/password</loc>
   </url>
   <url>
+    <loc>https://3ee.com/account/patch</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
@@ -62,7 +65,13 @@
     <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/aubrey-plaza</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/motu-diffusion</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
@@ -110,10 +119,10 @@
     <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/britelite/library</loc>
+    <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/messages/response</loc>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/ai training</loc>
@@ -123,9 +132,6 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game jams</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/games</loc>

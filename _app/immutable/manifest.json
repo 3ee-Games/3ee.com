@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-e7eee149.js",
+    "file": "start-ef52023d.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "_index-3d80c266.js",
+      "_index-8ca01e64.js",
+      "_index-12b3acf3.js",
       "_paths-396f020f.js",
       "_singletons-d1fb5791.js"
     ],
@@ -15,8 +15,6 @@
       "src/routes/account/__layout.svelte",
       "src/routes/about.svelte",
       "src/routes/account/accessibility.md",
-      "src/routes/account/britelite/index.svelte",
-      "src/routes/account/britelite/library/index.svelte",
       "src/routes/account/conduct.md",
       "src/routes/account/create/index.svelte",
       "src/routes/account/index.svelte",
@@ -26,13 +24,16 @@
       "src/routes/account/messages/response/index.svelte",
       "src/routes/account/new/index.svelte",
       "src/routes/account/password/index.svelte",
+      "src/routes/account/patch/index.svelte",
       "src/routes/account/privacy.md",
       "src/routes/account/profile/index.svelte",
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
+      "src/routes/blog/aubrey-plaza.md",
       "src/routes/blog/categories/[category].svelte",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
+      "src/routes/blog/motu-diffusion.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
@@ -49,24 +50,25 @@
       "src/routes/games/spin2win.md",
       "src/routes/games/zultiki.md",
       "src/routes/index.svelte",
+      "src/routes/spacelab/index.svelte",
       "src/routes/team/adora.md",
       "src/routes/team/ddraw.md",
       "src/routes/team/ryan.md"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-5319ba13.js",
+    "file": "pages/__layout.svelte-52bb19b9.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "_menuContextStore-4d685862.js",
-      "_accountStore-95234e99.js",
-      "_index-3d80c266.js"
+      "_index-8ca01e64.js",
+      "_menuContextStore-6e1fc22a.js",
+      "_accountStore-c3ff6133.js",
+      "_index-12b3acf3.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-2d88abb0.css"
+      "assets/pages/__layout.svelte-17e35679.css"
     ],
     "assets": [
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
@@ -79,110 +81,77 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-1085de28.js",
+    "file": "error.svelte-b64a6f27.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/account/__layout.svelte": {
-    "file": "pages/account/__layout.svelte-c4d83123.js",
+    "file": "pages/account/__layout.svelte-37cc4448.js",
     "src": "src/routes/account/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-a699f76e.js",
+    "file": "pages/about.svelte-5b3c73a6.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_env-859c48a7.js",
-      "_svgMapper-1ae78147.js",
+      "_svgMapper-099f4436.js",
       "_paths-396f020f.js"
     ],
     "css": [
-      "assets/pages/about.svelte-b8992e39.css"
+      "assets/pages/about.svelte-e4d407da.css"
     ]
   },
   "src/routes/account/accessibility.md": {
-    "file": "pages/account/accessibility.md-ede9f333.js",
+    "file": "pages/account/accessibility.md-2b2059e9.js",
     "src": "src/routes/account/accessibility.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-4e6b2106.js",
-      "_menuContextStore-4d685862.js",
-      "_index-3d80c266.js"
-    ]
-  },
-  "src/routes/account/britelite/index.svelte": {
-    "file": "pages/account/britelite/index.svelte-5b94551b.js",
-    "src": "src/routes/account/britelite/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-cd5daeef.js",
-      "_navigation-0e6511d1.js",
-      "_accountStore-95234e99.js",
-      "_Progress-3cf75cfd.js",
-      "_singletons-d1fb5791.js",
-      "_index-3d80c266.js",
-      "_briteliteStore-62efa313.js"
-    ]
-  },
-  "src/routes/account/britelite/library/index.svelte": {
-    "file": "pages/account/britelite/library/index.svelte-4d179ef9.js",
-    "src": "src/routes/account/britelite/library/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-cd5daeef.js",
-      "_ImageGrid-1acae9c8.js",
-      "_briteliteStore-62efa313.js",
-      "_accountStore-95234e99.js",
-      "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
-      "_singletons-d1fb5791.js"
-    ],
-    "css": [
-      "assets/pages/britelite/library/index.svelte-a0109768.css"
+      "_index-8ca01e64.js",
+      "__post-a538dae2.js",
+      "_menuContextStore-6e1fc22a.js",
+      "_index-12b3acf3.js"
     ]
   },
   "src/routes/account/conduct.md": {
-    "file": "pages/account/conduct.md-b6e72942.js",
+    "file": "pages/account/conduct.md-8f5f33ad.js",
     "src": "src/routes/account/conduct.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-4e6b2106.js",
-      "_svgMapper-1ae78147.js",
-      "_menuContextStore-4d685862.js",
-      "_index-3d80c266.js"
+      "_index-8ca01e64.js",
+      "__post-a538dae2.js",
+      "_svgMapper-099f4436.js",
+      "_menuContextStore-6e1fc22a.js",
+      "_index-12b3acf3.js"
     ],
     "css": [
       "assets/pages/account/conduct.md-93bf397a.css"
     ]
   },
   "src/routes/account/create/index.svelte": {
-    "file": "pages/account/create/index.svelte-4bce5029.js",
+    "file": "pages/account/create/index.svelte-e41ae801.js",
     "src": "src/routes/account/create/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "_accountStore-95234e99.js",
-      "_Captcha-65fcb585.js",
+      "_index-8ca01e64.js",
+      "_accountStore-c3ff6133.js",
+      "_Captcha-aa1e7dfb.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
+      "_index-12b3acf3.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -190,29 +159,29 @@
     ]
   },
   "src/routes/account/index.svelte": {
-    "file": "pages/account/index.svelte-8aab08a5.js",
+    "file": "pages/account/index.svelte-02e05975.js",
     "src": "src/routes/account/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_navigation-0e6511d1.js",
-      "_accountStore-95234e99.js",
+      "_accountStore-c3ff6133.js",
       "_singletons-d1fb5791.js",
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ]
   },
   "src/routes/account/login/index.svelte": {
-    "file": "pages/account/login/index.svelte-92eae667.js",
+    "file": "pages/account/login/index.svelte-5ac26620.js",
     "src": "src/routes/account/login/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_env-859c48a7.js",
-      "_accountStore-95234e99.js",
+      "_accountStore-c3ff6133.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
+      "_index-12b3acf3.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -220,16 +189,16 @@
     ]
   },
   "src/routes/account/logout/index.svelte": {
-    "file": "pages/account/logout/index.svelte-223144c9.js",
+    "file": "pages/account/logout/index.svelte-2feac337.js",
     "src": "src/routes/account/logout/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_env-859c48a7.js",
-      "_accountStore-95234e99.js",
+      "_accountStore-c3ff6133.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
+      "_index-12b3acf3.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -237,34 +206,34 @@
     ]
   },
   "src/routes/account/messages/index.svelte": {
-    "file": "pages/account/messages/index.svelte-b864938a.js",
+    "file": "pages/account/messages/index.svelte-1426b8a1.js",
     "src": "src/routes/account/messages/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_navigation-0e6511d1.js",
-      "_accountStore-95234e99.js",
-      "_messagingStore-522461ed.js",
+      "_accountStore-c3ff6133.js",
+      "_messagingStore-070d13b3.js",
       "_singletons-d1fb5791.js",
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ],
     "css": [
       "assets/pages/account/messages/index.svelte-40102792.css"
     ]
   },
   "src/routes/account/messages/response/index.svelte": {
-    "file": "pages/account/messages/response/index.svelte-94d0ffdc.js",
+    "file": "pages/account/messages/response/index.svelte-6bcb4413.js",
     "src": "src/routes/account/messages/response/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "_svgMapper-1ae78147.js",
-      "_accountStore-95234e99.js",
-      "_messagingStore-522461ed.js",
+      "_index-8ca01e64.js",
+      "_svgMapper-099f4436.js",
+      "_accountStore-c3ff6133.js",
+      "_messagingStore-070d13b3.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
+      "_index-12b3acf3.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -272,17 +241,17 @@
     ]
   },
   "src/routes/account/new/index.svelte": {
-    "file": "pages/account/new/index.svelte-b1b3eeae.js",
+    "file": "pages/account/new/index.svelte-0407eb0d.js",
     "src": "src/routes/account/new/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_env-859c48a7.js",
-      "_StarField-ff89c5f2.js",
-      "_accountStore-95234e99.js",
+      "_StarField-145973f9.js",
+      "_accountStore-c3ff6133.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
+      "_index-12b3acf3.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -290,334 +259,393 @@
     ]
   },
   "src/routes/account/password/index.svelte": {
-    "file": "pages/account/password/index.svelte-d8c57575.js",
+    "file": "pages/account/password/index.svelte-bc4e830c.js",
     "src": "src/routes/account/password/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ],
     "css": [
       "assets/pages/account/password/index.svelte-ae95f80c.css"
     ]
   },
+  "src/routes/account/patch/index.svelte": {
+    "file": "pages/account/patch/index.svelte-d5c6db21.js",
+    "src": "src/routes/account/patch/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ca01e64.js",
+      "_accountStore-c3ff6133.js",
+      "_index-12b3acf3.js"
+    ],
+    "css": [
+      "assets/pages/account/patch/index.svelte-ebfbb824.css"
+    ]
+  },
   "src/routes/account/privacy.md": {
-    "file": "pages/account/privacy.md-8d05d8d6.js",
+    "file": "pages/account/privacy.md-4ac5bb48.js",
     "src": "src/routes/account/privacy.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-4e6b2106.js",
-      "_menuContextStore-4d685862.js",
-      "_index-3d80c266.js"
+      "_index-8ca01e64.js",
+      "__post-a538dae2.js",
+      "_menuContextStore-6e1fc22a.js",
+      "_index-12b3acf3.js"
     ]
   },
   "src/routes/account/profile/index.svelte": {
-    "file": "pages/account/profile/index.svelte-9fd59964.js",
+    "file": "pages/account/profile/index.svelte-5793a9bd.js",
     "src": "src/routes/account/profile/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_navigation-0e6511d1.js",
-      "_accountStore-95234e99.js",
-      "_Prompts-107d9ad9.js",
+      "_accountStore-c3ff6133.js",
+      "_Prompts-57898cd4.js",
       "_singletons-d1fb5791.js",
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ],
     "css": [
       "assets/pages/account/profile/index.svelte-8bee8722.css"
     ]
   },
   "src/routes/account/terms.md": {
-    "file": "pages/account/terms.md-2bbd7e20.js",
+    "file": "pages/account/terms.md-eefe1086.js",
     "src": "src/routes/account/terms.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-4e6b2106.js",
-      "_menuContextStore-4d685862.js",
-      "_index-3d80c266.js"
+      "_index-8ca01e64.js",
+      "__post-a538dae2.js",
+      "_menuContextStore-6e1fc22a.js",
+      "_index-12b3acf3.js"
     ]
   },
   "src/routes/blog/3ee-games-youtube-channel.md": {
-    "file": "pages/blog/3ee-games-youtube-channel.md-e0c73cad.js",
+    "file": "pages/blog/3ee-games-youtube-channel.md-f38b61fb.js",
     "src": "src/routes/blog/3ee-games-youtube-channel.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js",
-      "_svgMapper-1ae78147.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js",
+      "_svgMapper-099f4436.js"
     ],
     "css": [
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
     ]
   },
+  "src/routes/blog/aubrey-plaza.md": {
+    "file": "pages/blog/aubrey-plaza.md-e28388ae.js",
+    "src": "src/routes/blog/aubrey-plaza.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js",
+      "_accountStore-c3ff6133.js",
+      "_index-12b3acf3.js"
+    ],
+    "css": [
+      "assets/pages/blog/aubrey-plaza.md-061b618d.css"
+    ]
+  },
   "src/routes/blog/categories/[category].svelte": {
-    "file": "pages/blog/categories/_category_.svelte-cd101f09.js",
+    "file": "pages/blog/categories/_category_.svelte-f151345b.js",
     "src": "src/routes/blog/categories/[category].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {
-    "file": "pages/blog/flappy-jacob-prototype.md-eb26c80f.js",
+    "file": "pages/blog/flappy-jacob-prototype.md-52314003.js",
     "src": "src/routes/blog/flappy-jacob-prototype.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-b5dd709e.js",
+    "file": "pages/blog/index.svelte-022d6f87.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
-      "_svgMapper-1ae78147.js",
-      "_singletons-d1fb5791.js"
+      "_svgMapper-099f4436.js",
+      "_accountStore-c3ff6133.js",
+      "_singletons-d1fb5791.js",
+      "_index-12b3acf3.js"
     ],
     "css": [
-      "assets/pages/blog/index.svelte-18e3aee1.css"
+      "assets/pages/blog/index.svelte-28b11750.css"
+    ]
+  },
+  "src/routes/blog/motu-diffusion.md": {
+    "file": "pages/blog/motu-diffusion.md-af5e0240.js",
+    "src": "src/routes/blog/motu-diffusion.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
+    ],
+    "css": [
+      "assets/pages/blog/ornamental-santa-diffusion.md-7f2ecd47.css"
     ]
   },
   "src/routes/blog/no-ads-in-our-games.md": {
-    "file": "pages/blog/no-ads-in-our-games.md-1fc258cf.js",
+    "file": "pages/blog/no-ads-in-our-games.md-5f25cb34.js",
     "src": "src/routes/blog/no-ads-in-our-games.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
     ]
   },
   "src/routes/blog/ornamental-santa-diffusion.md": {
-    "file": "pages/blog/ornamental-santa-diffusion.md-f4d1d4da.js",
+    "file": "pages/blog/ornamental-santa-diffusion.md-ec89069b.js",
     "src": "src/routes/blog/ornamental-santa-diffusion.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
+    ],
+    "css": [
+      "assets/pages/blog/ornamental-santa-diffusion.md-7f2ecd47.css"
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
-    "file": "pages/blog/phaser-game-react-ui.md-04109688.js",
+    "file": "pages/blog/phaser-game-react-ui.md-5ea60606.js",
     "src": "src/routes/blog/phaser-game-react-ui.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
     ]
   },
   "src/routes/blog/pong-kombat-2.md": {
-    "file": "pages/blog/pong-kombat-2.md-a9fba04a.js",
+    "file": "pages/blog/pong-kombat-2.md-1ee0c952.js",
     "src": "src/routes/blog/pong-kombat-2.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
     ],
     "css": [
       "assets/pages/blog/pong-kombat-2.md-127e7b1f.css"
     ]
   },
   "src/routes/blog/shenanijam2018.md": {
-    "file": "pages/blog/shenanijam2018.md-03d5f5ab.js",
+    "file": "pages/blog/shenanijam2018.md-6649a87e.js",
     "src": "src/routes/blog/shenanijam2018.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
     ]
   },
   "src/routes/blog/tiled-level-editor-phaser.md": {
-    "file": "pages/blog/tiled-level-editor-phaser.md-4d092dce.js",
+    "file": "pages/blog/tiled-level-editor-phaser.md-333c4a65.js",
     "src": "src/routes/blog/tiled-level-editor-phaser.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "__post-f1face9e.js"
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-3dbfeb47.js",
+    "file": "pages/britelite/index.svelte-a980abd4.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_navigation-0e6511d1.js",
-      "_accountStore-95234e99.js",
-      "_Progress-3cf75cfd.js",
-      "_Prompts-107d9ad9.js",
-      "_singletons-d1fb5791.js",
-      "_index-3d80c266.js",
-      "_briteliteStore-62efa313.js"
+      "_accountStore-c3ff6133.js",
+      "_briteliteStore-ee389409.js",
+      "_index-12b3acf3.js",
+      "_Prompts-57898cd4.js",
+      "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-f78ea9e1.css"
+      "assets/pages/britelite/index.svelte-d7267c6d.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {
-    "file": "pages/britelite/library/index.svelte-3107ba79.js",
+    "file": "pages/britelite/library/index.svelte-fd7905eb.js",
     "src": "src/routes/britelite/library/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
-      "_ImageGrid-1acae9c8.js",
-      "_briteliteStore-62efa313.js",
-      "_accountStore-95234e99.js",
+      "_index-8ca01e64.js",
+      "_briteliteStore-ee389409.js",
+      "_accountStore-c3ff6133.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
+      "_index-12b3acf3.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/library/index.svelte-a0109768.css"
+      "assets/pages/britelite/library/index.svelte-55edd614.css"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-d588012f.js",
+    "file": "pages/contact.svelte-24681c00.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_env-859c48a7.js",
       "_navigation-0e6511d1.js",
-      "_accountStore-95234e99.js",
-      "_Captcha-65fcb585.js",
-      "_messagingStore-522461ed.js",
+      "_accountStore-c3ff6133.js",
+      "_Captcha-aa1e7dfb.js",
+      "_messagingStore-070d13b3.js",
       "_singletons-d1fb5791.js",
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ],
     "css": [
       "assets/pages/contact.svelte-7ab07306.css"
     ]
   },
   "src/routes/games/cupids-balance.md": {
-    "file": "pages/games/cupids-balance.md-022885f5.js",
+    "file": "pages/games/cupids-balance.md-c4413169.js",
     "src": "src/routes/games/cupids-balance.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/games/flappy-jacob.md": {
-    "file": "pages/games/flappy-jacob.md-7c7af388.js",
+    "file": "pages/games/flappy-jacob.md-d26aaa9d.js",
     "src": "src/routes/games/flappy-jacob.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/games/index.svelte": {
-    "file": "pages/games/index.svelte-a1f6a9d8.js",
+    "file": "pages/games/index.svelte-f41e162a.js",
     "src": "src/routes/games/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ],
     "css": [
-      "assets/pages/games/index.svelte-92188956.css"
+      "assets/pages/games/index.svelte-3a6d686d.css"
     ]
   },
   "src/routes/games/palooza.md": {
-    "file": "pages/games/palooza.md-f1ebba86.js",
+    "file": "pages/games/palooza.md-d3ae3b93.js",
     "src": "src/routes/games/palooza.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/games/spin2win.md": {
-    "file": "pages/games/spin2win.md-0314ec16.js",
+    "file": "pages/games/spin2win.md-3eb2ec2d.js",
     "src": "src/routes/games/spin2win.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/games/zultiki.md": {
-    "file": "pages/games/zultiki.md-754589c1.js",
+    "file": "pages/games/zultiki.md-c2709ed5.js",
     "src": "src/routes/games/zultiki.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-ea0a6aab.js",
+    "file": "pages/index.svelte-6ea403b6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js",
+      "_index-8ca01e64.js",
       "_navigation-0e6511d1.js",
-      "_index-3d80c266.js",
-      "_accountStore-95234e99.js",
-      "_StarField-ff89c5f2.js",
+      "_index-12b3acf3.js",
+      "_accountStore-c3ff6133.js",
+      "_StarField-145973f9.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
       "assets/pages/index.svelte-54a02662.css"
     ]
   },
+  "src/routes/spacelab/index.svelte": {
+    "file": "pages/spacelab/index.svelte-7eef31e3.js",
+    "src": "src/routes/spacelab/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ca01e64.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ],
+    "css": [
+      "assets/pages/spacelab/index.svelte-a62dde92.css"
+    ]
+  },
   "src/routes/team/adora.md": {
-    "file": "pages/team/adora.md-0a3b4778.js",
+    "file": "pages/team/adora.md-af200ff2.js",
     "src": "src/routes/team/adora.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/team/ddraw.md": {
-    "file": "pages/team/ddraw.md-9e0b47b2.js",
+    "file": "pages/team/ddraw.md-91239ca7.js",
     "src": "src/routes/team/ddraw.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "src/routes/team/ryan.md": {
-    "file": "pages/team/ryan.md-7e7c77ef.js",
+    "file": "pages/team/ryan.md-a5555c5d.js",
     "src": "src/routes/team/ryan.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
-  "_index-cd5daeef.js": {
-    "file": "chunks/index-cd5daeef.js"
+  "_index-8ca01e64.js": {
+    "file": "chunks/index-8ca01e64.js"
   },
-  "_index-3d80c266.js": {
-    "file": "chunks/index-3d80c266.js",
+  "_index-12b3acf3.js": {
+    "file": "chunks/index-12b3acf3.js",
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ]
   },
   "_paths-396f020f.js": {
@@ -626,35 +654,35 @@
   "_singletons-d1fb5791.js": {
     "file": "chunks/singletons-d1fb5791.js"
   },
-  "_accountStore-95234e99.js": {
-    "file": "chunks/accountStore-95234e99.js",
+  "_accountStore-c3ff6133.js": {
+    "file": "chunks/accountStore-c3ff6133.js",
     "imports": [
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ]
   },
-  "_menuContextStore-4d685862.js": {
-    "file": "chunks/menuContextStore-4d685862.js",
+  "_menuContextStore-6e1fc22a.js": {
+    "file": "chunks/menuContextStore-6e1fc22a.js",
     "imports": [
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ]
   },
   "_env-859c48a7.js": {
     "file": "chunks/env-859c48a7.js"
   },
-  "_svgMapper-1ae78147.js": {
-    "file": "chunks/svgMapper-1ae78147.js",
+  "_svgMapper-099f4436.js": {
+    "file": "chunks/svgMapper-099f4436.js",
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ],
     "css": [
       "assets/svgMapper-04a23b64.css"
     ]
   },
-  "__post-4e6b2106.js": {
-    "file": "chunks/_post-4e6b2106.js",
+  "__post-a538dae2.js": {
+    "file": "chunks/_post-a538dae2.js",
     "imports": [
-      "_index-cd5daeef.js",
-      "_menuContextStore-4d685862.js"
+      "_index-8ca01e64.js",
+      "_menuContextStore-6e1fc22a.js"
     ],
     "css": [
       "assets/_post-f4fbebca.css"
@@ -666,53 +694,26 @@
       "_singletons-d1fb5791.js"
     ]
   },
-  "_Progress-3cf75cfd.js": {
-    "file": "chunks/Progress-3cf75cfd.js",
+  "_Captcha-aa1e7dfb.js": {
+    "file": "chunks/Captcha-aa1e7dfb.js",
     "imports": [
-      "_index-cd5daeef.js",
-      "_accountStore-95234e99.js",
-      "_briteliteStore-62efa313.js",
-      "_index-3d80c266.js"
-    ],
-    "css": [
-      "assets/Progress-db60a593.css"
-    ]
-  },
-  "_briteliteStore-62efa313.js": {
-    "file": "chunks/briteliteStore-62efa313.js",
-    "imports": [
-      "_index-3d80c266.js"
-    ]
-  },
-  "_ImageGrid-1acae9c8.js": {
-    "file": "chunks/ImageGrid-1acae9c8.js",
-    "imports": [
-      "_index-cd5daeef.js"
-    ],
-    "css": [
-      "assets/ImageGrid-1ddadeec.css"
-    ]
-  },
-  "_Captcha-65fcb585.js": {
-    "file": "chunks/Captcha-65fcb585.js",
-    "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ],
     "css": [
       "assets/Captcha-727e3782.css"
     ]
   },
-  "_messagingStore-522461ed.js": {
-    "file": "chunks/messagingStore-522461ed.js",
+  "_messagingStore-070d13b3.js": {
+    "file": "chunks/messagingStore-070d13b3.js",
     "imports": [
-      "_index-3d80c266.js"
+      "_index-12b3acf3.js"
     ]
   },
-  "_StarField-ff89c5f2.js": {
-    "file": "chunks/StarField-ff89c5f2.js",
+  "_StarField-145973f9.js": {
+    "file": "chunks/StarField-145973f9.js",
     "imports": [
-      "_index-cd5daeef.js",
-      "_accountStore-95234e99.js"
+      "_index-8ca01e64.js",
+      "_accountStore-c3ff6133.js"
     ],
     "css": [
       "assets/StarField-5456257e.css"
@@ -721,23 +722,29 @@
       "assets/spaceship-mock-4a394462.svg"
     ]
   },
-  "_Prompts-107d9ad9.js": {
-    "file": "chunks/Prompts-107d9ad9.js",
+  "_Prompts-57898cd4.js": {
+    "file": "chunks/Prompts-57898cd4.js",
     "imports": [
-      "_index-cd5daeef.js",
-      "_accountStore-95234e99.js"
+      "_index-8ca01e64.js",
+      "_accountStore-c3ff6133.js"
     ],
     "css": [
       "assets/Prompts-6607cf03.css"
     ]
   },
-  "__post-f1face9e.js": {
-    "file": "chunks/_post-f1face9e.js",
+  "__post-7867e3e5.js": {
+    "file": "chunks/_post-7867e3e5.js",
     "imports": [
-      "_index-cd5daeef.js"
+      "_index-8ca01e64.js"
     ],
     "css": [
       "assets/_post-0b61513e.css"
+    ]
+  },
+  "_briteliteStore-ee389409.js": {
+    "file": "chunks/briteliteStore-ee389409.js",
+    "imports": [
+      "_index-12b3acf3.js"
     ]
   }
 }

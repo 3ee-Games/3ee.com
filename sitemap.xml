@@ -65,13 +65,7 @@
     <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/aubrey-plaza</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/motu-diffusion</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
@@ -131,9 +125,6 @@
     <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game jams</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/games</loc>
   </url>
   <url>
@@ -141,6 +132,9 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/pong kombat</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/game jams</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/react</loc>

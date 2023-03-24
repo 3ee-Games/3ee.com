@@ -23,10 +23,10 @@
     <loc>https://3ee.com/games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/spacelab</loc>
+    <loc>https://3ee.com/account/accessibility</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/accessibility</loc>
+    <loc>https://3ee.com/spacelab</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/conduct</loc>
@@ -59,10 +59,10 @@
     <loc>https://3ee.com/account/profile</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/terms</loc>
+    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
+    <loc>https://3ee.com/account/terms</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
@@ -80,28 +80,10 @@
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/shenanijam2018</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
-    <loc>https://3ee.com/britelite/library</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/cupids-balance</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/flappy-jacob</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/palooza</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/spin2win</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/zultiki</loc>
+    <loc>https://3ee.com/blog/shenanijam2018</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/adora</loc>
@@ -110,13 +92,31 @@
     <loc>https://3ee.com/team/ddraw</loc>
   </url>
   <url>
+    <loc>https://3ee.com/britelite/library</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/messages/response</loc>
+    <loc>https://3ee.com/games/cupids-balance</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/flappy-jacob</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/zultiki</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/spin2win</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/palooza</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/advertisements</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/ai training</loc>
@@ -143,9 +143,9 @@
     <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/tiled</loc>
+    <loc>https://3ee.com/blog/categories/videos</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/videos</loc>
+    <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
 </urlset>

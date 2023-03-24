@@ -101,6 +101,9 @@
     <loc>https://3ee.com/games/spin2win</loc>
   </url>
   <url>
+    <loc>https://3ee.com/games/zultiki</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
@@ -119,10 +122,10 @@
     <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game development</loc>
+    <loc>https://3ee.com/blog/categories/game jams</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game jams</loc>
+    <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/games</loc>
@@ -134,18 +137,15 @@
     <loc>https://3ee.com/blog/categories/pong kombat</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/zultiki</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/react</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/videos</loc>
+    <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/tiled</loc>
+    <loc>https://3ee.com/blog/categories/videos</loc>
   </url>
 </urlset>

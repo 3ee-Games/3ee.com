@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d705f497.js",
+    "file": "start-00d19121.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -441,7 +441,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-6040304a.js",
+    "file": "pages/britelite/index.svelte-8ea2ff03.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -450,16 +450,17 @@
       "_navigation-0e6511d1.js",
       "_accountStore-c3ff6133.js",
       "_briteliteStore-ee389409.js",
+      "_Saos-3434f03e.js",
       "_index-12b3acf3.js",
       "_Prompts-57898cd4.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-f4e665e0.css"
+      "assets/pages/britelite/index.svelte-06cf90b5.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {
-    "file": "pages/britelite/library/index.svelte-6157f51c.js",
+    "file": "pages/britelite/library/index.svelte-6dd43339.js",
     "src": "src/routes/britelite/library/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -552,13 +553,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-6ea403b6.js",
+    "file": "pages/index.svelte-505c15d6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-8ca01e64.js",
       "_navigation-0e6511d1.js",
+      "_Saos-3434f03e.js",
       "_index-12b3acf3.js",
       "_accountStore-c3ff6133.js",
       "_StarField-145973f9.js",
@@ -715,6 +717,12 @@
     "file": "chunks/briteliteStore-ee389409.js",
     "imports": [
       "_index-12b3acf3.js"
+    ]
+  },
+  "_Saos-3434f03e.js": {
+    "file": "chunks/Saos-3434f03e.js",
+    "imports": [
+      "_index-8ca01e64.js"
     ]
   }
 }

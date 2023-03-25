@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-e480d9a2.js",
+    "file": "start-4e1b9d17.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -29,9 +29,11 @@
       "src/routes/account/profile/index.svelte",
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
+      "src/routes/blog/aubrey-plaza.md",
       "src/routes/blog/categories/[category].svelte",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
+      "src/routes/blog/motu-diffusion.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
@@ -337,6 +339,21 @@
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
     ]
   },
+  "src/routes/blog/aubrey-plaza.md": {
+    "file": "pages/blog/aubrey-plaza.md-e28388ae.js",
+    "src": "src/routes/blog/aubrey-plaza.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js",
+      "_accountStore-c3ff6133.js",
+      "_index-12b3acf3.js"
+    ],
+    "css": [
+      "assets/pages/blog/aubrey-plaza.md-061b618d.css"
+    ]
+  },
   "src/routes/blog/categories/[category].svelte": {
     "file": "pages/blog/categories/_category_.svelte-f151345b.js",
     "src": "src/routes/blog/categories/[category].svelte",
@@ -374,6 +391,19 @@
       "assets/pages/blog/index.svelte-28b11750.css"
     ]
   },
+  "src/routes/blog/motu-diffusion.md": {
+    "file": "pages/blog/motu-diffusion.md-af5e0240.js",
+    "src": "src/routes/blog/motu-diffusion.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ca01e64.js",
+      "__post-7867e3e5.js"
+    ],
+    "css": [
+      "assets/pages/blog/motu-diffusion.md-f78feb8c.css"
+    ]
+  },
   "src/routes/blog/no-ads-in-our-games.md": {
     "file": "pages/blog/no-ads-in-our-games.md-5f25cb34.js",
     "src": "src/routes/blog/no-ads-in-our-games.md",
@@ -394,7 +424,7 @@
       "__post-7867e3e5.js"
     ],
     "css": [
-      "assets/pages/blog/ornamental-santa-diffusion.md-7f2ecd47.css"
+      "assets/pages/blog/motu-diffusion.md-f78feb8c.css"
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
@@ -441,7 +471,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-35b57caf.js",
+    "file": "pages/britelite/index.svelte-ae3b495a.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -456,7 +486,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-b4800f94.css"
+      "assets/pages/britelite/index.svelte-7c01e09f.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {

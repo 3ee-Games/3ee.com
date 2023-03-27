@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-8bb4ec8a.js",
+    "file": "start-45d2c7b7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -29,11 +29,9 @@
       "src/routes/account/profile/index.svelte",
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
-      "src/routes/blog/aubrey-plaza.md",
       "src/routes/blog/categories/[category].svelte",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
-      "src/routes/blog/motu-diffusion.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
@@ -339,21 +337,6 @@
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
     ]
   },
-  "src/routes/blog/aubrey-plaza.md": {
-    "file": "pages/blog/aubrey-plaza.md-e28388ae.js",
-    "src": "src/routes/blog/aubrey-plaza.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ca01e64.js",
-      "__post-7867e3e5.js",
-      "_accountStore-c3ff6133.js",
-      "_index-12b3acf3.js"
-    ],
-    "css": [
-      "assets/pages/blog/aubrey-plaza.md-061b618d.css"
-    ]
-  },
   "src/routes/blog/categories/[category].svelte": {
     "file": "pages/blog/categories/_category_.svelte-f151345b.js",
     "src": "src/routes/blog/categories/[category].svelte",
@@ -389,19 +372,6 @@
     ],
     "css": [
       "assets/pages/blog/index.svelte-28b11750.css"
-    ]
-  },
-  "src/routes/blog/motu-diffusion.md": {
-    "file": "pages/blog/motu-diffusion.md-af5e0240.js",
-    "src": "src/routes/blog/motu-diffusion.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ca01e64.js",
-      "__post-7867e3e5.js"
-    ],
-    "css": [
-      "assets/pages/blog/ornamental-santa-diffusion.md-7f2ecd47.css"
     ]
   },
   "src/routes/blog/no-ads-in-our-games.md": {
@@ -490,7 +460,7 @@
     ]
   },
   "src/routes/britelite/library/index.svelte": {
-    "file": "pages/britelite/library/index.svelte-021a981e.js",
+    "file": "pages/britelite/library/index.svelte-b6c6eace.js",
     "src": "src/routes/britelite/library/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

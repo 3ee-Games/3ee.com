@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-248d76fc.js",
+    "file": "start-67bf4163.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -438,7 +438,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-19ad833c.js",
+    "file": "pages/britelite/index.svelte-d4afbad8.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -452,7 +452,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-ef80b070.css"
+      "assets/pages/britelite/index.svelte-febb6b1a.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {

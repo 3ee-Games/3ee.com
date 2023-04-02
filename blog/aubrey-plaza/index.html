@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="3ee Games website" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" href="/favicon.png" />
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="content-security-policy" content=""><title>3ee Games Blog - textual inversion with Aubrey Plaza</title><meta property="og:title" content="textual inversion with Aubrey Plaza" data-svelte="svelte-1oh68j2">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-75cba44b.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/aubrey-plaza.md-061b618d.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/_post-0b61513e.css">
+	<link rel="modulepreload" href="/_app/immutable/start-09c9ec16.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-847aa976.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-6d33a316.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-d1fb5791.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-6d0c2910.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c0f1e893.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-41a4589c.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/aubrey-plaza.md-26f86c78.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/_post-44edd104.js">
+</head>
+
+<body>
+	<div id="svelte">
+
+
+<header class="svelte-yqytdq"><nav class="svelte-bv34uk"><button class="svelte-bv34uk"><ion-icon class="icon svelte-bv34uk" name="reorder-three-outline"></ion-icon></button>
+</nav>
+	<nav class="svelte-yqytdq"><a href="/" class="svelte-yqytdq"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.237 102.658" class="svelte-17ukrba"><defs><clipPath id="logo-path"><ellipse cx="106.822" cy="119.364" fill="none" stroke="#c43b37" stroke-width=".825" rx="49.117" ry="39.162"></ellipse></clipPath></defs><ellipse cx="61.051" cy="51.291" fill="#3899ed" stroke="#000" stroke-width="2.628" rx="59.737" ry="49.977"></ellipse><g clip-path="url(#logo-path)" transform="translate(-74.872 -99.587) scale(1.26422)"><ellipse cx="107.576" cy="119.667" rx="26.46" ry="25.524"></ellipse><path d="M77.486 89.412 65.352 77.278l14.94-.163c42.264-.462 61.806-.685 65.178-.743l3.732-.065-12.144 12.145-12.143 12.144-.543-.409c-5.324-4.013-12.023-6.001-18.474-5.483-3.756.302-6.754 1.11-9.997 2.696-2.075 1.014-3.781 2.098-5.245 3.33-.532.449-.983.816-1.002.816-.02 0-5.495-5.46-12.168-12.134zm-.1 60.876L65.352 162.52l14.94.042c42.267.118 61.81.182 65.182.213l3.732.034-12.242-12.045-12.242-12.045-.538.413c-5.292 4.056-11.975 6.099-18.43 5.633-3.758-.272-6.762-1.055-10.019-2.614-2.082-.997-3.797-2.067-5.27-3.288-.536-.444-.99-.808-1.01-.808-.019 0-5.45 5.505-12.069 12.233z"></path></g><ellipse cx="73.834" cy="40.787" fill="#fff" rx="6.69" ry="6.212"></ellipse></svg>
+			<img alt="3ee Games 3D text logo" src="/logo-txt-glow.png" class="logo-txt svelte-yqytdq"></a></nav>
+</header>
+
+<main class="svelte-jq7k3t">
+
+<section class="background"><article class="blog content"><h1 class="svelte-1kl993h">textual inversion with Aubrey Plaza</h1>
+		<aside class="date-aside svelte-1kl993h"><ul class="svelte-1kl993h"><li class="published-date svelte-1kl993h"><strong>Published:</strong> January 26, 2023</li>
+				</ul></aside>
+
+		<aside class="categories svelte-1kl993h"><ul class="svelte-1kl993h"><li class="svelte-1kl993h"><a href="/blog/categories/stable diffusion" class="svelte-1kl993h">Stable diffusion</a>
+						</li><li class="svelte-1kl993h"><a href="/blog/categories/ai training" class="svelte-1kl993h">Ai training</a>
+						</li></ul></aside>
+
+		
+
+		<div class="article"><p>A great way to dive into the methods of training an embedding using textual inversion is to use a celebrity.  This model was trained on a wide variety of different images of Aubrey Plaza, we encourage you to try different variations of vivid prompts.  Below are my findings with this experiment and deep dive into the model.</p>
+<p><img src="https://huggingface.co/datasets/zuleo/aubrey-plaza/resolve/main/images/grid_v2.png" alt="Detailed Samples" title="A photo booth of the model's output: images of santa claus" class="svelte-3z7sly"></p>
+<h2 id="what-is-textual-inversion"><a aria-hidden="true" tabindex="-1" href="#what-is-textual-inversion"><span class="icon icon-link"></span></a>What is Textual Inversion?</h2>
+<blockquote><p>📄 See the paper: <a href="https://arxiv.org/abs/2208.01618" rel="nofollow">https://arxiv.org/abs/2208.01618</a></p></blockquote>
+<p>Stable Diffusion is a denoising tool which is fine-tuned to predict what is noise in an image to remove it. Running that process 20 to 40 times in a row on pure noise can repair it into a brand new image.</p>
+<p>Stable Diffusion uses a diffusion model called a <strong>latent diffusion model</strong> (LDM).  The CLIP encoder describes images with 768 latents (in SD 1.x models - SD 2.x uses 1024), where each latent is a spectrum of some type of feature.</p>
+<p>Examples: </p>
+<ul><li>At one end might be round objects and at the other end might be square objects, but it’s much more complex than that. </li>
+<li>At one end might be chairs, and at another end might be giraffes. </li></ul>
+<p>These feature spectrums are probably beyond human understanding.</p>
+<p>The latents were built with captions where words can also be encoded to these same latents (e.g. ‘cat’, ‘planet’, ‘spaceship’, etc, each concept can be described in 768 values of various spectrums).</p>
+<p>Stable Diffusion is guided by those latents: </p>
+<ul><li>Learns to understand what each one means when you inference using prompts.</li>
+<li>Gives each a weighting to different areas of an image. </li></ul>
+<p>While training, it’s possible to introduce latents never trained on using textual inversion or manually combining existing word latents.  Stable Diffusion will draw those concepts because it learned to understand those spectrums of ideas - not copy existing content. </p>
+<p>For example, you can combine 50% of cat and 50% of a kangaroo and it can draw a cat-kangaroo hybrid creature which it never trained on.</p>
+<p>You can find the latents which describe your own face, or a new artstyle - despite it never training on it.</p>
+<h2 id="embedding-usage"><a aria-hidden="true" tabindex="-1" href="#embedding-usage"><span class="icon icon-link"></span></a>Embedding Usage</h2>
+<p>Using embeddings within different Stable Diffusion UIs is usually the same process: add the embedding token to your prompt and modify the weight of that specific token in your prompts.</p>
+<p>✨ V2: Use the token <code>aubreyplazav2-300</code> in your prompts to activate the embedding.</p>
+<p>✨ V1: Use the token <code>aubreyplazav1-7375</code> in your prompts to activate the embedding.</p>
+<h2 id="prompt-example"><a aria-hidden="true" tabindex="-1" href="#prompt-example"><span class="icon icon-link"></span></a>Prompt Example</h2>
+<p>🧾 Prompt:</p>
+<p><code>Perfectly-centered close up portrait-photograph of a real life warrior aubreyplazav2-300, hair flowing in the wind with beautiful bright blue eyes, (wearing gold and white armor and big hoop gold earrings and a tiara:1.22223), (battle axe and broad sword hanging from her belt:1.112), standing near a rain forest with a waterfall, lifelike, super highly detailed, professional digital painting, artstation, concept art, Photorealism, HD quality, 8k resolution, beautiful, cinematic, art by artgerm and greg rutkowski and alphonse mucha and loish and WLOP</code></p>
+<p>➖ Negative:</p>
+<p><code>(bad_prompt_version2:0.8), ((((ugly)))), (((duplicate))), ((morbid)), ((mutilated)), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), ((ugly)), blurry, ((bad anatomy)), (((bad proportions))), ((extra limbs)), cloned face, (((disfigured))), out of frame, ugly, extra limbs, (bad anatomy), gross proportions, (malformed limbs), ((missing arms)), ((missing legs)), (((extra arms))), (((extra legs))), mutated hands, (fused fingers), (too many fingers), (((long neck))), watermark, signature, words, (text:1.4), cross eyed</code></p>
+<p><em>Steps: 20, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 3960559569, Size: 512x512, Model hash: 67abd65708</em></p>
+<blockquote><p>🌅 For more information on how to use this embedding, see <a href="https://huggingface.co/datasets/zuleo/aubrey-plaza" rel="nofollow">https://huggingface.co/datasets/zuleo/aubrey-plaza</a>.</p></blockquote>
+<hr>
+    <div class="subscribe svelte-vjvavh"><h2 class="svelte-vjvavh">SpaceLab Content</h2>
+
+        <p class="highlight large svelte-vjvavh"><ion-icon class="icon svelte-vjvavh" name="lock-closed"></ion-icon>SpaceLab Content</p>
+        
+        <p class="svelte-vjvavh">To access this content, you need a SpaceLab subscription.</p>
+
+        
+
+        
+
+        <button class="button subscribe svelte-vjvavh"><ion-icon class="icon svelte-vjvavh" name="planet"></ion-icon>
+            <span>SpaceLab</span></button></div>
+    <hr>
+<h2 id="understanding-learning-rates"><a aria-hidden="true" tabindex="-1" href="#understanding-learning-rates"><span class="icon icon-link"></span></a>Understanding Learning Rates</h2>
+<p>📈 Learning rates: How fast the embedding evolves per training step. The higher the value, the faster Stable Diffusion will learn.</p>
+<p>Using a high value for a learning rate for a long running duration will cause the embedding to become inflexible or cause deformities and visual artifacts to start appearing in your images.</p>
+<p>Example: a large learning rate is like using a sledgehammer to create a stone statue from a large boulder.  It’s great to make rapid progress at the start by knocking off large pieces of stone. but eventually you need to use something smaller like a hammer to get more precision. Finally, end up at a chisel to get the fine details you want.</p>
+<p>Values around the default of 0.005 work well for most subject based training. But we aren’t limited to a static learning rate, we can have it change at set step intervals with using a progressive learning rate.</p>
+<h3 id="progressive-learning-rates"><a aria-hidden="true" tabindex="-1" href="#progressive-learning-rates"><span class="icon icon-link"></span></a>Progressive Learning Rates</h3>
+<p>Progressive learning rates are able to change during specified steps and can be appended to a list.  Most training CLIs and/or UIs accept a list of learning rates and step intervals.  For example:</p>
+<p><code>0.05:10, 0.02:20, 0.01:60, 0.005:200, 0.002:500, 0.001:3000, 0.0005</code></p>
+<p>This is a list of learning rates and step intervals.  When training a model, the learning rate will change at the specified step intervals.  Here is what happens step by step during each interval when training your own embedding:</p>
+<ul><li>Step 1 - 10 uses a learning rate of 0.05. (high learning rate)</li>
+<li>Steps 10 - 20: lowered to 0.02</li>
+<li>20 - 60: lowered to 0.01</li>
+<li>60 - 200: lowered to 0.005</li>
+<li>200 - 500: lowered to 0.002</li>
+<li>500 - 3000: lowered to 0.001</li>
+<li>3000+ is lowered to 0.0005 (slow learning rate)</li></ul>
+<p>When the learning rate is lowered, the more fine tuning happens and increase how precise the embedding will become. This should produce subject likeness results in the 200-500 step range.  Results may get better or worse towards 1000-1500 steps depending on the subject.</p>
+<hr></div></article>
+</section></main>
+
+<footer class="svelte-1pv61cd"><div class="footer-container svelte-1pv61cd"><div class="footer-main svelte-1pv61cd"><div class="brand svelte-1pv61cd"><div class="footer-logo footer-logo-animation svelte-1pv61cd"><svg viewBox="0 0 30 17" class="svelte-1pv61cd"><g><g aria-label="3EE" font-size="16.383" stroke-width=".41"><path class="three-ee-text-logo svelte-1pv61cd" d="M7.077 3.584H3.649v1.132H.91V3.258q0-.583.063-1.08.078-.498.313-.84.235-.343.688-.532Q2.444.6 3.242.6h.063L7.42.566h.063q.36 0 .72.051.36.035.751.309.423.309.61.703.189.377.235.875.047.497.047.96 0 .223-.015.446v.411q-.016.223-.016.446v.463q0 .463-.11.789-.093.326-.36.617.267.274.36.617.11.326.11.79v2.417q0 .446-.156.823-.141.36-.407.652-.25.274-.61.428-.345.155-.736.155H2.788q-.391 0-.735-.155-.345-.154-.595-.428-.25-.292-.407-.652-.14-.377-.14-.823V8.402h2.738v1.132h3.428v-1.68H2.961V4.853h4.116zM19.205 9.568v3.001h-8.39V.566h8.39V3.55h-5.65v1.526h4.633v2.983h-4.633v1.51zM28.499 9.568v3.001h-8.39V.566h8.39V3.55h-5.65v1.526h4.632v2.983h-4.633v1.51z"></path></g><g aria-label="Third Eye Entertainment" font-size="2.117" stroke-width=".265"><path class="three-ee-unwrapped-text svelte-1pv61cd" d="M2.237 13.958v.368H1.82v1.113h-.37v-1.113h-.417v-.368zM3.555 13.954v1.481h-.368v-.556H2.72v.556h-.368v-1.481h.368v.556h.466v-.556zM4.068 13.958v1.481h-.37v-1.481zM5.35 14.356v.05l.002.05v.042l.002.038-.002.093-.006.093q-.009.061-.036.106-.025.042-.076.078-.034.023-.066.032-.03.006-.063.008l.273.49h-.422l-.27-.488h-.144v.487h-.37v-1.481h.91q.056 0 .105.02.049.02.085.058.036.036.057.087.021.048.021.105zm-.375.224v-.256h-.433v.256zM6.479 13.964q.07.021.108.053.038.03.055.068.017.038.021.082.004.045.004.093v.026q.002.01.002.023.003.03.003.07v.692q0 .06-.003.112-.002.053-.02.098-.02.044-.062.08-.04.036-.117.061-.019.005-.074.009l-.116.004h-.812v-1.481h.535q.046-.003.095-.003h.068q.055 0 .116.003.064 0 .119.004.057.002.076.006zM6.3 15.067v-.743h-.463v.743zM8.756 15.069v.37H7.62v-1.481h1.135v.368H7.99v.188h.627v.369h-.627v.186zM10.222 13.956l-.531.842v.64h-.369v-.64l-.533-.842h.436l.281.442.28-.442zM11.401 15.069v.37h-1.134v-1.481H11.4v.368h-.764v.188h.627v.369h-.627v.186zM13.477 15.069v.37h-1.135v-1.481h1.135v.368h-.764v.188h.626v.369h-.626v.186zM14.814 13.96v1.482h-.347l-.487-.762v.762h-.368V13.96h.347l.487.76v-.76zM16.136 13.958v.368h-.417v1.113h-.37v-1.113h-.417v-.368zM17.367 15.069v.37h-1.135v-1.481h1.135v.368h-.764v.188h.626v.369h-.626v.186zM18.67 14.356v.05l.002.05v.042l.002.038-.002.093-.006.093q-.008.061-.036.106-.025.042-.076.078-.034.023-.066.032-.03.006-.063.008l.273.49h-.421l-.271-.488h-.144v.487h-.37v-1.481h.91q.057 0 .105.02.049.02.085.058.036.036.057.087.021.048.021.105zm-.374.224v-.256h-.434v.256zM19.964 13.958v.368h-.417v1.113h-.37v-1.113h-.417v-.368zM20.903 13.954l.538 1.481h-.396l-.1-.277h-.45l-.1.277h-.394l.538-1.481zm-.093.834q-.013-.034-.021-.06l-.02-.053q-.008-.027-.02-.057l-.028-.076-.091.246zM21.87 13.958v1.481h-.37v-1.481zM23.186 13.96v1.482h-.348l-.486-.762v.762h-.369V13.96h.347l.487.76v-.76zM24.755 13.956v1.481h-.37v-.74l-.104.165-.097.158h-.271l-.201-.326v.743h-.37v-1.481h.35l.356.578.358-.578zM26.04 15.069v.37h-1.134v-1.481h1.134v.368h-.764v.188h.627v.369h-.627v.186zM27.377 13.96v1.482h-.347l-.486-.762v.762h-.369V13.96h.347l.487.76v-.76zM28.7 13.958v.368h-.417v1.113h-.37v-1.113h-.418v-.368z"></path></g></g></svg></div>
+				<p class="legal svelte-1pv61cd">© Copyright 2023 3ee Games LLC. All rights reserved.</p>
+				<p class="legal svelte-1pv61cd">Made with a giant barrel of <ion-icon class="heart-icon svelte-1pv61cd" name="heart-sharp"></ion-icon> by 3ee Games.
+				</p>
+				<p class="legal svelte-1pv61cd">In memory of Teela 🐱</p></div>
+			<div class="footer-routes svelte-1pv61cd"><div class="footer-category svelte-1pv61cd"><div class="footer-heading svelte-1pv61cd"><ion-icon class="footer-heading-icon svelte-1pv61cd" name="planet-sharp"></ion-icon>
+						<h6 class="svelte-1pv61cd">discover</h6></div>
+					<a href="/about" aria-current="page" class="svelte-1pv61cd">about</a>
+					<a href="/games" aria-current="page" class="svelte-1pv61cd">games</a>
+					<a href="/blog" aria-current="page" class="svelte-1pv61cd">blog</a>
+					<a href="https://discord.gg/3ee" target="_blank" class="svelte-1pv61cd">discord community</a>
+					<a href="/contact" aria-current="page" class="svelte-1pv61cd">contact</a></div>
+				<div class="footer-category svelte-1pv61cd"><div class="footer-heading svelte-1pv61cd"><ion-icon class="footer-heading-icon svelte-1pv61cd" name="person-circle-sharp"></ion-icon>
+						<h6 class="svelte-1pv61cd">account</h6></div>
+					<a href="/account/login" aria-current="page" class="svelte-1pv61cd">login</a>
+						<a href="/account/create" aria-current="page" class="svelte-1pv61cd">create an account</a>
+						<a href="/account/accessibility" aria-current="page" class="svelte-1pv61cd">accessibility</a>
+						<a href="/account/conduct" aria-current="page" class="svelte-1pv61cd">code of conduct</a>
+						<a href="/account/privacy" aria-current="page" class="svelte-1pv61cd">privacy policy</a>
+						<a href="/account/terms" aria-current="page" class="svelte-1pv61cd">terms of service</a></div>
+				<div class="footer-category svelte-1pv61cd"><div class="footer-heading svelte-1pv61cd"><ion-icon class="footer-heading-icon svelte-1pv61cd" name="chatbubbles-sharp"></ion-icon>
+						<h6 class="svelte-1pv61cd">social</h6></div>
+
+					<a href="https://github.com/3ee-Games" target="_blank" class="svelte-1pv61cd">github</a>
+					<a href="https://huggingface.co/3ee" target="_blank" class="svelte-1pv61cd">huggingface</a>
+					<a rel="me" target="_blank" href="https://mastodon.social/@zuleo" class="svelte-1pv61cd">mastodon</a>
+					<a href="https://www.youtube.com/channel/UCv-Cy54zRQgGHe5kiqpfOGA" target="_blank" class="svelte-1pv61cd">youtube</a>
+					<a href="https://twitter.com/3ee_Games" target="_blank" class="svelte-1pv61cd">twitter</a>
+					<a href="https://www.linkedin.com/company/3ee-games" target="_blank" class="svelte-1pv61cd">linkedin</a>
+					<a href="https://www.facebook.com/3eecom" target="_blank" class="svelte-1pv61cd">facebook</a></div></div></div></div></footer>
+
+
+
+
+
+	<script async defer data-website-id="a7b42ac7-8ef9-4e00-a63e-73c6726cc1ea" src="https://lifestream.3ee.com/umami.js"></script>
+
+
+		<script type="module" data-sveltekit-hydrate="1nplhon">
+		import { start } from "/_app/immutable/start-09c9ec16.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1nplhon"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "always",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 19],
+				params: {},
+				routeId: "blog/aubrey-plaza"
+			}
+		});
+	</script></div>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

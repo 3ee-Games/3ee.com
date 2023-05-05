@@ -14,18 +14,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="content-security-policy" content=""><title>3ee Games Blog - Using Tiled as a level editor with Phaser</title><meta property="og:title" content="Using Tiled as a level editor with Phaser" data-svelte="svelte-1oh68j2">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-d92f0340.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-701b8cf4.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-0b61513e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-7e13dc9c.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-847aa976.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-6d33a316.js">
+	<link rel="modulepreload" href="/_app/immutable/start-453914b8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-8ed999ca.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-71ac3aa5.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-6d0c2910.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c0f1e893.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-41a4589c.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/tiled-level-editor-phaser.md-f4204a48.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/_post-44edd104.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-947c7382.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-382f91e1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-859cf7a0.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/tiled-level-editor-phaser.md-a2f2a30a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/_post-60c1c672.js">
 </head>
 
 <body>
@@ -40,9 +40,9 @@
 
 <main class="svelte-jq7k3t">
 
-<section class="background"><article class="blog content"><h1 class="svelte-1kl993h">Using Tiled as a level editor with Phaser</h1>
+<section class="background"><article class="blog content"><h1 id="using-tiled-as-a-level-editor-with-phaser" class="svelte-1kl993h">Using Tiled as a level editor with Phaser</h1>
 		<aside class="date-aside svelte-1kl993h"><ul class="svelte-1kl993h"><li class="published-date svelte-1kl993h"><strong>Published:</strong> February 6, 2021</li>
-				<li class="published-date svelte-1kl993h"><strong>Modified:</strong> October 4, 2022</li></ul></aside>
+				<li class="published-date svelte-1kl993h"><strong>Modified:</strong> April 24, 2023</li></ul></aside>
 
 		<aside class="categories svelte-1kl993h"><ul class="svelte-1kl993h"><li class="svelte-1kl993h"><a href="/blog/categories/tiled" class="svelte-1kl993h">Tiled</a>
 						</li><li class="svelte-1kl993h"><a href="/blog/categories/game development" class="svelte-1kl993h">Game development</a>
@@ -52,20 +52,89 @@
 		<div class="video-container svelte-1835brm"><video preload="auto" width="100%" height="600" poster="https://3ee.s3.amazonaws.com/video/tiled_phaser_poster.webp" controls class="svelte-1835brm"><source src="https://3ee.s3.amazonaws.com/video/tiled_phaser.mp4" type="video/mp4"><track src="/captions/tiled_phaser.vtt" kind="captions" default></video>
 </div>
 
-		<div class="article"><p>When developing a game, look for ways to use tools that are proven to work and have solid integration with your game engine. This will allow you to focus on your game and not be distracted by creating custom tools to build your game’s content.</p>
-<p>In this prototype, I’m building vertical levels that require the player to jump up, across, and the player wraps around the screen - similar to Kid Icarus. There are various powerups and a mechanic that gives the player a sense of danger - <a href="https://www.he-man.org/encyclopedia/viewobject.php?typeid=3&objectid=153" rel="nofollow">The Creeping Horak</a> Yes - Masters of the Universe reference!).</p>
+		<div class="article"><p>When developing a game, it’s important to use proven tools that integrate well with your game engine. By doing so, you can focus on the game’s content rather than getting bogged down with creating custom tools.</p>
+<p>For example, in a recent prototype I was developing vertical levels inspired by Kid Icarus that required the player to jump up, across, and wrap around the screen. The levels contained various powerups and a danger mechanic.</p>
 <h2 id="powerups"><a aria-hidden="true" tabindex="-1" href="#powerups"><span class="icon icon-link"></span></a>Powerups</h2>
 <p>Powerups randomly drop when Skeletons die:</p>
 <ul><li>Heart: Player is healed for a fixed amount.</li>
 <li>Arrows: Arrows can drop by groups of three - two and a single arrow can drop.</li>
 <li>Nothing: Nothing drops based on the rest of the loot table.</li></ul>
-<p><a href="https://www.mapeditor.org/" rel="nofollow">Tiled</a> is used to layout all the spawn points of the player, skeletons, The Creeping Horak, and the boss - Medusa. The level design is manually built.
-From the platforms to the ladders and all the way to the vines, all the level assets are managed and placed in Tiled. From there the level data is loaded into Phaser. All the tile types bind to their respective mapped sprite within Phaser.</p>
-<p>You’ll also notice when climbing vines and ladders - we use a different bank of sound effects for those elements - and that data is also handled in Tiled. When the data comes in for the audio - the bank of sound effects is assigned. When a collision happens with the player and that specific object tile - a random sound effect is pulled from the bank and used.</p>
+<p>To manage the level design, I used <a href="https://www.mapeditor.org/" rel="nofollow">Tiled</a>, a tool that enables the layout of all player, enemy, and boss spawn points, as well as the placement of all level assets, such as platforms, ladders, and vines. Once placed in Tiled, the level data was loaded into Phaser, where all tile types were bound to their respective mapped sprite.</p>
 <h2 id="building-levels-and-getting-quick-feedback"><a aria-hidden="true" tabindex="-1" href="#building-levels-and-getting-quick-feedback"><span class="icon icon-link"></span></a>Building levels and getting quick feedback</h2>
-<p>Notice how we quickly make changes to the level and test the changes? If we take this a step further, we could have a listener within the game client that can hot load the new level data, pause the player, and run through the level data - update any cache and we’d have hot loading.</p>
-<p>As game developers - we have to be open to engineering a faster pipeline. However, for this prototype we’re just playing around with some game mechanics and taking a deep dive into the important design questions - for example “are these mechanic fun or just the same old stuff?”</p>
-<p>Tiled’s layer support gives you freedom to seperate your level tiles and in Phaser, you can access those layers - giving you foreground/background layout out of the box. Since Phaser can access layers seperately, you can simply target one group of tiles or objects to assign behaviors to.</p>
+<p>Tiled’s layer support allowed me to separate level tiles into foreground and background layers, which could then be accessed separately in Phaser to assign behaviors to. This gave me the freedom to quickly make changes to the level design and test them, leading to faster iteration and better game development.</p>
+<p>Tiled was also used to handle audio data, with different sound effects assigned to different objects such as vines and ladders. When a collision occurred with a specific object tile, a random sound effect was pulled from the corresponding sound bank.</p>
+<p>Overall, Tiled proved to be a powerful tool for managing game content and streamlining the development pipeline. If you’re interested in using Tiled for 2D game development, I recommend taking a deep dive and building a simple game with collisions and object zones to learn the program.</p>
+<h2 id="example"><a aria-hidden="true" tabindex="-1" href="#example"><span class="icon icon-link"></span></a>Example</h2>
+<p><strong>map.json</strong></p>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token punctuation">&#123;</span>
+  <span class="token string-property property">"height"</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"layers"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token string-property property">"data"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"name"</span><span class="token operator">:</span> <span class="token string">"Tile Layer 1"</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"opacity"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"type"</span><span class="token operator">:</span> <span class="token string">"tilelayer"</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"visible"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"width"</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"x"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"y"</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"tileheight"</span><span class="token operator">:</span> <span class="token number">32</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"tilesets"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">&#123;</span>
+      <span class="token string-property property">"columns"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"firstgid"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"image"</span><span class="token operator">:</span> <span class="token string">"tiles.png"</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"imageheight"</span><span class="token operator">:</span> <span class="token number">128</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"imagewidth"</span><span class="token operator">:</span> <span class="token number">128</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"margin"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"name"</span><span class="token operator">:</span> <span class="token string">"tiles"</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"spacing"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"tilecount"</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"tileheight"</span><span class="token operator">:</span> <span class="token number">32</span><span class="token punctuation">,</span>
+      <span class="token string-property property">"tilewidth"</span><span class="token operator">:</span> <span class="token number">32</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"tilewidth"</span><span class="token operator">:</span> <span class="token number">32</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"width"</span><span class="token operator">:</span> <span class="token number">10</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<p><strong>game.js</strong></p>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> Phaser<span class="token punctuation">.</span><span class="token constant">AUTO</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">320</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">scene</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token literal-property property">preload</span><span class="token operator">:</span> preload<span class="token punctuation">,</span>
+    <span class="token literal-property property">create</span><span class="token operator">:</span> create
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> game <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Phaser<span class="token punctuation">.</span>Game</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">preload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>load<span class="token punctuation">.</span><span class="token function">tilemapTiledJSON</span><span class="token punctuation">(</span><span class="token string">'map'</span><span class="token punctuation">,</span> <span class="token string">'map.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>load<span class="token punctuation">.</span><span class="token function">image</span><span class="token punctuation">(</span><span class="token string">'tiles'</span><span class="token punctuation">,</span> <span class="token string">'tiles.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>make<span class="token punctuation">.</span><span class="token function">tilemap</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> <span class="token literal-property property">key</span><span class="token operator">:</span> <span class="token string">'map'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> tiles <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">addTilesetImage</span><span class="token punctuation">(</span><span class="token string">'tiles'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> layer <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">createStaticLayer</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> tiles<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+</code><!-- HTML_TAG_END --></pre>
 <h2 id="tiled---take-a-deep-dive"><a aria-hidden="true" tabindex="-1" href="#tiled---take-a-deep-dive"><span class="icon icon-link"></span></a>Tiled - take a deep dive</h2>
 <p>If 2D game development has peaked your interest and you want to get started using Tiled - I recommend taking a deep dive with it. Build a simple game with collisions and object zones and learn the program. It does have a few quirks but nothing that any other editor or homegrown tool would have.</p>
 <h2 id="resources"><a aria-hidden="true" tabindex="-1" href="#resources"><span class="icon icon-link"></span></a>Resources</h2>
@@ -113,10 +182,10 @@ From the platforms to the ladders and all the way to the vines, all the level as
 	<script async defer data-website-id="a7b42ac7-8ef9-4e00-a63e-73c6726cc1ea" src="https://lifestream.3ee.com/umami.js"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="a5e02o">
-		import { start } from "/_app/immutable/start-7e13dc9c.js";
+		<script type="module" data-sveltekit-hydrate="8h6scn">
+		import { start } from "/_app/immutable/start-453914b8.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="a5e02o"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="8h6scn"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

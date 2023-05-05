@@ -14,18 +14,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="content-security-policy" content=""><title>3ee Games Blog - Phaser game with a React UI</title><meta property="og:title" content="Phaser game with a React UI" data-svelte="svelte-1oh68j2">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-d92f0340.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-701b8cf4.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-0b61513e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-7e13dc9c.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-847aa976.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-6d33a316.js">
+	<link rel="modulepreload" href="/_app/immutable/start-453914b8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-8ed999ca.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-71ac3aa5.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-6d0c2910.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c0f1e893.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-41a4589c.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/phaser-game-react-ui.md-29f789f3.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/_post-44edd104.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-947c7382.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-382f91e1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-859cf7a0.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/phaser-game-react-ui.md-b923495f.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/_post-60c1c672.js">
 </head>
 
 <body>
@@ -40,9 +40,9 @@
 
 <main class="svelte-jq7k3t">
 
-<section class="background"><article class="blog content"><h1 class="svelte-1kl993h">Phaser game with a React UI</h1>
+<section class="background"><article class="blog content"><h1 id="phaser-game-with-a-react-ui" class="svelte-1kl993h">Phaser game with a React UI</h1>
 		<aside class="date-aside svelte-1kl993h"><ul class="svelte-1kl993h"><li class="published-date svelte-1kl993h"><strong>Published:</strong> June 10, 2020</li>
-				<li class="published-date svelte-1kl993h"><strong>Modified:</strong> September 29, 2022</li></ul></aside>
+				<li class="published-date svelte-1kl993h"><strong>Modified:</strong> April 29, 2023</li></ul></aside>
 
 		<aside class="categories svelte-1kl993h"><ul class="svelte-1kl993h"><li class="svelte-1kl993h"><a href="/blog/categories/phaser" class="svelte-1kl993h">Phaser</a>
 						</li><li class="svelte-1kl993h"><a href="/blog/categories/react" class="svelte-1kl993h">React</a>
@@ -52,32 +52,74 @@
 		<div class="video-container svelte-1835brm"><video preload="auto" width="100%" height="600" poster="https://3ee.s3.amazonaws.com/video/phaser_react_ui.webp" controls class="svelte-1835brm"><source src="https://3ee.s3.amazonaws.com/video/phaser_react_ui.mp4" type="video/mp4"></video>
 </div>
 
-		<div class="article"><p>In this video, we show developing a game with Phaser and using React for the user interface. Using React to alleviate the burden of handling the UI in Canvas. RequestAnimationFrame can be expensive and should be used for the game only. The canvas game shouldn’t be wasting valuable updates for the UI.</p>
-<p>The game we’re developing is using Next.js (a React framework) and Phaser (javascript game engine). Next.js compiles a static html version of the game that can be used iOS/Android webview for mobile, NW.js/Electron for desktop (similar to what Discord does).</p>
-<p>The game is a NextJS application that from there, it builds the Phaser game and game starts up normally. However, the Nextjs application is handling the UI elements like in the video: merchant dialog, player bag, player armory, and other dialogs like the death dialog.</p>
+		<div class="article"><p>I find it interesting to consider the idea of using React as a UI and Phaser as a headless, UI-less game engine. In this blog post, I’ll explore this concept in more detail.</p>
+<h2 id="the-concept"><a aria-hidden="true" tabindex="-1" href="#the-concept"><span class="icon icon-link"></span></a>The Concept</h2>
+<p>The idea behind this approach is to use React to handle the UI elements of a game, while using Phaser as a headless game engine to handle the gameplay mechanics. This approach can help to alleviate the burden of handling the UI in Canvas. RequestAnimationFrame can be expensive and should be used for the game only. The canvas game shouldn’t be wasting valuable updates for the UI.</p>
+<h2 id="the-game"><a aria-hidden="true" tabindex="-1" href="#the-game"><span class="icon icon-link"></span></a>The Game</h2>
+<p>The game we’ll be developing is using Next.js (a React framework) and Phaser (JavaScript game engine). Next.js compiles a static HTML version of the game that can be used on iOS/Android webview for mobile, NW.js/Electron for desktop (similar to what Discord does).</p>
+<p>The game is a Next.js application that builds the Phaser game and starts up normally. The Next.js application is handling the UI elements like the merchant dialog, player bag, player armory, and other dialogs like the death dialog.</p>
 <blockquote><p>This is a similar approach to older console games that used Scaleform - which under the hood was using Flash and overlaying the UI created by a Flash developer. From there, Scaleform would sit on top of the c++ game engine.</p></blockquote>
-<h2 id="writing-the-bridge-between-canvas-and-react"><a aria-hidden="true" tabindex="-1" href="#writing-the-bridge-between-canvas-and-react"><span class="icon icon-link"></span></a>Writing the bridge between Canvas and React</h2>
-<p>For the bridge to work between Phaser and React, use an event listener: </p>
-<ul><li>addEventListener on the document object to send objects back and forth. </li>
-<li>The implementation of addEventListener is contained within a hook that implements an Effect Hook: useEffect so that state can be passed in.</li></ul>
+<h2 id="writing-the-bridge-between-canvas-and-react"><a aria-hidden="true" tabindex="-1" href="#writing-the-bridge-between-canvas-and-react"><span class="icon icon-link"></span></a>Writing the Bridge between Canvas and React</h2>
+<p>To create the bridge between Phaser and React, we’ll use an event listener:</p>
+<ul><li><code>addEventListener</code> on the document object to send objects back and forth.</li>
+<li>The implementation of <code>addEventListener</code> is contained within a hook that implements an Effect Hook: <code>useEffect</code> so that state can be passed in.</li></ul>
 <p>The performance issue that was solved here was to convert the class components (Bag, Armory, DeathDialog, MerchantDialog) to functional components and then use hooks to manage the add/remove listeners.</p>
-<p><strong>Types of Hooks </strong></p>
-<ul><li><strong>State Hooks: </strong> useState - called inside a function component to add some local state.  (example: a counter)</li>
-<li><strong>Effect Hooks: </strong> useEffect - perform side effects from a function component. (example: listening to an event fire from the DOM)</li>
-<li><strong>Context Hooks: </strong> useContext - subscribe to React context without introducing nesting.  (example: Dark &amp; Light themes)</li>
-<li><strong>Reducer Hooks: </strong> useReducer - And useReducer lets you manage local state of complex components with a reducer.  (dealing with complex state logic)</li></ul>
-<p><strong>Rules of using Hooks </strong></p>
+<h3 id="types-of-hooks"><a aria-hidden="true" tabindex="-1" href="#types-of-hooks"><span class="icon icon-link"></span></a>Types of Hooks</h3>
+<ul><li><strong>State Hooks:</strong> <code>useState</code> - called inside a function component to add some local state (e.g., a counter).</li>
+<li><strong>Effect Hooks:</strong> <code>useEffect</code> - perform side effects from a function component (e.g., listening to an event fire from the DOM).</li>
+<li><strong>Context Hooks:</strong> <code>useContext</code> - subscribe to React context without introducing nesting (e.g., dark &amp; light themes).</li>
+<li><strong>Reducer Hooks:</strong> <code>useReducer</code> - lets you manage the local state of complex components with a reducer (e.g., dealing with complex state logic).</li></ul>
+<h3 id="rules-of-using-hooks"><a aria-hidden="true" tabindex="-1" href="#rules-of-using-hooks"><span class="icon icon-link"></span></a>Rules of Using Hooks</h3>
 <p>Take the time to learn hooks and using functional components.</p>
-<ul><li>Call Hooks at top level only: Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions.</li>
-<li>Functional Components only: Only call Hooks from React function components. Don’t call Hooks from regular JavaScript functions. (See Custom Hooks.)</li></ul>
-<p>If you are using class components, do not worry - porting class components to functional components is trivial.  Simply follow the <a href="https://reactjs.org/tutorial/tutorial.html#function-components" rel="nofollow">pattern of functional components</a> when porting classes.</p>
-<blockquote><p>Pay close attention to useState when rewriting your new functional components. Once you spend time writing functional components, we find you’ll enjoy using them and paired with hooks makes the component design simple to implement and iterate on the design of the interface.</p></blockquote>
-<h2 id="a-simple-example"><a aria-hidden="true" tabindex="-1" href="#a-simple-example"><span class="icon icon-link"></span></a>A Simple Example</h2>
-<p>Below is a bare bones example of a using a Hook and implementing useEffect to attach events with addEventListener.  Use this example to experiment with different types of hooks.</p>
-<iframe height="500" style="width: 100%;" scrolling="no" title="React Hooks - useMousePosition" src="https://codepen.io/halvves/embed/preview/qQxPNo?default-tab=js%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">See the Pen <a href="https://codepen.io/halvves/pen/qQxPNo">Code Pen</a>
-		by halvves (<a href="https://codepen.io/halvves">@halvves</a>) on
-		<a href="https://codepen.io">CodePen</a>.
-	</iframe>
+<ul><li>Call Hooks at the top level only: Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions.</li>
+<li>Functional Components only: Only call Hooks from React function components. Don’t call Hooks from regular JavaScript functions (see Custom Hooks).</li></ul>
+<p>If you are using class components, don’t worry - porting class components to functional components is trivial. Simply follow the <a href="https://reactjs.org/tutorial/tutorial.html#function-components" rel="nofollow">pattern of functional components</a> when porting classes.</p>
+<p>Pay close attention to <code>useState</code> when rewriting your new functional components. Once you spend time writing functional components, you’ll enjoy using them, and paired with hooks, they make the component design simple to implement and iterate on the design of the interface.</p>
+<h2 id="class-to-functional-component"><a aria-hidden="true" tabindex="-1" href="#class-to-functional-component"><span class="icon icon-link"></span></a>class to functional component</h2>
+<p>An example of the class component.  It’s a Cat that holds state for agility, balance, and sight:</p>
+<pre class="language-jsx"><!-- HTML_TAG_START --><code class="language-jsx"><span class="token comment">// Class component</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">&#123;</span>
+  state <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    <span class="token literal-property property">agility</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">balance</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">sight</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Cat Stats</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Agility: </span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>agility<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Balance: </span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>balance<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Sight: </span><span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>sight<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Cat<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>Now, let’s see how we can convert this class component into a functional component.</p>
+<pre class="language-jsx"><!-- HTML_TAG_START --><code class="language-jsx"><span class="token comment">// Functional component</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> useState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Cat</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> agility<span class="token punctuation">,</span> balance<span class="token punctuation">,</span> sight <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">Cat Stats</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Agility: </span><span class="token punctuation">&#123;</span>agility<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Balance: </span><span class="token punctuation">&#123;</span>balance<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Sight: </span><span class="token punctuation">&#123;</span>sight<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Cat<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<p>In the above example, we have a <code>Cat</code> component that is originally written as a class component. It has a state object that holds the cat’s abilities: <code>agility</code>, <code>balance</code>, and <code>sight</code>. The render method displays the cat’s stats using JSX.</p>
+<p>To convert this component to a functional component, we can replace the class declaration with a function declaration. We also need to remove the <code>state</code> object and replace it with parameters passed into the function. In this example, the parameters are <code>agility</code>, <code>balance</code>, and <code>sight</code>.</p>
+<p>In the functional component version of the <code>Cat</code> component, we use destructuring to extract the parameters from the props object. We then use those parameters to display the cat’s stats using JSX.</p>
+<blockquote><p>📄 Note that the functional component does not have a <code>this</code> object or a <code>render</code> method. Instead, we simply return JSX directly from the function.</p></blockquote>
 <h2 id="have-a-solid-understanding-of-hooks"><a aria-hidden="true" tabindex="-1" href="#have-a-solid-understanding-of-hooks"><span class="icon icon-link"></span></a>Have a solid understanding of Hooks</h2>
 <p>Taking the time to understand hooks and why we are using them is the first important building block to building the bridge between the game engine and UI. Pick the areas that you need side effects - the Effect Hook, which allows for data fetching, DOM updates, and for our example for the bridge: we use addEventListener within useEffect.  In the callback for useEffect, pass in removeEventListener to clean up that instance of the event listener.</p>
 <h2 id="resources-and-frameworks"><a aria-hidden="true" tabindex="-1" href="#resources-and-frameworks"><span class="icon icon-link"></span></a>Resources and frameworks</h2>
@@ -127,10 +169,10 @@
 	<script async defer data-website-id="a7b42ac7-8ef9-4e00-a63e-73c6726cc1ea" src="https://lifestream.3ee.com/umami.js"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1geov10">
-		import { start } from "/_app/immutable/start-7e13dc9c.js";
+		<script type="module" data-sveltekit-hydrate="er75g1">
+		import { start } from "/_app/immutable/start-453914b8.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1geov10"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="er75g1"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

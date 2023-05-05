@@ -14,18 +14,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="content-security-policy" content=""><title>3ee Games Blog - Flappy Jacob Prototype</title><meta property="og:title" content="Flappy Jacob Prototype" data-svelte="svelte-1oh68j2">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-d92f0340.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-701b8cf4.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-0b61513e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-7e13dc9c.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-847aa976.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-6d33a316.js">
+	<link rel="modulepreload" href="/_app/immutable/start-453914b8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-8ed999ca.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-71ac3aa5.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-6d0c2910.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c0f1e893.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-41a4589c.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/flappy-jacob-prototype.md-c5140526.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/_post-44edd104.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-947c7382.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-382f91e1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-859cf7a0.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/flappy-jacob-prototype.md-36d07578.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/_post-60c1c672.js">
 </head>
 
 <body>
@@ -40,9 +40,9 @@
 
 <main class="svelte-jq7k3t">
 
-<section class="background"><article class="blog content"><h1 class="svelte-1kl993h">Flappy Jacob Prototype</h1>
+<section class="background"><article class="blog content"><h1 id="flappy-jacob-prototype" class="svelte-1kl993h">Flappy Jacob Prototype</h1>
 		<aside class="date-aside svelte-1kl993h"><ul class="svelte-1kl993h"><li class="published-date svelte-1kl993h"><strong>Published:</strong> August 17, 2020</li>
-				<li class="published-date svelte-1kl993h"><strong>Modified:</strong> May 29, 2022</li></ul></aside>
+				<li class="published-date svelte-1kl993h"><strong>Modified:</strong> March 29, 2023</li></ul></aside>
 
 		<aside class="categories svelte-1kl993h"><ul class="svelte-1kl993h"><li class="svelte-1kl993h"><a href="/blog/categories/game development" class="svelte-1kl993h">Game development</a>
 						</li><li class="svelte-1kl993h"><a href="/blog/categories/phaser" class="svelte-1kl993h">Phaser</a>
@@ -57,7 +57,7 @@
 <li><strong>Feather </strong>: The player’s movement and jumping has less gravity applied. Boss projectiles slow down in speed.</li>
 <li><strong>Weight </strong>: The player’s movement and jumping has more gravity applied. Boss projectiles are reflected back to the boss.</li></ul>
 <p>The feather and weight offer a challenging experience the way they are designed. Sometimes a weight is extremely helpful when you need to drop fast to avoid knocking into the walls. The feather can be beneficial when you need to float or glide through the walls.</p>
-<p>However, if you get one of these powerups at the wrong time, there is a chance you’ll die. It does create some momentum in the game play but many times it equals death for the player.</p>
+<p>If you get one of these powerups at the wrong time, there is a chance you’ll die. It does create some momentum in the game play but many times it equals death for the player.</p>
 <p>The shield is designed help the player along no matter what the situation is, allowing the player to destory walls.</p>
 <p>While these are some decent designs for the game’s mechanics, these powerups still need work. Instead of these powerups appearing randomly based on set percentages, we could design the powerups to be collected and the player can use them when they want to. This design is different but allows the player to make a decision instead of accepting what happens randomly.</p>
 <blockquote><p>As game designers, we shouldn’t accept any mechanic into the game unless it’s been tested, iterated on, and tested again and again.</p></blockquote>
@@ -65,8 +65,8 @@
 <p>Introduce a “miracle” type situation: the player would just wiggle through enough space to pass through the walls. Magical moments can spread stories outside of the confines of your game world. Maybe that’s not enough or can be exploited. Some designs may need to be more clear. The player should be able to complete the levels or areas by learning from their mistakes.  If random powerups cause deaths - no amount of learning will help.  </p>
 <p>To solve these issues, let’s look at allowing the player to choose which powerup to use at a given time.  We limit the amount of powerups that can be carried to three and allow to player to decide when to activate.</p>
 <h2 id="balancing-act"><a aria-hidden="true" tabindex="-1" href="#balancing-act"><span class="icon icon-link"></span></a>Balancing Act</h2>
-<p>Developing a boss encounter is incredibly enjoyable. Creating all the abilities the boss can perform and attemping to balance. Picturing a design in your head seems perfect at first, right? What could go wrong? Many times when designers are coming up with a boss fight, their mind fills in the blanks.  When we see the boss in action, that’s the flaws can be seen. While the boss encounter looked great in our minds and on paper, some of the gameplay wasn’t thought out at all.</p>
-<p>For example: the bird boss that wildly kept healing over and over; when designing this fight, bird’s tuning with casting its healing spell happened too often.  The only strategy that works is to get a shield powerup and reflect the bird’s projectiles back.  As seen in the video, this gameplay creates a frustrating game play experience.</p>
+<p>Developing a boss encounter is incredibly enjoyable. Creating all the abilities the boss can perform and attempting to balance. Picturing a design in your head seems perfect at first, right? What could go wrong? Many times when designers are coming up with a boss fight, their mind fills in the blanks. When we see the boss in action, that’s the flaws can be seen. While the boss encounter looked great in our minds and on paper, some of the gameplay wasn’t thought out at all.</p>
+<p>For example: the bird boss that wildly kept healing over and over; when designing this fight, bird’s tuning with casting its healing spell happened too often. The only strategy that works is to get a shield powerup and reflect the bird’s projectiles back. As seen in the video, this gameplay creates a frustrating game play experience.</p>
 <p>How do we fix this?  Let the player know the boss can heal.  </p>
 <ul><li>The first few times the bird takes damage, it heals. </li>
 <li>Then when the bird is on its last life, it heals. </li></ul>
@@ -75,12 +75,21 @@
 <ul><li>The healing spell has a cast timer and additional of the powerups can be used to interupt.</li></ul>
 <p>Instead of waiting for a shield to arrive - this allows for all the powerups to contribute to the player with defeating this boss.</p>
 <h2 id="giving-the-player-leeway"><a aria-hidden="true" tabindex="-1" href="#giving-the-player-leeway"><span class="icon icon-link"></span></a>Giving the Player Leeway</h2>
-<p>Pixel perfect collision detection has its place.  In this game, we’re not interested in that.  Collision that is extrmely tight doesn’t give the player freedom to mess up and make mistakes. Perfect collision doesn’t allow the player to experiment with different moves. It all has to be the same jump, same move, and distance. </p>
-<p>With Flappy Jacob, if the player’s hair touches the wall, does the player need to die?</p>
-<p>Giving the player additional freedom doesn’t mean that the game’s difficultly will be reduced. There is plently of room for balance. In our example with Flappy Jacob, reducing the player’s hitbox felt instantly forgiving but still stays within the confines of the original design.  The player can die if they’re not playing attention, being reckless, or not taking their time.</p>
+<p>As game developers, we strive to create a fun and engaging experience for our players. One aspect of game design that requires careful consideration is the balance between player freedom and difficulty. In particular, collision detection is an area where a fine balance must be struck.</p>
+<p>While pixel perfect collision detection can have its place in certain games, in many cases it can limit player freedom and experimentation. Tight collision detection may require the player to execute the same jump or move with the same distance every time, leaving little room for creativity or mistakes. On the other hand, perfect collision detection can allow for experimentation, but can make the game too forgiving and reduce the sense of challenge.</p>
+<p>One example of balancing player freedom and difficulty is the popular game Flappy Jacob. In this game, the player controls a character who must navigate through a series of obstacles by jumping and avoiding collision. While the game has a simple concept, it can be challenging due to the tight collision detection. If the player’s hair touches the wall, the player dies.</p>
+<p>Reducing the player’s hitbox slightly can provide additional freedom without significantly reducing the game’s difficulty. This change allows players to make small mistakes without being penalized too harshly, while still maintaining a sense of challenge. The player can still die if they are not paying attention, being reckless, or not taking their time.</p>
+<pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token comment">// create a new sprite</span>
+<span class="token keyword">const</span> sprite <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>add<span class="token punctuation">.</span><span class="token function">sprite</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">'mySprite'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// resize the sprite's hitbox</span>
+sprite<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">setSize</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code><!-- HTML_TAG_END --></pre>
+<p>In this example, we create a new sprite at position <code>(100, 100)</code> with the key <code>&#39;mySprite&#39;</code>. Then we use the <code>setSize()</code> method to resize the sprite’s hitbox to a width and height of <code>50</code> pixels.</p>
+<p>Note that the <code>setSize()</code> method sets the hitbox size in pixels, so the actual size of the hitbox will depend on the scale of the sprite and the size of the texture it is using. You can use the <code>setScale()</code> method to adjust the scale of the sprite if needed.</p>
 <h2 id="gameplay-need-time-and-iteration"><a aria-hidden="true" tabindex="-1" href="#gameplay-need-time-and-iteration"><span class="icon icon-link"></span></a>Gameplay need time and iteration</h2>
-<p>A design that may play out in your mind perfectly may not work at all. There are so many things your subconscious fills in so when you get to see your creation take flight, it will likely never match the idea you had originally. </p>
-<p>It’s our job to spend time at the drawing board, think of many possibilities, play with different concepts of gameplay - uncover other possibilities players will inevitably find that you never thought would exist!</p></div></article>
+<p>It is important to note that balancing player freedom and difficulty requires time and iteration. A design that appears perfect in theory may not play out well in practice. It is essential to spend time at the drawing board, consider multiple possibilities, and play with different concepts of gameplay to uncover unforeseen possibilities that players will inevitably find. </p>
+<p>Through this process of iteration and testing, we can create games that strike the right balance between player freedom and difficulty, providing an enjoyable and engaging experience for players.</p></div></article>
 </section></main>
 
 <footer class="svelte-1pv61cd"><div class="footer-container svelte-1pv61cd"><div class="footer-main svelte-1pv61cd"><div class="brand svelte-1pv61cd"><div class="footer-logo footer-logo-animation svelte-1pv61cd"><svg viewBox="0 0 30 17" class="svelte-1pv61cd"><g><g aria-label="3EE" font-size="16.383" stroke-width=".41"><path class="three-ee-text-logo svelte-1pv61cd" d="M7.077 3.584H3.649v1.132H.91V3.258q0-.583.063-1.08.078-.498.313-.84.235-.343.688-.532Q2.444.6 3.242.6h.063L7.42.566h.063q.36 0 .72.051.36.035.751.309.423.309.61.703.189.377.235.875.047.497.047.96 0 .223-.015.446v.411q-.016.223-.016.446v.463q0 .463-.11.789-.093.326-.36.617.267.274.36.617.11.326.11.79v2.417q0 .446-.156.823-.141.36-.407.652-.25.274-.61.428-.345.155-.736.155H2.788q-.391 0-.735-.155-.345-.154-.595-.428-.25-.292-.407-.652-.14-.377-.14-.823V8.402h2.738v1.132h3.428v-1.68H2.961V4.853h4.116zM19.205 9.568v3.001h-8.39V.566h8.39V3.55h-5.65v1.526h4.633v2.983h-4.633v1.51zM28.499 9.568v3.001h-8.39V.566h8.39V3.55h-5.65v1.526h4.632v2.983h-4.633v1.51z"></path></g><g aria-label="Third Eye Entertainment" font-size="2.117" stroke-width=".265"><path class="three-ee-unwrapped-text svelte-1pv61cd" d="M2.237 13.958v.368H1.82v1.113h-.37v-1.113h-.417v-.368zM3.555 13.954v1.481h-.368v-.556H2.72v.556h-.368v-1.481h.368v.556h.466v-.556zM4.068 13.958v1.481h-.37v-1.481zM5.35 14.356v.05l.002.05v.042l.002.038-.002.093-.006.093q-.009.061-.036.106-.025.042-.076.078-.034.023-.066.032-.03.006-.063.008l.273.49h-.422l-.27-.488h-.144v.487h-.37v-1.481h.91q.056 0 .105.02.049.02.085.058.036.036.057.087.021.048.021.105zm-.375.224v-.256h-.433v.256zM6.479 13.964q.07.021.108.053.038.03.055.068.017.038.021.082.004.045.004.093v.026q.002.01.002.023.003.03.003.07v.692q0 .06-.003.112-.002.053-.02.098-.02.044-.062.08-.04.036-.117.061-.019.005-.074.009l-.116.004h-.812v-1.481h.535q.046-.003.095-.003h.068q.055 0 .116.003.064 0 .119.004.057.002.076.006zM6.3 15.067v-.743h-.463v.743zM8.756 15.069v.37H7.62v-1.481h1.135v.368H7.99v.188h.627v.369h-.627v.186zM10.222 13.956l-.531.842v.64h-.369v-.64l-.533-.842h.436l.281.442.28-.442zM11.401 15.069v.37h-1.134v-1.481H11.4v.368h-.764v.188h.627v.369h-.627v.186zM13.477 15.069v.37h-1.135v-1.481h1.135v.368h-.764v.188h.626v.369h-.626v.186zM14.814 13.96v1.482h-.347l-.487-.762v.762h-.368V13.96h.347l.487.76v-.76zM16.136 13.958v.368h-.417v1.113h-.37v-1.113h-.417v-.368zM17.367 15.069v.37h-1.135v-1.481h1.135v.368h-.764v.188h.626v.369h-.626v.186zM18.67 14.356v.05l.002.05v.042l.002.038-.002.093-.006.093q-.008.061-.036.106-.025.042-.076.078-.034.023-.066.032-.03.006-.063.008l.273.49h-.421l-.271-.488h-.144v.487h-.37v-1.481h.91q.057 0 .105.02.049.02.085.058.036.036.057.087.021.048.021.105zm-.374.224v-.256h-.434v.256zM19.964 13.958v.368h-.417v1.113h-.37v-1.113h-.417v-.368zM20.903 13.954l.538 1.481h-.396l-.1-.277h-.45l-.1.277h-.394l.538-1.481zm-.093.834q-.013-.034-.021-.06l-.02-.053q-.008-.027-.02-.057l-.028-.076-.091.246zM21.87 13.958v1.481h-.37v-1.481zM23.186 13.96v1.482h-.348l-.486-.762v.762h-.369V13.96h.347l.487.76v-.76zM24.755 13.956v1.481h-.37v-.74l-.104.165-.097.158h-.271l-.201-.326v.743h-.37v-1.481h.35l.356.578.358-.578zM26.04 15.069v.37h-1.134v-1.481h1.134v.368h-.764v.188h.627v.369h-.627v.186zM27.377 13.96v1.482h-.347l-.486-.762v.762h-.369V13.96h.347l.487.76v-.76zM28.7 13.958v.368h-.417v1.113h-.37v-1.113h-.418v-.368z"></path></g></g></svg></div>
@@ -121,10 +130,10 @@
 	<script async defer data-website-id="a7b42ac7-8ef9-4e00-a63e-73c6726cc1ea" src="https://lifestream.3ee.com/umami.js"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1s76pdt">
-		import { start } from "/_app/immutable/start-7e13dc9c.js";
+		<script type="module" data-sveltekit-hydrate="1b0jvdv">
+		import { start } from "/_app/immutable/start-453914b8.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1s76pdt"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1b0jvdv"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

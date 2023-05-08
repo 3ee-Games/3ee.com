@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-453914b8.js",
+    "file": "start-3d138bf3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -29,14 +29,18 @@
       "src/routes/account/profile/index.svelte",
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
+      "src/routes/blog/action-figure-art.md",
       "src/routes/blog/categories/[category].svelte",
+      "src/routes/blog/first-party-experience.md",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
+      "src/routes/blog/motu-diffusion.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
       "src/routes/blog/pong-kombat-2.md",
       "src/routes/blog/shenanijam2018.md",
+      "src/routes/blog/textual-inversions.md",
       "src/routes/blog/tiled-level-editor-phaser.md",
       "src/routes/britelite/index.svelte",
       "src/routes/britelite/library/index.svelte",
@@ -97,7 +101,7 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-7d776a78.js",
+    "file": "pages/about.svelte-cc1d5c50.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -108,7 +112,7 @@
       "_paths-396f020f.js"
     ],
     "css": [
-      "assets/pages/about.svelte-2b612023.css"
+      "assets/pages/about.svelte-eab707f9.css"
     ]
   },
   "src/routes/account/accessibility.md": {
@@ -339,6 +343,21 @@
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
     ]
   },
+  "src/routes/blog/action-figure-art.md": {
+    "file": "pages/blog/action-figure-art.md-3e6b55ba.js",
+    "src": "src/routes/blog/action-figure-art.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ed999ca.js",
+      "__post-60c1c672.js",
+      "_menuContextStore-382f91e1.js",
+      "_index-71ac3aa5.js"
+    ],
+    "css": [
+      "assets/AdditionalContent.svelte_svelte_type_style_lang-b73d21f2.css"
+    ]
+  },
   "src/routes/blog/categories/[category].svelte": {
     "file": "pages/blog/categories/_category_.svelte-00d96a78.js",
     "src": "src/routes/blog/categories/[category].svelte",
@@ -346,6 +365,21 @@
     "isDynamicEntry": true,
     "imports": [
       "_index-8ed999ca.js"
+    ]
+  },
+  "src/routes/blog/first-party-experience.md": {
+    "file": "pages/blog/first-party-experience.md-34ccdc8f.js",
+    "src": "src/routes/blog/first-party-experience.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ed999ca.js",
+      "__post-60c1c672.js",
+      "_menuContextStore-382f91e1.js",
+      "_index-71ac3aa5.js"
+    ],
+    "css": [
+      "assets/pages/blog/first-party-experience.md-f0fd03aa.css"
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {
@@ -378,6 +412,18 @@
       "assets/pages/blog/index.svelte-28b11750.css"
     ]
   },
+  "src/routes/blog/motu-diffusion.md": {
+    "file": "pages/blog/motu-diffusion.md-f671387a.js",
+    "src": "src/routes/blog/motu-diffusion.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ed999ca.js",
+      "__post-60c1c672.js",
+      "_menuContextStore-382f91e1.js",
+      "_index-71ac3aa5.js"
+    ]
+  },
   "src/routes/blog/no-ads-in-our-games.md": {
     "file": "pages/blog/no-ads-in-our-games.md-88c2294a.js",
     "src": "src/routes/blog/no-ads-in-our-games.md",
@@ -391,18 +437,16 @@
     ]
   },
   "src/routes/blog/ornamental-santa-diffusion.md": {
-    "file": "pages/blog/ornamental-santa-diffusion.md-0a234994.js",
+    "file": "pages/blog/ornamental-santa-diffusion.md-5330a0cd.js",
     "src": "src/routes/blog/ornamental-santa-diffusion.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-8ed999ca.js",
       "__post-60c1c672.js",
+      "_ResponsivePicture-c98b3942.js",
       "_menuContextStore-382f91e1.js",
       "_index-71ac3aa5.js"
-    ],
-    "css": [
-      "assets/pages/blog/ornamental-santa-diffusion.md-a56e5d05.css"
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
@@ -442,6 +486,23 @@
       "__post-60c1c672.js",
       "_menuContextStore-382f91e1.js",
       "_index-71ac3aa5.js"
+    ]
+  },
+  "src/routes/blog/textual-inversions.md": {
+    "file": "pages/blog/textual-inversions.md-9327d974.js",
+    "src": "src/routes/blog/textual-inversions.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ed999ca.js",
+      "__post-60c1c672.js",
+      "_ResponsivePicture-c98b3942.js",
+      "_accountStore-859cf7a0.js",
+      "_menuContextStore-382f91e1.js",
+      "_index-71ac3aa5.js"
+    ],
+    "css": [
+      "assets/AdditionalContent.svelte_svelte_type_style_lang-b73d21f2.css"
     ]
   },
   "src/routes/blog/tiled-level-editor-phaser.md": {
@@ -587,7 +648,7 @@
     ]
   },
   "src/routes/spacelab/index.svelte": {
-    "file": "pages/spacelab/index.svelte-39c3873e.js",
+    "file": "pages/spacelab/index.svelte-e508b10b.js",
     "src": "src/routes/spacelab/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -597,7 +658,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/spacelab/index.svelte-2ac6f26f.css"
+      "assets/pages/spacelab/index.svelte-90a93db8.css"
     ]
   },
   "src/routes/team/adora.md": {
@@ -718,6 +779,15 @@
     ],
     "css": [
       "assets/_post-0b61513e.css"
+    ]
+  },
+  "_ResponsivePicture-c98b3942.js": {
+    "file": "chunks/ResponsivePicture-c98b3942.js",
+    "imports": [
+      "_index-8ed999ca.js"
+    ],
+    "css": [
+      "assets/ResponsivePicture-2c9ee03e.css"
     ]
   },
   "_briteliteStore-1636fc63.js": {

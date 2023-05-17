@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-666502ad.js",
+    "file": "start-a59d3131.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -29,18 +29,14 @@
       "src/routes/account/profile/index.svelte",
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
-      "src/routes/blog/action-figure-art.md",
       "src/routes/blog/categories/[category].svelte",
-      "src/routes/blog/first-party-experience.md",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
-      "src/routes/blog/motu-diffusion.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
       "src/routes/blog/pong-kombat-2.md",
       "src/routes/blog/shenanijam2018.md",
-      "src/routes/blog/textual-inversions.md",
       "src/routes/blog/tiled-level-editor-phaser.md",
       "src/routes/britelite/index.svelte",
       "src/routes/britelite/library/index.svelte",
@@ -343,21 +339,6 @@
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
     ]
   },
-  "src/routes/blog/action-figure-art.md": {
-    "file": "pages/blog/action-figure-art.md-3e6b55ba.js",
-    "src": "src/routes/blog/action-figure-art.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ed999ca.js",
-      "__post-60c1c672.js",
-      "_menuContextStore-382f91e1.js",
-      "_index-71ac3aa5.js"
-    ],
-    "css": [
-      "assets/AdditionalContent.svelte_svelte_type_style_lang-b73d21f2.css"
-    ]
-  },
   "src/routes/blog/categories/[category].svelte": {
     "file": "pages/blog/categories/_category_.svelte-168d7cf0.js",
     "src": "src/routes/blog/categories/[category].svelte",
@@ -372,21 +353,6 @@
       "_svgMapper-328a4fdf.js",
       "_accountStore-859cf7a0.js",
       "_index-71ac3aa5.js"
-    ]
-  },
-  "src/routes/blog/first-party-experience.md": {
-    "file": "pages/blog/first-party-experience.md-34ccdc8f.js",
-    "src": "src/routes/blog/first-party-experience.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ed999ca.js",
-      "__post-60c1c672.js",
-      "_menuContextStore-382f91e1.js",
-      "_index-71ac3aa5.js"
-    ],
-    "css": [
-      "assets/pages/blog/first-party-experience.md-f0fd03aa.css"
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {
@@ -417,18 +383,6 @@
       "_index-71ac3aa5.js"
     ]
   },
-  "src/routes/blog/motu-diffusion.md": {
-    "file": "pages/blog/motu-diffusion.md-f671387a.js",
-    "src": "src/routes/blog/motu-diffusion.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ed999ca.js",
-      "__post-60c1c672.js",
-      "_menuContextStore-382f91e1.js",
-      "_index-71ac3aa5.js"
-    ]
-  },
   "src/routes/blog/no-ads-in-our-games.md": {
     "file": "pages/blog/no-ads-in-our-games.md-88c2294a.js",
     "src": "src/routes/blog/no-ads-in-our-games.md",
@@ -442,16 +396,18 @@
     ]
   },
   "src/routes/blog/ornamental-santa-diffusion.md": {
-    "file": "pages/blog/ornamental-santa-diffusion.md-5330a0cd.js",
+    "file": "pages/blog/ornamental-santa-diffusion.md-0a234994.js",
     "src": "src/routes/blog/ornamental-santa-diffusion.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-8ed999ca.js",
       "__post-60c1c672.js",
-      "_ResponsivePicture-c98b3942.js",
       "_menuContextStore-382f91e1.js",
       "_index-71ac3aa5.js"
+    ],
+    "css": [
+      "assets/pages/blog/ornamental-santa-diffusion.md-a56e5d05.css"
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
@@ -491,23 +447,6 @@
       "__post-60c1c672.js",
       "_menuContextStore-382f91e1.js",
       "_index-71ac3aa5.js"
-    ]
-  },
-  "src/routes/blog/textual-inversions.md": {
-    "file": "pages/blog/textual-inversions.md-9327d974.js",
-    "src": "src/routes/blog/textual-inversions.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ed999ca.js",
-      "__post-60c1c672.js",
-      "_ResponsivePicture-c98b3942.js",
-      "_accountStore-859cf7a0.js",
-      "_menuContextStore-382f91e1.js",
-      "_index-71ac3aa5.js"
-    ],
-    "css": [
-      "assets/AdditionalContent.svelte_svelte_type_style_lang-b73d21f2.css"
     ]
   },
   "src/routes/blog/tiled-level-editor-phaser.md": {
@@ -800,15 +739,6 @@
     ],
     "css": [
       "assets/Grid-12c356fe.css"
-    ]
-  },
-  "_ResponsivePicture-c98b3942.js": {
-    "file": "chunks/ResponsivePicture-c98b3942.js",
-    "imports": [
-      "_index-8ed999ca.js"
-    ],
-    "css": [
-      "assets/ResponsivePicture-2c9ee03e.css"
     ]
   },
   "_briteliteStore-1636fc63.js": {

@@ -71,10 +71,10 @@
     <loc>https://3ee.com/blog/first-party-experience</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
+    <loc>https://3ee.com/blog/motu-diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/motu-diffusion</loc>
+    <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
@@ -128,6 +128,9 @@
     <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
@@ -138,9 +141,6 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game development</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game jams</loc>

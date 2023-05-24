@@ -80,10 +80,10 @@
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
+    <loc>https://3ee.com/blog/shenanijam2018</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/shenanijam2018</loc>
+    <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
     <loc>https://3ee.com/britelite/library</loc>
@@ -119,6 +119,9 @@
     <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/categories/ai training</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
@@ -129,9 +132,6 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/phaser</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/pong kombat</loc>

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-915d9ac3.js",
+    "file": "start-18427029.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -32,7 +32,7 @@
       "src/routes/blog/categories/[category].svelte",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
-      "src/routes/blog/motu-diffusion.md",
+      "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
       "src/routes/blog/pong-kombat-2.md",
@@ -383,9 +383,9 @@
       "_index-71ac3aa5.js"
     ]
   },
-  "src/routes/blog/motu-diffusion.md": {
-    "file": "pages/blog/motu-diffusion.md-f671387a.js",
-    "src": "src/routes/blog/motu-diffusion.md",
+  "src/routes/blog/no-ads-in-our-games.md": {
+    "file": "pages/blog/no-ads-in-our-games.md-88c2294a.js",
+    "src": "src/routes/blog/no-ads-in-our-games.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [

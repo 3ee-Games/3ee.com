@@ -64,24 +64,24 @@ import{S as xh,i as Sh,s as Ah,C as Zc,w as Ih,x as Gh,y as Lh,z as Rh,A as Fd,q
 	&#123;/each&#125;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span>
-	video &#123;
-		border-radius: 7px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border: 0;
-		object-fit: cover;
-	&#125;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+	<span class="token selector">video</span> <span class="token punctuation">&#123;</span>
+		<span class="token property">border-radius</span><span class="token punctuation">:</span> 7px<span class="token punctuation">;</span>
+		<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+		<span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+		<span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+		<span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
 
-	.video-container &#123;
-		position: relative;
-		width: 100%;
-		padding-bottom: 56.25%;
-	&#125;
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code>`,Zn,H,pp,hs,rp,cp,De,up,Xn,M,ie,ks,fp,ms,dp,eo,S,hp,He,kp,mp,Me,vp,yp,to,Dt,wp,ao,Ye,Jd=`<code class="language-txt">  WEBVTT
+	<span class="token selector">.video-container</span> <span class="token punctuation">&#123;</span>
+		<span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+		<span class="token property">padding-bottom</span><span class="token punctuation">:</span> 56.25%<span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code>`,Zn,H,pp,hs,rp,cp,De,up,Xn,M,ie,ks,fp,ms,dp,eo,S,hp,He,kp,mp,Me,vp,yp,to,Dt,wp,ao,Ye,Jd=`<code class="language-txt">  WEBVTT
 
   00:00:02.780 --> 00:00:05.310
   this is a prototype of a game on

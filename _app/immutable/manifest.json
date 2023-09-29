@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-b8c6454f.js",
+    "file": "start-4649eb14.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -42,10 +42,8 @@
       "src/routes/britelite/library/index.svelte",
       "src/routes/contact.svelte",
       "src/routes/games/cupids-balance.md",
-      "src/routes/games/flappy-jacob.md",
       "src/routes/games/index.svelte",
-      "src/routes/games/palooza.md",
-      "src/routes/games/spin2win.md",
+      "src/routes/games/whiskers_cove.md",
       "src/routes/games/zultiki.md",
       "src/routes/index.svelte",
       "src/routes/spacelab/index.svelte",
@@ -517,17 +515,8 @@
     ]
   },
   "src/routes/games/cupids-balance.md": {
-    "file": "pages/games/cupids-balance.md-876adc38.js",
+    "file": "pages/games/cupids-balance.md-66ae6f91.js",
     "src": "src/routes/games/cupids-balance.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ed999ca.js"
-    ]
-  },
-  "src/routes/games/flappy-jacob.md": {
-    "file": "pages/games/flappy-jacob.md-8d5f2720.js",
-    "src": "src/routes/games/flappy-jacob.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -546,18 +535,9 @@
       "assets/pages/games/index.svelte-3a6d686d.css"
     ]
   },
-  "src/routes/games/palooza.md": {
-    "file": "pages/games/palooza.md-c2a05204.js",
-    "src": "src/routes/games/palooza.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ed999ca.js"
-    ]
-  },
-  "src/routes/games/spin2win.md": {
-    "file": "pages/games/spin2win.md-a805bdb7.js",
-    "src": "src/routes/games/spin2win.md",
+  "src/routes/games/whiskers_cove.md": {
+    "file": "pages/games/whiskers_cove.md-2ddf1db3.js",
+    "src": "src/routes/games/whiskers_cove.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -565,7 +545,7 @@
     ]
   },
   "src/routes/games/zultiki.md": {
-    "file": "pages/games/zultiki.md-13383cf7.js",
+    "file": "pages/games/zultiki.md-16df6445.js",
     "src": "src/routes/games/zultiki.md",
     "isEntry": true,
     "isDynamicEntry": true,

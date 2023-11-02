@@ -2,9 +2,9 @@
 
 ## Compiled with [SvelteKit](https://kit.svelte.dev/)
 
-🧩 3Games frontend
+🧩 3ee Games frontend
 
-The repo contains the frontend for the 3Games platform.  On push to the `main` branch, the site is deployed to [3ee.com](https://3ee.com).
+The repo contains the frontend for the 3ee Games platform.  On push to the `main` branch, the site is deployed to [3ee.com](https://3ee.com).
 
 ## Containers
 

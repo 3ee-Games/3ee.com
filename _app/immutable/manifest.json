@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-df69b274.js",
+    "file": "start-c08ab492.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -53,7 +53,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-3aaf94d7.js",
+    "file": "pages/__layout.svelte-48817a82.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -68,7 +68,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-9a1b8861.css"
+      "assets/pages/__layout.svelte-b1ff2bc4.css"
     ],
     "assets": [
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
@@ -191,7 +191,7 @@
     ]
   },
   "src/routes/account/logout/index.svelte": {
-    "file": "pages/account/logout/index.svelte-546200cc.js",
+    "file": "pages/account/logout/index.svelte-3a7376ed.js",
     "src": "src/routes/account/logout/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -205,7 +205,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/account/logout/index.svelte-589a4db5.css"
+      "assets/pages/account/logout/index.svelte-ec917397.css"
     ]
   },
   "src/routes/account/messages/index.svelte": {
@@ -277,7 +277,7 @@
     ]
   },
   "src/routes/account/patch/index.svelte": {
-    "file": "pages/account/patch/index.svelte-8e3a677a.js",
+    "file": "pages/account/patch/index.svelte-70640edb.js",
     "src": "src/routes/account/patch/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -291,7 +291,7 @@
       "_index-217cba32.js"
     ],
     "css": [
-      "assets/pages/account/patch/index.svelte-63bd2c62.css"
+      "assets/pages/account/patch/index.svelte-78247dec.css"
     ]
   },
   "src/routes/account/privacy.md": {
@@ -485,7 +485,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-3aa9ddd2.js",
+    "file": "pages/britelite/index.svelte-3c48b3f6.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -501,7 +501,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-c7f0deb9.css"
+      "assets/pages/britelite/index.svelte-c766b6c2.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {
@@ -544,17 +544,17 @@
     ]
   },
   "src/routes/games/cupids-balance.md": {
-    "file": "pages/games/cupids-balance.md-d019fdfc.js",
+    "file": "pages/games/cupids-balance.md-36be8c9f.js",
     "src": "src/routes/games/cupids-balance.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bde066b7.js",
-      "__game-d105da0b.js"
+      "__game-46575364.js"
     ]
   },
   "src/routes/games/index.svelte": {
-    "file": "pages/games/index.svelte-228c2cb7.js",
+    "file": "pages/games/index.svelte-8316ecf9.js",
     "src": "src/routes/games/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -564,27 +564,27 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/games/index.svelte-3fba1b2b.css"
+      "assets/pages/games/index.svelte-789d897d.css"
     ]
   },
   "src/routes/games/whiskers_cove.md": {
-    "file": "pages/games/whiskers_cove.md-e0140d3f.js",
+    "file": "pages/games/whiskers_cove.md-79e9cbaa.js",
     "src": "src/routes/games/whiskers_cove.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bde066b7.js",
-      "__game-d105da0b.js"
+      "__game-46575364.js"
     ]
   },
   "src/routes/games/zultiki.md": {
-    "file": "pages/games/zultiki.md-86031e33.js",
+    "file": "pages/games/zultiki.md-1997fd96.js",
     "src": "src/routes/games/zultiki.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bde066b7.js",
-      "__game-d105da0b.js"
+      "__game-46575364.js"
     ]
   },
   "src/routes/index.svelte": {
@@ -781,13 +781,13 @@
       "_index-bde066b7.js"
     ]
   },
-  "__game-d105da0b.js": {
-    "file": "chunks/_game-d105da0b.js",
+  "__game-46575364.js": {
+    "file": "chunks/_game-46575364.js",
     "imports": [
       "_index-bde066b7.js"
     ],
     "css": [
-      "assets/_game-7d1565b6.css"
+      "assets/_game-325c2163.css"
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-10a4afe3.js",
+    "file": "start-e28b5d8e.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -53,7 +53,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-59e398db.js",
+    "file": "pages/__layout.svelte-1669b861.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -68,7 +68,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-cff4b655.css"
+      "assets/pages/__layout.svelte-513f186b.css"
     ],
     "assets": [
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
@@ -277,7 +277,7 @@
     ]
   },
   "src/routes/account/patch/index.svelte": {
-    "file": "pages/account/patch/index.svelte-70640edb.js",
+    "file": "pages/account/patch/index.svelte-08354c51.js",
     "src": "src/routes/account/patch/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -291,7 +291,7 @@
       "_index-217cba32.js"
     ],
     "css": [
-      "assets/pages/account/patch/index.svelte-78247dec.css"
+      "assets/pages/account/patch/index.svelte-ca6bb161.css"
     ]
   },
   "src/routes/account/privacy.md": {
@@ -544,17 +544,17 @@
     ]
   },
   "src/routes/games/cupids-balance.md": {
-    "file": "pages/games/cupids-balance.md-8b042906.js",
+    "file": "pages/games/cupids-balance.md-ff5a3bc2.js",
     "src": "src/routes/games/cupids-balance.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bde066b7.js",
-      "__game-b2f94bb0.js"
+      "__game-27a6e489.js"
     ]
   },
   "src/routes/games/index.svelte": {
-    "file": "pages/games/index.svelte-e0dead23.js",
+    "file": "pages/games/index.svelte-8d6444f5.js",
     "src": "src/routes/games/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -564,27 +564,27 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/games/index.svelte-06277271.css"
+      "assets/pages/games/index.svelte-2ffdc4ee.css"
     ]
   },
   "src/routes/games/whiskers_cove.md": {
-    "file": "pages/games/whiskers_cove.md-e5db87cd.js",
+    "file": "pages/games/whiskers_cove.md-531627ec.js",
     "src": "src/routes/games/whiskers_cove.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bde066b7.js",
-      "__game-b2f94bb0.js"
+      "__game-27a6e489.js"
     ]
   },
   "src/routes/games/zultiki.md": {
-    "file": "pages/games/zultiki.md-aec0cfaf.js",
+    "file": "pages/games/zultiki.md-1483c39b.js",
     "src": "src/routes/games/zultiki.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bde066b7.js",
-      "__game-b2f94bb0.js"
+      "__game-27a6e489.js"
     ]
   },
   "src/routes/index.svelte": {
@@ -781,13 +781,13 @@
       "_index-bde066b7.js"
     ]
   },
-  "__game-b2f94bb0.js": {
-    "file": "chunks/_game-b2f94bb0.js",
+  "__game-27a6e489.js": {
+    "file": "chunks/_game-27a6e489.js",
     "imports": [
       "_index-bde066b7.js"
     ],
     "css": [
-      "assets/_game-31a5b1d1.css"
+      "assets/_game-bf0647bc.css"
     ]
   }
 }

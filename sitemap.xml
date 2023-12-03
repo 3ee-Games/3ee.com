@@ -29,10 +29,10 @@
     <loc>https://3ee.com/account/accessibility</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/create</loc>
+    <loc>https://3ee.com/account/conduct</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/conduct</loc>
+    <loc>https://3ee.com/account/create</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/login</loc>
@@ -68,7 +68,7 @@
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
+    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
@@ -89,40 +89,40 @@
     <loc>https://3ee.com/games/whiskers_cove</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/pong-kombat-2</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
-    <loc>https://3ee.com/team/adora</loc>
+    <loc>https://3ee.com/blog/pong-kombat-2</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ddraw</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
+    <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/messages/response</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/advertisements</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/ai training</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game jams</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/categories/game development</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/account/messages/response</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/categories/games</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/phaser</loc>
@@ -134,12 +134,12 @@
     <loc>https://3ee.com/blog/categories/react</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/stable diffusion</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/videos</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
 </urlset>

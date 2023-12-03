@@ -53,10 +53,10 @@
     <loc>https://3ee.com/account/patch</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/profile</loc>
+    <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/privacy</loc>
+    <loc>https://3ee.com/account/profile</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/terms</loc>
@@ -71,13 +71,10 @@
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
+    <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/shenanijam2018</loc>
@@ -98,6 +95,9 @@
     <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
@@ -113,10 +113,10 @@
     <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/ai training</loc>
+    <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game development</loc>
+    <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game jams</loc>
@@ -131,15 +131,15 @@
     <loc>https://3ee.com/blog/categories/pong kombat</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/react</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/tiled</loc>
+    <loc>https://3ee.com/blog/categories/react</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/videos</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
 </urlset>

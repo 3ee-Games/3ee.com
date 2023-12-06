@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-3b91594b.js",
+    "file": "start-42d345ea.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -246,21 +246,21 @@
     ]
   },
   "src/routes/account/new/index.svelte": {
-    "file": "pages/account/new/index.svelte-92055c3c.js",
+    "file": "pages/account/new/index.svelte-15ae66ec.js",
     "src": "src/routes/account/new/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "_env-859c48a7.js",
-      "_StarField-3510f967.js",
-      "_accountStore-3492c591.js",
+      "_StarField-6ff2d406.js",
       "_navigation-0e6511d1.js",
+      "_accountStore-3492c591.js",
       "_index-16dda89e.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/account/new/index.svelte-50e00285.css"
+      "assets/pages/account/new/index.svelte-c3d66d05.css"
     ]
   },
   "src/routes/account/password/index.svelte": {
@@ -485,7 +485,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-e4a22c26.js",
+    "file": "pages/britelite/index.svelte-90cff1dd.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -588,7 +588,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-eafe804e.js",
+    "file": "pages/index.svelte-72b849bd.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -598,12 +598,12 @@
       "_Saos-4482d860.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_StarField-3510f967.js",
+      "_StarField-6ff2d406.js",
       "_config-abc8f7a4.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/index.svelte-54a02662.css"
+      "assets/pages/index.svelte-641a2430.css"
     ]
   },
   "src/routes/spacelab/index.svelte": {
@@ -723,14 +723,14 @@
       "_index-16dda89e.js"
     ]
   },
-  "_StarField-3510f967.js": {
-    "file": "chunks/StarField-3510f967.js",
+  "_StarField-6ff2d406.js": {
+    "file": "chunks/StarField-6ff2d406.js",
     "imports": [
       "_index-2a82a4a8.js",
       "_accountStore-3492c591.js"
     ],
     "css": [
-      "assets/StarField-5456257e.css"
+      "assets/StarField-d157637c.css"
     ],
     "assets": [
       "assets/spaceship-mock-4a394462.svg"

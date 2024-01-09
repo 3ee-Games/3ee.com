@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/pong-kombat-2.md-83d9c76f.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-a3466399.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
-	<link rel="modulepreload" href="/_app/immutable/start-f34cfca1.js">
+	<link rel="modulepreload" href="/_app/immutable/start-ca459266.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -30,7 +30,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/pong-kombat-2.md-cfcb3bb3.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/pong-kombat-2.md-47a7d352.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-9f2bd344.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-212a4df6.js">
 </head>
@@ -130,7 +130,7 @@ The best secret is the built in debug menu where you can simply choose a “supe
 <p>The way it works here is whenever the player uses those inputs, I create a pixel off to the screen.  Then I have another block of events that checks for the presence of those pixels off screen to form a combination of inputs.  If those are within the area under a specific time, the player will shoot a special move, like a fireball.  While I’m sure there is a much better way to handle this but at the time, I may have tried and this is what I came up with.</p>
 <p><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1704838679/img/pk2-code-2.png" alt="Special attack event code." title="Special attack event code" class="svelte-1u1rc42"></p>
 <h3 id="collisions"><a aria-hidden="true" tabindex="-1" href="#collisions"><span class="icon icon-link"></span></a>collisions</h3>
-<p>Once of the strong points of Klik ‘N Play was the collision detection.  It was really decent in making responsive collisions and provided me a way to easily implement them.  This block of events is part of the blood sprite creation - when the CPU player was hit by the player’s special attack, it would create blood sprites at those cordinates.  Those sprites are assign pathing animation and are removed when the animation is complete.</p>
+<p>One of the strong points of Klik ‘N Play was the collision detection.  It was decent in making responsive collisions and provided me a way to easily implement them.  This block of events is part of the blood sprite creation - when the CPU player was hit by the player’s special attack, it would create blood sprites at those cordinates.  Those sprites are assign pathing animation and are removed when the animation is complete.</p>
 <p><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1704838679/img/pk2-code-4.png" alt="collision." title="collision." class="svelte-1u1rc42"></p>
 <h3 id="computer-intelligence"><a aria-hidden="true" tabindex="-1" href="#computer-intelligence"><span class="icon icon-link"></span></a>computer intelligence</h3>
 <p>The AI of the computer controlled paddles is a gimmick.  When the player hits the ball, it actually goes to the computer opponent!  In the first few levels, it’s not as evident because the <code>look at</code> coordinates weren’t very exact, however at higher levels, it becomes apparent that the ball goes directly to the computer.  If I ever decided to modify the game, this is the first piece that I would fix.</p>
@@ -184,10 +184,10 @@ The best secret is the built in debug menu where you can simply choose a “supe
 
 
 
-		<script type="module" data-sveltekit-hydrate="hkn5wi">
-		import { start } from "/_app/immutable/start-f34cfca1.js";
+		<script type="module" data-sveltekit-hydrate="16rditq">
+		import { start } from "/_app/immutable/start-ca459266.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="hkn5wi"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="16rditq"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

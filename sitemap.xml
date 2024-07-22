@@ -20,6 +20,9 @@
     <loc>https://3ee.com/contact</loc>
   </url>
   <url>
+    <loc>https://3ee.com/games</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/spacelab</loc>
   </url>
   <url>
@@ -35,9 +38,6 @@
     <loc>https://3ee.com/account/login</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/account/logout</loc>
   </url>
   <url>
@@ -47,10 +47,10 @@
     <loc>https://3ee.com/account/new</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/patch</loc>
+    <loc>https://3ee.com/account/password</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/password</loc>
+    <loc>https://3ee.com/account/patch</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/privacy</loc>
@@ -68,25 +68,34 @@
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
+    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
+    <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/pong-kombat-2</loc>
+    <loc>https://3ee.com/blog/shenanijam2018</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/shenanijam2018</loc>
+    <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
     <loc>https://3ee.com/britelite/library</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/cupids-balance</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/divine-sun</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/adora</loc>
@@ -96,18 +105,6 @@
   </url>
   <url>
     <loc>https://3ee.com/team/ryan</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/cupids-balance</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/spin2win</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/whiskers_cove</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/messages/response</loc>

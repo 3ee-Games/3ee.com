@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-75b22f0e.js",
+    "file": "start-e4cfdc01.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -42,9 +42,8 @@
       "src/routes/britelite/library/index.svelte",
       "src/routes/contact.svelte",
       "src/routes/games/cupids-balance.md",
+      "src/routes/games/divine-sun.md",
       "src/routes/games/index.svelte",
-      "src/routes/games/spin2win.md",
-      "src/routes/games/whiskers_cove.md",
       "src/routes/games/zultiki.md",
       "src/routes/index.svelte",
       "src/routes/spacelab/index.svelte",
@@ -549,6 +548,16 @@
       "__game-16ef271a.js"
     ]
   },
+  "src/routes/games/divine-sun.md": {
+    "file": "pages/games/divine-sun.md-2eb32e2f.js",
+    "src": "src/routes/games/divine-sun.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js",
+      "__game-16ef271a.js"
+    ]
+  },
   "src/routes/games/index.svelte": {
     "file": "pages/games/index.svelte-078670fb.js",
     "src": "src/routes/games/index.svelte",
@@ -561,32 +570,6 @@
     ],
     "css": [
       "assets/pages/games/index.svelte-2ffdc4ee.css"
-    ]
-  },
-  "src/routes/games/spin2win.md": {
-    "file": "pages/games/spin2win.md-a5790a36.js",
-    "src": "src/routes/games/spin2win.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__game-16ef271a.js",
-      "_config-abc8f7a4.js",
-      "_accountStore-3492c591.js",
-      "_index-16dda89e.js"
-    ],
-    "css": [
-      "assets/pages/games/spin2win.md-ade1c8d0.css"
-    ]
-  },
-  "src/routes/games/whiskers_cove.md": {
-    "file": "pages/games/whiskers_cove.md-275a7477.js",
-    "src": "src/routes/games/whiskers_cove.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__game-16ef271a.js"
     ]
   },
   "src/routes/games/zultiki.md": {

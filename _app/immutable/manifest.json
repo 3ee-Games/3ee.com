@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-855bf80d.js",
+    "file": "start-1d25b71b.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -44,7 +44,6 @@
       "src/routes/games/cupids-balance.md",
       "src/routes/games/divine-sun.md",
       "src/routes/games/index.svelte",
-      "src/routes/games/whiskers_cove.md",
       "src/routes/games/zultiki.md",
       "src/routes/index.svelte",
       "src/routes/spacelab/index.svelte",
@@ -571,16 +570,6 @@
     ],
     "css": [
       "assets/pages/games/index.svelte-2ffdc4ee.css"
-    ]
-  },
-  "src/routes/games/whiskers_cove.md": {
-    "file": "pages/games/whiskers_cove.md-275a7477.js",
-    "src": "src/routes/games/whiskers_cove.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__game-16ef271a.js"
     ]
   },
   "src/routes/games/zultiki.md": {

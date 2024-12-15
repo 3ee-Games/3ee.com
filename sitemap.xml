@@ -20,10 +20,10 @@
     <loc>https://3ee.com/contact</loc>
   </url>
   <url>
-    <loc>https://3ee.com/spacelab</loc>
+    <loc>https://3ee.com/games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games</loc>
+    <loc>https://3ee.com/spacelab</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/accessibility</loc>
@@ -65,12 +65,6 @@
     <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/first-party-experience</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/action-figure-art</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
@@ -83,7 +77,7 @@
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/samplers</loc>
+    <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/shenanijam2018</loc>
@@ -92,37 +86,28 @@
     <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/britelite/library</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/cupids-balance</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/divine-sun</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/spin2win</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/games/whiskers_cove</loc>
   </url>
   <url>
     <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
+    <loc>https://3ee.com/games/whiskers_cove</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
-    <loc>https://3ee.com/team/ryan</loc>
+    <loc>https://3ee.com/games/divine-sun</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/messages/response</loc>
+    <loc>https://3ee.com/games/cupids-balance</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ddraw</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/advertisements</loc>
@@ -131,13 +116,7 @@
     <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/analytics</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/containers</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/cookies</loc>
+    <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game development</loc>
@@ -158,10 +137,10 @@
     <loc>https://3ee.com/blog/categories/react</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/stable diffusion</loc>
+    <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/tiled</loc>
+    <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/videos</loc>

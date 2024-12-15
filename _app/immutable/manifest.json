@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-20b91f5e.js",
+    "file": "start-855bf80d.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -29,16 +29,13 @@
       "src/routes/account/profile/index.svelte",
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
-      "src/routes/blog/action-figure-art.md",
       "src/routes/blog/categories/[category].svelte",
-      "src/routes/blog/first-party-experience.md",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
       "src/routes/blog/pong-kombat-2.md",
-      "src/routes/blog/samplers.md",
       "src/routes/blog/shenanijam2018.md",
       "src/routes/blog/tiled-level-editor-phaser.md",
       "src/routes/britelite/index.svelte",
@@ -47,7 +44,6 @@
       "src/routes/games/cupids-balance.md",
       "src/routes/games/divine-sun.md",
       "src/routes/games/index.svelte",
-      "src/routes/games/spin2win.md",
       "src/routes/games/whiskers_cove.md",
       "src/routes/games/zultiki.md",
       "src/routes/index.svelte",
@@ -356,27 +352,6 @@
       "assets/pages/blog/3ee-games-youtube-channel.md-9da31171.css"
     ]
   },
-  "src/routes/blog/action-figure-art.md": {
-    "file": "pages/blog/action-figure-art.md-d039db3d.js",
-    "src": "src/routes/blog/action-figure-art.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__post-dca79525.js",
-      "_config-201c2df4.js",
-      "_accountStore-3492c591.js",
-      "_ResponsivePicture-976c1e70.js",
-      "_Player-9202028c.js",
-      "_menuContextStore-c2e700c4.js",
-      "_index-16dda89e.js"
-    ],
-    "css": [
-      "assets/pages/blog/action-figure-art.md-1ed35824.css",
-      "assets/AdditionalContent.svelte_svelte_type_style_lang-b73d21f2.css",
-      "assets/ResponsivePicture.svelte_svelte_type_style_lang-8be4d395.css"
-    ]
-  },
   "src/routes/blog/categories/[category].svelte": {
     "file": "pages/blog/categories/_category_.svelte-c04af54d.js",
     "src": "src/routes/blog/categories/[category].svelte",
@@ -391,27 +366,6 @@
       "_svgMapper-bda289ff.js",
       "_accountStore-3492c591.js",
       "_index-16dda89e.js"
-    ]
-  },
-  "src/routes/blog/first-party-experience.md": {
-    "file": "pages/blog/first-party-experience.md-56dcd46d.js",
-    "src": "src/routes/blog/first-party-experience.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__post-dca79525.js",
-      "_ResponsivePicture-976c1e70.js",
-      "_accountStore-3492c591.js",
-      "_navigation-0e6511d1.js",
-      "_Player-9202028c.js",
-      "_menuContextStore-c2e700c4.js",
-      "_index-16dda89e.js",
-      "_singletons-d1fb5791.js"
-    ],
-    "css": [
-      "assets/pages/blog/first-party-experience.md-eff38a8a.css",
-      "assets/ResponsivePicture.svelte_svelte_type_style_lang-8be4d395.css"
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {
@@ -457,20 +411,19 @@
     ]
   },
   "src/routes/blog/ornamental-santa-diffusion.md": {
-    "file": "pages/blog/ornamental-santa-diffusion.md-711ab3cd.js",
+    "file": "pages/blog/ornamental-santa-diffusion.md-9c3f5e31.js",
     "src": "src/routes/blog/ornamental-santa-diffusion.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-dca79525.js",
-      "_ResponsivePicture-976c1e70.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
     ],
     "css": [
-      "assets/ResponsivePicture.svelte_svelte_type_style_lang-8be4d395.css"
+      "assets/pages/blog/ornamental-santa-diffusion.md-a56e5d05.css"
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
@@ -500,24 +453,6 @@
     ],
     "css": [
       "assets/pages/blog/pong-kombat-2.md-83d9c76f.css"
-    ]
-  },
-  "src/routes/blog/samplers.md": {
-    "file": "pages/blog/samplers.md-71109425.js",
-    "src": "src/routes/blog/samplers.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__post-dca79525.js",
-      "_Player-9202028c.js",
-      "_menuContextStore-c2e700c4.js",
-      "_index-16dda89e.js"
-    ],
-    "css": [
-      "assets/pages/blog/samplers.md-0a352a7c.css",
-      "assets/AdditionalContent.svelte_svelte_type_style_lang-b73d21f2.css",
-      "assets/ResponsivePicture.svelte_svelte_type_style_lang-8be4d395.css"
     ]
   },
   "src/routes/blog/shenanijam2018.md": {
@@ -636,22 +571,6 @@
     ],
     "css": [
       "assets/pages/games/index.svelte-2ffdc4ee.css"
-    ]
-  },
-  "src/routes/games/spin2win.md": {
-    "file": "pages/games/spin2win.md-83be57ea.js",
-    "src": "src/routes/games/spin2win.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__game-16ef271a.js",
-      "_config-201c2df4.js",
-      "_accountStore-3492c591.js",
-      "_index-16dda89e.js"
-    ],
-    "css": [
-      "assets/pages/games/spin2win.md-ade1c8d0.css"
     ]
   },
   "src/routes/games/whiskers_cove.md": {
@@ -838,15 +757,6 @@
     ],
     "css": [
       "assets/Player-713e4035.css"
-    ]
-  },
-  "_ResponsivePicture-976c1e70.js": {
-    "file": "chunks/ResponsivePicture-976c1e70.js",
-    "imports": [
-      "_index-2a82a4a8.js"
-    ],
-    "css": [
-      "assets/ResponsivePicture.svelte_svelte_type_style_lang-8be4d395.css"
     ]
   },
   "_Grid-d20820aa.js": {

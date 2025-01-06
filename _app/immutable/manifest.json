@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-2d79b63c.js",
+    "file": "start-bcaed747.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -32,6 +32,7 @@
       "src/routes/blog/categories/[category].svelte",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/index.svelte",
+      "src/routes/blog/issue-tracker.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
@@ -99,13 +100,13 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-30d7ce25.js",
+    "file": "pages/about.svelte-e32f12ac.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_paths-396f020f.js"
     ],
     "css": [
@@ -125,14 +126,14 @@
     ]
   },
   "src/routes/account/conduct.md": {
-    "file": "pages/account/conduct.md-9fdfb008.js",
+    "file": "pages/account/conduct.md-61972cfe.js",
     "src": "src/routes/account/conduct.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-c17c7585.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
     ],
@@ -224,14 +225,14 @@
     ]
   },
   "src/routes/account/messages/response/index.svelte": {
-    "file": "pages/account/messages/response/index.svelte-dec8a184.js",
+    "file": "pages/account/messages/response/index.svelte-f673ef64.js",
     "src": "src/routes/account/messages/response/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "_config-201c2df4.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_accountStore-3492c591.js",
       "_messagingStore-7daf7769.js",
       "_navigation-0e6511d1.js",
@@ -273,7 +274,7 @@
     ]
   },
   "src/routes/account/patch/index.svelte": {
-    "file": "pages/account/patch/index.svelte-78b2dfc7.js",
+    "file": "pages/account/patch/index.svelte-42cf905f.js",
     "src": "src/routes/account/patch/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -282,7 +283,7 @@
       "_navigation-0e6511d1.js",
       "_config-201c2df4.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_singletons-d1fb5791.js",
       "_index-16dda89e.js"
     ],
@@ -335,14 +336,14 @@
     ]
   },
   "src/routes/blog/3ee-games-youtube-channel.md": {
-    "file": "pages/blog/3ee-games-youtube-channel.md-cec2bf99.js",
+    "file": "pages/blog/3ee-games-youtube-channel.md-94e4b4ef.js",
     "src": "src/routes/blog/3ee-games-youtube-channel.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-dca79525.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
@@ -352,17 +353,17 @@
     ]
   },
   "src/routes/blog/categories/[category].svelte": {
-    "file": "pages/blog/categories/_category_.svelte-c04af54d.js",
+    "file": "pages/blog/categories/_category_.svelte-3a7bd1ff.js",
     "src": "src/routes/blog/categories/[category].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
-      "_Grid-d20820aa.js",
+      "_Grid-517acc30.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_accountStore-3492c591.js",
       "_index-16dda89e.js"
     ]
@@ -381,18 +382,32 @@
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-d40e508b.js",
+    "file": "pages/blog/index.svelte-000ba298.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
-      "_Grid-d20820aa.js",
+      "_Grid-517acc30.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_accountStore-3492c591.js",
+      "_index-16dda89e.js"
+    ]
+  },
+  "src/routes/blog/issue-tracker.md": {
+    "file": "pages/blog/issue-tracker.md-3ffb5d37.js",
+    "src": "src/routes/blog/issue-tracker.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js",
+      "__post-dca79525.js",
+      "_IssueTracker-28422c9c.js",
+      "_Player-9202028c.js",
+      "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
     ]
   },
@@ -583,7 +598,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-42c2f918.js",
+    "file": "pages/index.svelte-f369e6c8.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -595,10 +610,11 @@
       "_accountStore-3492c591.js",
       "_StarField-32f064e8.js",
       "_config-201c2df4.js",
+      "_IssueTracker-28422c9c.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/index.svelte-618c5e2d.css"
+      "assets/pages/index.svelte-0cf00544.css"
     ]
   },
   "src/routes/spacelab/index.svelte": {
@@ -681,8 +697,8 @@
       "_index-16dda89e.js"
     ]
   },
-  "_svgMapper-bda289ff.js": {
-    "file": "chunks/svgMapper-bda289ff.js",
+  "_svgMapper-cb1c5e24.js": {
+    "file": "chunks/svgMapper-cb1c5e24.js",
     "imports": [
       "_index-2a82a4a8.js"
     ],
@@ -748,17 +764,27 @@
       "assets/Player-713e4035.css"
     ]
   },
-  "_Grid-d20820aa.js": {
-    "file": "chunks/Grid-d20820aa.js",
+  "_Grid-517acc30.js": {
+    "file": "chunks/Grid-517acc30.js",
     "imports": [
       "_index-2a82a4a8.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
-      "_svgMapper-bda289ff.js",
+      "_svgMapper-cb1c5e24.js",
       "_accountStore-3492c591.js"
     ],
     "css": [
       "assets/Grid-12c356fe.css"
+    ]
+  },
+  "_IssueTracker-28422c9c.js": {
+    "file": "chunks/IssueTracker-28422c9c.js",
+    "imports": [
+      "_index-2a82a4a8.js",
+      "_index-16dda89e.js"
+    ],
+    "css": [
+      "assets/IssueTracker-77e52b6c.css"
     ]
   },
   "_briteliteStore-0bae7799.js": {

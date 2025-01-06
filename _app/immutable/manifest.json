@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-bcaed747.js",
+    "file": "start-6bbad2a8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -31,8 +31,8 @@
       "src/routes/blog/3ee-games-youtube-channel.md",
       "src/routes/blog/categories/[category].svelte",
       "src/routes/blog/flappy-jacob-prototype.md",
+      "src/routes/blog/github-actions-101.md",
       "src/routes/blog/index.svelte",
-      "src/routes/blog/issue-tracker.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
@@ -381,6 +381,20 @@
       "_index-16dda89e.js"
     ]
   },
+  "src/routes/blog/github-actions-101.md": {
+    "file": "pages/blog/github-actions-101.md-2ac6f223.js",
+    "src": "src/routes/blog/github-actions-101.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js",
+      "__post-dca79525.js",
+      "_IssueTracker-28422c9c.js",
+      "_Player-9202028c.js",
+      "_menuContextStore-c2e700c4.js",
+      "_index-16dda89e.js"
+    ]
+  },
   "src/routes/blog/index.svelte": {
     "file": "pages/blog/index.svelte-000ba298.js",
     "src": "src/routes/blog/index.svelte",
@@ -394,20 +408,6 @@
       "_singletons-d1fb5791.js",
       "_svgMapper-cb1c5e24.js",
       "_accountStore-3492c591.js",
-      "_index-16dda89e.js"
-    ]
-  },
-  "src/routes/blog/issue-tracker.md": {
-    "file": "pages/blog/issue-tracker.md-3ffb5d37.js",
-    "src": "src/routes/blog/issue-tracker.md",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2a82a4a8.js",
-      "__post-dca79525.js",
-      "_IssueTracker-28422c9c.js",
-      "_Player-9202028c.js",
-      "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
     ]
   },

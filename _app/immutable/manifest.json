@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ef4832ed.js",
+    "file": "start-ce903eaf.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -33,6 +33,7 @@
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/github-actions-101.md",
       "src/routes/blog/index.svelte",
+      "src/routes/blog/issue-tracker.md",
       "src/routes/blog/no-ads-in-our-games.md",
       "src/routes/blog/ornamental-santa-diffusion.md",
       "src/routes/blog/phaser-game-react-ui.md",
@@ -382,14 +383,14 @@
     ]
   },
   "src/routes/blog/github-actions-101.md": {
-    "file": "pages/blog/github-actions-101.md-564150d3.js",
+    "file": "pages/blog/github-actions-101.md-a3341d61.js",
     "src": "src/routes/blog/github-actions-101.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-dca79525.js",
-      "_IssueTracker-28422c9c.js",
+      "_IssueTracker-2167ad18.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
@@ -408,6 +409,20 @@
       "_singletons-d1fb5791.js",
       "_svgMapper-cb1c5e24.js",
       "_accountStore-3492c591.js",
+      "_index-16dda89e.js"
+    ]
+  },
+  "src/routes/blog/issue-tracker.md": {
+    "file": "pages/blog/issue-tracker.md-46a81b8d.js",
+    "src": "src/routes/blog/issue-tracker.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js",
+      "__post-dca79525.js",
+      "_IssueTracker-2167ad18.js",
+      "_Player-9202028c.js",
+      "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
     ]
   },
@@ -598,7 +613,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f369e6c8.js",
+    "file": "pages/index.svelte-d5d4290d.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -610,7 +625,7 @@
       "_accountStore-3492c591.js",
       "_StarField-32f064e8.js",
       "_config-201c2df4.js",
-      "_IssueTracker-28422c9c.js",
+      "_IssueTracker-2167ad18.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
@@ -777,8 +792,8 @@
       "assets/Grid-12c356fe.css"
     ]
   },
-  "_IssueTracker-28422c9c.js": {
-    "file": "chunks/IssueTracker-28422c9c.js",
+  "_IssueTracker-2167ad18.js": {
+    "file": "chunks/IssueTracker-2167ad18.js",
     "imports": [
       "_index-2a82a4a8.js",
       "_index-16dda89e.js"

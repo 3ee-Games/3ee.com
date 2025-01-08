@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-231d07a3.js",
+    "file": "start-40540987.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -30,6 +30,7 @@
       "src/routes/account/terms.md",
       "src/routes/blog/3ee-games-youtube-channel.md",
       "src/routes/blog/categories/[category].svelte",
+      "src/routes/blog/first-party-experience.md",
       "src/routes/blog/flappy-jacob-prototype.md",
       "src/routes/blog/github-actions-101.md",
       "src/routes/blog/index.svelte",
@@ -368,6 +369,26 @@
       "_index-16dda89e.js"
     ]
   },
+  "src/routes/blog/first-party-experience.md": {
+    "file": "pages/blog/first-party-experience.md-454844da.js",
+    "src": "src/routes/blog/first-party-experience.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js",
+      "__post-dca79525.js",
+      "_ResponsivePicture-1c5d2d4b.js",
+      "_accountStore-3492c591.js",
+      "_navigation-0e6511d1.js",
+      "_Player-9202028c.js",
+      "_menuContextStore-c2e700c4.js",
+      "_index-16dda89e.js",
+      "_singletons-d1fb5791.js"
+    ],
+    "css": [
+      "assets/pages/blog/first-party-experience.md-eff38a8a.css"
+    ]
+  },
   "src/routes/blog/flappy-jacob-prototype.md": {
     "file": "pages/blog/flappy-jacob-prototype.md-8c0e128d.js",
     "src": "src/routes/blog/flappy-jacob-prototype.md",
@@ -382,7 +403,7 @@
     ]
   },
   "src/routes/blog/github-actions-101.md": {
-    "file": "pages/blog/github-actions-101.md-a3341d61.js",
+    "file": "pages/blog/github-actions-101.md-76dc341c.js",
     "src": "src/routes/blog/github-actions-101.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -425,19 +446,17 @@
     ]
   },
   "src/routes/blog/ornamental-santa-diffusion.md": {
-    "file": "pages/blog/ornamental-santa-diffusion.md-9c3f5e31.js",
+    "file": "pages/blog/ornamental-santa-diffusion.md-3f679e47.js",
     "src": "src/routes/blog/ornamental-santa-diffusion.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-dca79525.js",
+      "_ResponsivePicture-1c5d2d4b.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
-    ],
-    "css": [
-      "assets/pages/blog/ornamental-santa-diffusion.md-a56e5d05.css"
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
@@ -775,6 +794,15 @@
     ],
     "css": [
       "assets/Grid-12c356fe.css"
+    ]
+  },
+  "_ResponsivePicture-1c5d2d4b.js": {
+    "file": "chunks/ResponsivePicture-1c5d2d4b.js",
+    "imports": [
+      "_index-2a82a4a8.js"
+    ],
+    "css": [
+      "assets/ResponsivePicture-2c9ee03e.css"
     ]
   },
   "_IssueTracker-2167ad18.js": {

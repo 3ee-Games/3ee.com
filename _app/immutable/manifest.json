@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-bc994974.js",
+    "file": "start-cc28b4e6.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -370,7 +370,7 @@
     ]
   },
   "src/routes/blog/first-party-experience.md": {
-    "file": "pages/blog/first-party-experience.md-a4c81c32.js",
+    "file": "pages/blog/first-party-experience.md-00274d84.js",
     "src": "src/routes/blog/first-party-experience.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -386,7 +386,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/blog/first-party-experience.md-eff38a8a.css"
+      "assets/pages/blog/first-party-experience.md-47635474.css"
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {

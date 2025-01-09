@@ -17,11 +17,11 @@
 		<script type="application/ld+json" ✂prettier:content✂="CgkJICAke0pTT04uc3RyaW5naWZ5KHNjaGVtYSl9CgkJ">{}</script>
 		<!-- HTML_TAG_END -->
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-0ce23f93.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/first-party-experience.md-eff38a8a.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/first-party-experience.md-47635474.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-a3466399.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-2c9ee03e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-bc994974.js">
+	<link rel="modulepreload" href="/_app/immutable/start-cc28b4e6.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/first-party-experience.md-a4c81c32.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/first-party-experience.md-00274d84.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-dca79525.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-1c5d2d4b.js">
@@ -81,7 +81,7 @@
 
 		<div class="article"><h3 id="first-party-centric-built-in-privacy"><a aria-hidden="true" tabindex="-1" href="#first-party-centric-built-in-privacy"><span class="icon icon-link"></span></a>First Party Centric: Built-In Privacy</h3>
 <p>This journey began with a meticulous evaluation of the third-party services the platform relied on. Every third-party script that people take for granted uses and shares cookies with other vendors. Examples include embedding YouTube videos, implementing Google Analytics, Tag Managers, advertising scripts, and the massive list that keeps going.</p>
-<blockquote class="svelte-puc4py"><p class="svelte-puc4py"><strong>Note</strong>: The code in this article is meant to entice ideas and not meant to be a template that can be copy and pasted. It is designed to mentor you to come up with ideas on how you would implement this yourself on the technology you work with.</p></blockquote>
+<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7"><strong>Note</strong>: The code in this article is meant to entice ideas and not meant to be a template that can be copy and pasted. It is designed to mentor you to come up with ideas on how you would implement this yourself on the technology you work with.</p></blockquote>
 <p>Similar to the belief and goals with <a href="/account/accessibility/">accessibility</a>, privacy is a feature that should be built into your product. It’s not a checkbox that you can check off and say you’re done. It’s a continuous process of making sure your product is built with privacy in mind.</p>
 <h4 id="transitioning-from-third-parties"><a aria-hidden="true" tabindex="-1" href="#transitioning-from-third-parties"><span class="icon icon-link"></span></a>Transitioning from Third Parties</h4>
 <p>Transitioning to a first-party experience is an essential process for securing user data and maintaining a high level of privacy.</p>
@@ -225,32 +225,32 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 <p>Containerization simplifies managing applications by packaging them in digital containers. Think of it as neatly storing each application in a perfectly sized container, much like LEGO bricks fitting into designated spaces.</p>
 <p>These containers bundle everything an application needs to run smoothly, offering a standardized way to transport and deploy them. Whether you’re testing locally, deploying in the cloud, or scaling up, containerization provides consistency and reliability.</p>
 <p>Additionally, containerization ensures that your applications behave consistently across different environments, from development to testing to production. It’s like knowing your LEGO bricks will always fit together seamlessly.</p>
-<blockquote class="svelte-puc4py"><p class="svelte-puc4py">Imagine your application experiencing increased demand. Containerization lets you add containers effortlessly to handle the higher load, ensuring efficient performance and resource use. This streamlined approach is cost-effective and keeps your infrastructure running smoothly.</p></blockquote>
+<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">Imagine your application experiencing increased demand. Containerization lets you add containers effortlessly to handle the higher load, ensuring efficient performance and resource use. This streamlined approach is cost-effective and keeps your infrastructure running smoothly.</p></blockquote>
 <h4 id="troubleshooting-with-docker"><a aria-hidden="true" tabindex="-1" href="#troubleshooting-with-docker"><span class="icon icon-link"></span></a>Troubleshooting with Docker</h4>
 <p>In our real-world example, Umami ships with a Docker Compose configuation that contains the application and a PostgreSQL database.  Now we can configure, troubleshoot, monitor, and update Umami easily.</p>
 <p>In this example, imagine you received an alert that the Umami frontend is not working.  Time to troubleshoot and inspect the containers:</p>
 <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell"><span class="token comment">#show both running and stopped containers</span>
 <span class="token function">docker</span> <span class="token function">ps</span> -a</code><!-- HTML_TAG_END --></pre>
-<table class="svelte-puc4py"><thead><tr class="svelte-puc4py"><th>CONTAINER ID</th>
-<th>IMAGE</th>
-<th>PORTS</th>
-<th>CREATED</th>
-<th>STATUS</th></tr></thead>
-<tbody><tr class="svelte-puc4py"><td class="svelte-puc4py">abc123456789</td>
-<td class="svelte-puc4py">nginx</td>
-<td class="svelte-puc4py">0.0.0.0:80-&gt;80/tcp, 0.0.0.0:443-&gt;443/tcp</td>
-<td class="svelte-puc4py">2023-11-07 08:00:00</td>
-<td class="svelte-puc4py">Up 2 hours</td></tr>
-<tr class="svelte-puc4py"><td class="svelte-puc4py">def987654321</td>
-<td class="svelte-puc4py">umani_frontend</td>
-<td class="svelte-puc4py">0.0.0.0:3000-&gt;3000/tcp</td>
-<td class="svelte-puc4py">2023-11-07 09:00:00</td>
-<td class="svelte-puc4py">Down 1 hour</td></tr>
-<tr class="svelte-puc4py"><td class="svelte-puc4py">xyz567890123</td>
-<td class="svelte-puc4py">postgres_alpine</td>
-<td class="svelte-puc4py">0.0.0.0:5432-&gt;5432/tcp</td>
-<td class="svelte-puc4py">2023-11-07 10:00:00</td>
-<td class="svelte-puc4py">Up 30 minutes</td></tr></tbody></table>
+<table class="svelte-1ogqhx7"><thead class="svelte-1ogqhx7"><tr class="svelte-1ogqhx7"><th class="svelte-1ogqhx7">CONTAINER ID</th>
+<th class="svelte-1ogqhx7">IMAGE</th>
+<th class="svelte-1ogqhx7">PORTS</th>
+<th class="svelte-1ogqhx7">CREATED</th>
+<th class="svelte-1ogqhx7">STATUS</th></tr></thead>
+<tbody class="svelte-1ogqhx7"><tr class="svelte-1ogqhx7"><td class="svelte-1ogqhx7">abc123456789</td>
+<td class="svelte-1ogqhx7">nginx</td>
+<td class="svelte-1ogqhx7">0.0.0.0:80-&gt;80/tcp, 0.0.0.0:443-&gt;443/tcp</td>
+<td class="svelte-1ogqhx7">2023-11-07 08:00:00</td>
+<td class="svelte-1ogqhx7">Up 2 hours</td></tr>
+<tr class="svelte-1ogqhx7"><td class="svelte-1ogqhx7">def987654321</td>
+<td class="svelte-1ogqhx7">umani_frontend</td>
+<td class="svelte-1ogqhx7">0.0.0.0:3000-&gt;3000/tcp</td>
+<td class="svelte-1ogqhx7">2023-11-07 09:00:00</td>
+<td class="svelte-1ogqhx7">Down 1 hour</td></tr>
+<tr class="svelte-1ogqhx7"><td class="svelte-1ogqhx7">xyz567890123</td>
+<td class="svelte-1ogqhx7">postgres_alpine</td>
+<td class="svelte-1ogqhx7">0.0.0.0:5432-&gt;5432/tcp</td>
+<td class="svelte-1ogqhx7">2023-11-07 10:00:00</td>
+<td class="svelte-1ogqhx7">Up 30 minutes</td></tr></tbody></table>
 <p>Docker containers allows you to assess if any of them are currently not running or down.  In the Umani application, the infrastructure is comprised of three distinct components that make up the Umami application:</p>
 <ol><li><p><strong>Nginx</strong>: The Nginx container is hosting web services configured to listen on ports 80 and 443.</p></li>
 <li><p><strong>Umani Frontend</strong>: Umani is the analytics frontend, serving as the user interface. It listens on port 3000.</p></li>
@@ -259,26 +259,26 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 <p>In this example, Umani frontend is down and needs a restart:</p>
 <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell"><span class="token comment">#start up Umani frontend:</span>
 <span class="token function">docker</span> start umani_frontend</code><!-- HTML_TAG_END --></pre>
-<table class="svelte-puc4py"><thead><tr class="svelte-puc4py"><th>CONTAINER ID</th>
-<th>IMAGE</th>
-<th>PORTS</th>
-<th>CREATED</th>
-<th>STATUS</th></tr></thead>
-<tbody><tr class="svelte-puc4py"><td class="svelte-puc4py">abc123456789</td>
-<td class="svelte-puc4py">nginx</td>
-<td class="svelte-puc4py">0.0.0.0:80-&gt;80/tcp, 0.0.0.0:443-&gt;443/tcp</td>
-<td class="svelte-puc4py">2023-11-07 08:00:00</td>
-<td class="svelte-puc4py">Up 2 hours</td></tr>
-<tr class="svelte-puc4py"><td class="svelte-puc4py">def987654321</td>
-<td class="svelte-puc4py">umani_frontend</td>
-<td class="svelte-puc4py">0.0.0.0:3000-&gt;3000/tcp</td>
-<td class="svelte-puc4py">2023-11-07 09:00:00</td>
-<td class="svelte-puc4py">Up 1 second</td></tr>
-<tr class="svelte-puc4py"><td class="svelte-puc4py">xyz567890123</td>
-<td class="svelte-puc4py">postgres_alpine</td>
-<td class="svelte-puc4py">0.0.0.0:5432-&gt;5432/tcp</td>
-<td class="svelte-puc4py">2023-11-07 10:00:00</td>
-<td class="svelte-puc4py">Up 30 minutes</td></tr></tbody></table>
+<table class="svelte-1ogqhx7"><thead class="svelte-1ogqhx7"><tr class="svelte-1ogqhx7"><th class="svelte-1ogqhx7">CONTAINER ID</th>
+<th class="svelte-1ogqhx7">IMAGE</th>
+<th class="svelte-1ogqhx7">PORTS</th>
+<th class="svelte-1ogqhx7">CREATED</th>
+<th class="svelte-1ogqhx7">STATUS</th></tr></thead>
+<tbody class="svelte-1ogqhx7"><tr class="svelte-1ogqhx7"><td class="svelte-1ogqhx7">abc123456789</td>
+<td class="svelte-1ogqhx7">nginx</td>
+<td class="svelte-1ogqhx7">0.0.0.0:80-&gt;80/tcp, 0.0.0.0:443-&gt;443/tcp</td>
+<td class="svelte-1ogqhx7">2023-11-07 08:00:00</td>
+<td class="svelte-1ogqhx7">Up 2 hours</td></tr>
+<tr class="svelte-1ogqhx7"><td class="svelte-1ogqhx7">def987654321</td>
+<td class="svelte-1ogqhx7">umani_frontend</td>
+<td class="svelte-1ogqhx7">0.0.0.0:3000-&gt;3000/tcp</td>
+<td class="svelte-1ogqhx7">2023-11-07 09:00:00</td>
+<td class="svelte-1ogqhx7">Up 1 second</td></tr>
+<tr class="svelte-1ogqhx7"><td class="svelte-1ogqhx7">xyz567890123</td>
+<td class="svelte-1ogqhx7">postgres_alpine</td>
+<td class="svelte-1ogqhx7">0.0.0.0:5432-&gt;5432/tcp</td>
+<td class="svelte-1ogqhx7">2023-11-07 10:00:00</td>
+<td class="svelte-1ogqhx7">Up 30 minutes</td></tr></tbody></table>
 <h3 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="icon icon-link"></span></a>Conclusion</h3>
 <p>Third-party to a first-party experience is a significant undertaking, but it’s one that can lead to compliance with evolving privacy regulations. By gradually replacing third-party dependencies with privacy-centric solutions, you can create a user-focused environment while retaining the data you need for analysis.</p>
 <p>Remember that this journey is continuous, as privacy regulations evolve, and user expectations change. Stay committed to transparency, user education, and data protection, and you’ll be prepared for the privacy-centric future of the web.</p>
@@ -340,10 +340,10 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1gdyuse">
-		import { start } from "/_app/immutable/start-bc994974.js";
+		<script type="module" data-sveltekit-hydrate="1rz4hq6">
+		import { start } from "/_app/immutable/start-cc28b4e6.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1gdyuse"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1rz4hq6"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

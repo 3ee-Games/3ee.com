@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-a3466399.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-2c9ee03e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-cc28b4e6.js">
+	<link rel="modulepreload" href="/_app/immutable/start-ff7160d6.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/first-party-experience.md-00274d84.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/first-party-experience.md-385174ee.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-dca79525.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-1c5d2d4b.js">
@@ -94,7 +94,7 @@
 <p>Remember that embracing a first-party experience is a journey rather than a sprint. Hastily rushing through the process may result in unforeseen costs and complications.</p>
 <h3 id="identify-all-cookies"><a aria-hidden="true" tabindex="-1" href="#identify-all-cookies"><span class="icon icon-link"></span></a>Identify All Cookies</h3>
 <p><strong>🍪 State Cookies</strong>:</p>
-<p>Start by identifying cookies that store state, such as accepting or declining a cookie banner. State cookies are the first to go, and you should avoid using them whenever possible. If you have to use them, try to find alternative ways to store state that don’t involve cookies.</p>
+<p>Start by identifying cookies that store state, such as accepting or declining a cookie banner. State cookies are the first to go, and you should avoid using them whenever possible. If you have to use them, try to find alternative ways to store state.</p>
 <p>There are many situations where developers have rushed to stored state in a cookie. The reason is: <strong>they have no other place to store it</strong>. There are what seem to be infinite reasons why, main one being: a backend service that is not ready to store state.</p>
 <p>Another example: guest experiences.  You allow a user to anonymously buy products. Try to encourage users to create an account instead. If your sign-up process is complicated, simplify it to encourage more people to sign up. By having users create an account, you can store their data properly instead of relying on state cookies.</p>
 <p><strong>🍪 Shared Cookies</strong>:</p>
@@ -103,11 +103,11 @@
 <p>Ditching Google Analytics might seem like a bold move, but it’s necessary to achieve a first-party experience. To maintain the data analytics my business depends on, I needed a reliable alternative.</p>
 <p>3ee Games uses <a href="https://umami.is/" rel="nofollow">Umami</a> for analytics.  Umami is open source, offers visitor privacy, data ownership, and is self hosted.  Using a self hosted solution is what we want - I now own the data.  It’s not longer shared with other third party companies.</p>
 <p>Let’s break down this down:</p>
-<ul><li>Plan a way to support both analytics platforms.  This will give you an advantage to compare the data between the two platforms.</li>
+<ul><li>Plan a way to support both platforms.  This will give you an advantage to compare the data between the two.</li>
 <li>Translate custom events from Google Analytics to the new platform.</li>
-<li>Configure switches to turn on and off each analytics platform.</li></ul>
+<li>Configure switches to turn on and off each platform.</li></ul>
 <h4 id="example-of-handling-multiple-platforms"><a aria-hidden="true" tabindex="-1" href="#example-of-handling-multiple-platforms"><span class="icon icon-link"></span></a>Example of handling multiple platforms</h4>
-<p>There are many options to choose from when supporting different analytics platforms.  A common solution is creating a wrapper around the analytics platform.  This wrapper will handle the differences between the two platforms.  Let’s create a wrapper that will handle the differences between the Google Analytics and umami API:</p>
+<p>There are options to choose from when supporting different analytics software.  A common solution is creating a wrapper around the analytics platform.  This wrapper will handle the differences between the two platforms.  Let’s create a wrapper that will handle the differences between the Google Analytics and umami:</p>
 <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">let</span> analytics <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Analytics</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 analytics<span class="token punctuation">.</span><span class="token function">trackEvent</span><span class="token punctuation">(</span><span class="token string">'video'</span><span class="token punctuation">,</span> <span class="token string">'play'</span><span class="token punctuation">,</span> <span class="token string">'video_id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
 <p>The wrapper calls <code>trackEvent</code> which in turn calls both Google Analytics and umami:</p>
@@ -118,7 +118,8 @@ analytics<span class="token punctuation">.</span><span class="token function">tr
   <span class="token comment">//umami</span>
   umami<span class="token punctuation">.</span><span class="token function">trackEvent</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>category action label<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'signup'</span><span class="token punctuation">,</span> <span class="token literal-property property">moreInfo</span><span class="token operator">:</span> <span class="token number">123</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>Preserving your events and porting them over to the new platform is a tedious task.  Verify the events are working as expected in a networking tool such as the built-in browser networking tools, <a href="https://www.telerik.com/fiddler" rel="nofollow">Fiddler</a>, or <a href="https://www.charlesproxy.com/" rel="nofollow">Charles</a>.  To see <em>only</em> the requests made to the analytics platform, filter the requests by <code>collect</code>.</p>
+<p>Preserving your events and porting them over to the new platform is a tedious task.  Verify the events are working as expected in a networking tool such as the built-in browser networking tools, <a href="https://www.telerik.com/fiddler" rel="nofollow">Fiddler</a>, or <a href="https://www.charlesproxy.com/" rel="nofollow">Charles</a>.  </p>
+<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">To see <em>only</em> the requests made to the analytics platform, filter the requests by <code>collect</code>.</p></blockquote>
 <picture><source media="(min-width: 100px) and (max-width: 896.98px)" srcset="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party.png" width="380" height="89">
 
 	<img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party-5.png" alt="Check networking to see if events are working" width="599" height="142" class="svelte-1ygy214">
@@ -134,11 +135,11 @@ analytics<span class="token punctuation">.</span><span class="token function">tr
   <span class="token punctuation">&#125;</span>
   umami<span class="token punctuation">.</span><span class="token function">trackEvent</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>category action label<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'signup'</span><span class="token punctuation">,</span> <span class="token literal-property property">moreInfo</span><span class="token operator">:</span> <span class="token number">123</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>This allows you to pivot quickly if you need to restore Google Analytics temporarly.  With iteration and time, you can remove the switch and remove Google Analytics from your codebase.  Since we are using a wrapper, we can easily remove the Google Analytics code from the wrapper:</p>
+<p>This allows you to pivot quickly if you need to restore Google Analytics temporarly.  With iteration, you can remove the switch and Google Analytics from your codebase:</p>
 <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token function">trackEvent</span><span class="token punctuation">(</span><span class="token parameter">category<span class="token punctuation">,</span> action<span class="token punctuation">,</span> label</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   umami<span class="token punctuation">.</span><span class="token function">trackEvent</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>category action label<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'signup'</span><span class="token punctuation">,</span> <span class="token literal-property property">moreInfo</span><span class="token operator">:</span> <span class="token number">123</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>At this point, we have moved to our new platform.  Whether you decided to use umami or another analytics platform, you’re now in control of your data.</p>
+<p>At this point, we have moved to our new platform.  Whether you decided to use umami or another analytics platform. You’re now in control of your data!</p>
 <picture><source media="(min-width: 100px) and (max-width: 896.98px)" srcset="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party-2.png" width="317" height="191">
 
 	<img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party-7.png" alt="Umami Dashboard" width="636" height="384" class="svelte-1ygy214">
@@ -148,8 +149,8 @@ analytics<span class="token punctuation">.</span><span class="token function">tr
 	<img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party-10.png" alt="Umami&#39;s dashboard showing the video events" width="705" height="325" class="svelte-1ygy214">
 </picture>
 <h3 id="from-cookies-to-localstorage"><a aria-hidden="true" tabindex="-1" href="#from-cookies-to-localstorage"><span class="icon icon-link"></span></a>From Cookies to LocalStorage</h3>
-<p>LocalStorage is a web storage API supported by modern web browsers, providing a more efficient and privacy-centric alternative to traditional cookies. This change not only enhances user privacy but also streamlines data management.</p>
-<p>Cookies were once a default choice for storing small pieces of data in users’ browsers, but they have several drawbacks, including data size limitations, cross-domain security concerns, and GDPR compliance challenges.</p>
+<p>LocalStorage is a web storage API supported by modern web browsers, providing an efficient alternative to traditional cookies.</p>
+<p>Cookies were once a default choice for storing small pieces of data in users’ browsers, but they have several drawbacks, including size limitations, cross-domain security concerns, and GDPR compliance challenges.</p>
 <p>LocalStorage offers several advantages:</p>
 <ul><li><strong>Increased Storage</strong>: provides a significantly larger storage capacity compared to cookies, which is especially valuable when dealing with user data.</li>
 <li><strong>First-Party</strong>: Data stored in LocalStorage is first-party data, which aligns with the privacy-centric approach of a first-party website.</li>
@@ -215,12 +216,11 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 <span class="token keyword">const</span> paused <span class="token operator">=</span> storedVideoPlayerSettings<span class="token punctuation">.</span>paused<span class="token punctuation">;</span>
 </code><!-- HTML_TAG_END --></pre>
 <h3 id="updating-privacy-policies"><a aria-hidden="true" tabindex="-1" href="#updating-privacy-policies"><span class="icon icon-link"></span></a>Updating Privacy Policies</h3>
-<p>Moving to a first-party experience involves more than just technical changes; it also requires a commitment to transparency and compliance. Updating your privacy policy is an essential step to communicate your dedication to user privacy.</p>
-<p>When updating your privacy policy for a first-party experience, consider these as a guide:</p>
+<p>Moving to a first-party experience involves more than just technical changes; it also requires transparency and compliance.  When updating your policies, keep these points in mind:</p>
 <ul><li>Use clear and simple language for easy comprehension.</li>
 <li>Outline the data collected and its intended purposes.</li>
-<li>Describe data usage, whether for enhancing the user experience, analytics, or legitimate purposes.</li>
-<li>Disclose the use of cookies and LocalStorage for data storage and tracking, emphasizing the shift from third-party cookies to first-party LocalStorage.</li></ul>
+<li>Describe data usage, whether for enhancing the user experience, analytics, legitimate purposes.</li>
+<li>Disclose the use of cookies and local storage for data tracking.</li></ul>
 <h3 id="streamlining-with-containers"><a aria-hidden="true" tabindex="-1" href="#streamlining-with-containers"><span class="icon icon-link"></span></a>Streamlining with Containers</h3>
 <p>Containerization simplifies managing applications by packaging them in digital containers. Think of it as neatly storing each application in a perfectly sized container, much like LEGO bricks fitting into designated spaces.</p>
 <p>These containers bundle everything an application needs to run smoothly, offering a standardized way to transport and deploy them. Whether you’re testing locally, deploying in the cloud, or scaling up, containerization provides consistency and reliability.</p>
@@ -340,10 +340,10 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1rz4hq6">
-		import { start } from "/_app/immutable/start-cc28b4e6.js";
+		<script type="module" data-sveltekit-hydrate="mcio1r">
+		import { start } from "/_app/immutable/start-ff7160d6.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1rz4hq6"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="mcio1r"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

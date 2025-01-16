@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-a3466399.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-2c9ee03e.css">
-	<link rel="modulepreload" href="/_app/immutable/start-cb0376d0.js">
+	<link rel="modulepreload" href="/_app/immutable/start-ed6131c5.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/first-party-experience.md-09ffd1a8.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/first-party-experience.md-a52c0dfd.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-dca79525.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-1c5d2d4b.js">
@@ -81,7 +81,7 @@
 
 		<div class="article"><h3 id="first-party-centric-built-in-privacy"><a aria-hidden="true" tabindex="-1" href="#first-party-centric-built-in-privacy"><span class="icon icon-link"></span></a>First Party Centric: Built-In Privacy</h3>
 <p>This journey began with a meticulous evaluation of the third-party services the platform relied on. Every third-party script that people take for granted uses and shares cookies with other vendors. Examples include embedding YouTube videos, implementing Google Analytics, Tag Managers, advertising scripts, and the massive list that keeps going.</p>
-<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7"><strong>Note</strong>: The code in this article is meant to entice ideas and not meant to be a template that can be copy and pasted. It is designed to mentor you to come up with ideas on how you would implement this yourself on the technology you work with.</p></blockquote>
+<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">📄 The code in this article is meant to entice ideas and not meant to be a template that can be copy and pasted. It is designed to mentor you to come up with ideas on how you would implement this yourself on the technology you work with.</p></blockquote>
 <p>Similar to the belief and goals with <a href="/account/accessibility/">accessibility</a>, privacy is a feature that should be built into your product. It’s not a checkbox that you can check off and say you’re done. It’s a continuous process of making sure your product is built with privacy in mind.</p>
 <h4 id="transitioning-from-third-parties"><a aria-hidden="true" tabindex="-1" href="#transitioning-from-third-parties"><span class="icon icon-link"></span></a>Transitioning from Third Parties</h4>
 <p>Transitioning to a first-party experience is an essential process for securing user data and maintaining a high level of privacy.</p>
@@ -119,7 +119,7 @@ analytics<span class="token punctuation">.</span><span class="token function">tr
   umami<span class="token punctuation">.</span><span class="token function">trackEvent</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>category action label<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'signup'</span><span class="token punctuation">,</span> <span class="token literal-property property">moreInfo</span><span class="token operator">:</span> <span class="token number">123</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
 <p>Preserving your events and porting them over to the new platform is a tedious task.  Verify the events are working as expected in a networking tool such as the built-in browser networking tools, <a href="https://www.telerik.com/fiddler" rel="nofollow">Fiddler</a>, or <a href="https://www.charlesproxy.com/" rel="nofollow">Charles</a>.  </p>
-<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">To see <em>only</em> the requests made to the analytics platform, filter the requests by <code>collect</code>.</p></blockquote>
+<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">📄 To see <em>only</em> the requests made to the analytics platform, filter the requests by <code>collect</code>.</p></blockquote>
 <picture><source media="(min-width: 100px) and (max-width: 896.98px)" srcset="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party.png" width="380" height="89">
 
 	<img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1703431355/img/blog-first-party-5.png" alt="Check networking to see if events are working" width="599" height="142" class="svelte-1ygy214">
@@ -225,7 +225,7 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 <p>Containerization simplifies managing applications by packaging them in digital containers. Think of it as neatly storing each application in a perfectly sized container, much like LEGO bricks fitting into designated spaces.</p>
 <p>These containers bundle everything an application needs to run smoothly, offering a standardized way to transport and deploy them. Whether you’re testing locally, deploying in the cloud, or scaling up, containerization provides consistency and reliability.</p>
 <p>Additionally, containerization ensures that your applications behave consistently across different environments, from development to testing to production. It’s like knowing your LEGO bricks will always fit together seamlessly.</p>
-<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">Imagine your application experiencing increased demand. Containerization lets you add containers effortlessly to handle the higher load, ensuring efficient performance and resource use. This streamlined approach is cost-effective and keeps your infrastructure running smoothly.</p></blockquote>
+<blockquote class="svelte-1ogqhx7"><p class="svelte-1ogqhx7">📄 Imagine your application experiencing increased demand. Containerization lets you add containers effortlessly to handle the higher load, ensuring efficient performance and resource use. This streamlined approach is cost-effective and keeps your infrastructure running smoothly.</p></blockquote>
 <h4 id="troubleshooting-with-docker"><a aria-hidden="true" tabindex="-1" href="#troubleshooting-with-docker"><span class="icon icon-link"></span></a>Troubleshooting with Docker</h4>
 <p>In our real-world example, Umami ships with a Docker Compose configuation that contains the application and a PostgreSQL database.  Now we can configure, troubleshoot, monitor, and update Umami easily.</p>
 <p>In this example, imagine you received an alert that the Umami frontend is not working.  Time to troubleshoot and inspect the containers:</p>
@@ -340,10 +340,10 @@ localStorage<span class="token punctuation">.</span><span class="token function"
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="s57ns4">
-		import { start } from "/_app/immutable/start-cb0376d0.js";
+		<script type="module" data-sveltekit-hydrate="acgbrs">
+		import { start } from "/_app/immutable/start-ed6131c5.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="s57ns4"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="acgbrs"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

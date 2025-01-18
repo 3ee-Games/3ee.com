@@ -5,10 +5,10 @@
     <loc>https://3ee.com</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account</loc>
+    <loc>https://3ee.com/about</loc>
   </url>
   <url>
-    <loc>https://3ee.com/about</loc>
+    <loc>https://3ee.com/account</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog</loc>
@@ -95,10 +95,10 @@
     <loc>https://3ee.com/britelite/library</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/divine-sun</loc>
+    <loc>https://3ee.com/games/cupids-balance</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/cupids-balance</loc>
+    <loc>https://3ee.com/games/divine-sun</loc>
   </url>
   <url>
     <loc>https://3ee.com/games/zultiki</loc>
@@ -119,16 +119,16 @@
     <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/analytics</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/containers</loc>
+    <loc>https://3ee.com/blog/categories/analytics</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/automation</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/containers</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/cookies</loc>
@@ -164,9 +164,9 @@
     <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/videos</loc>
+    <loc>https://3ee.com/blog/categories/web development</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/web development</loc>
+    <loc>https://3ee.com/blog/categories/videos</loc>
   </url>
 </urlset>

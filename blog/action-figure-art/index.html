@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-a0dba1c8.css">
-	<link rel="modulepreload" href="/_app/immutable/start-fc975eb3.js">
+	<link rel="modulepreload" href="/_app/immutable/start-2835e7dd.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-bc7fe6da.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-61301625.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-526d3695.js">
@@ -206,8 +206,7 @@ setlocal EnableDelayedExpansion
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
 <p>Within that folder, the setup is similar to setting up your train data directory, create directories with the following a repetition count and name:</p>
 <pre class="language-xml"><!-- HTML_TAG_START --><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repetition</span> <span class="token attr-name">count</span><span class="token punctuation">></span></span>_<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>identifier</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
-<p>Specify the <code class="svelte-1s7xsui">number of iterations</code> so that the number of iterations of training images <code class="svelte-1s7xsui">x</code> =  the number of training images <code class="svelte-1s7xsui">≥</code> the number of iterations of regularization images <code class="svelte-1s7xsui">x</code> the number of regularization images .
-(The number of data in one epoch is “number of repetitions of training images <code class="svelte-1s7xsui">x</code> number of training images”. If the number of regularization images is more than that, the remaining regularization images will not be used.)</p>
+<p>Set the <code class="svelte-1s7xsui">number of iterations</code> so that training images are used as often as or more often than regularization images. In one epoch, the total data is <code class="svelte-1s7xsui">training images × iterations</code>. If there are more regularization images than this, the extras won’t be used.</p>
 <p>Create folders in the training image folder with the format <code class="svelte-1s7xsui">&lt;repetition count&gt;_&lt;class&gt;</code> multiple times, and similarly create folders in the regularization image folder with the format <code class="svelte-1s7xsui">&lt;repetition count&gt;_&lt;class&gt;</code>.</p>
 <p>If there is only one class with multiple targets, you only need one regularization image folder.  For example, if there is character A and character B in 1girl, it would look like this:</p>
 <ul><li>train_data_dir<ul><li>10_princeadam</li></ul></li>
@@ -361,10 +360,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1uzx34k">
-		import { start } from "/_app/immutable/start-fc975eb3.js";
+		<script type="module" data-sveltekit-hydrate="53ufwe">
+		import { start } from "/_app/immutable/start-2835e7dd.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1uzx34k"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="53ufwe"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

@@ -17,11 +17,11 @@
 		<script type="application/ld+json" ✂prettier:content✂="CgkJICAke0pTT04uc3RyaW5naWZ5KHNjaGVtYSl9CgkJ">{}</script>
 		<!-- HTML_TAG_END -->
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-0ce23f93.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/action-figure-art.md-0e202110.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/action-figure-art.md-1bb66666.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-a0dba1c8.css">
-	<link rel="modulepreload" href="/_app/immutable/start-4b655c6a.js">
+	<link rel="modulepreload" href="/_app/immutable/start-bd9e4106.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-555f61fe.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-bc7fe6da.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-526d3695.js">
@@ -84,7 +84,7 @@
 </picture>
 <h2 id="what-are-regularization-images"><a aria-hidden="true" tabindex="-1" href="#what-are-regularization-images"><span class="icon icon-link"></span></a>What are Regularization Images?</h2>
 <p>Regularization images are used for prior-preservation loss to prevent overfitting in a machine learning model.  To further illustrate: regularization images are extra pictures that are used to help Stable Diffusion learn better. </p>
-<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1">Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/rhor7neqffebs3mkb4jl.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854420/blog/paxaerqrspuqlkckjf0d.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
 
@@ -98,24 +98,24 @@
 <p>By creating regularization images, you’re defining a “class” of what you’re trying to invert. For example, if you’re trying to invert a skateboard, you might want to create a collection of skateboard images for regularization. This is to prevent your training from drifting into another class, let’s say “bike” or “roller skates.” It also helps guard against heading towards a “toy skateboard” if you are using real references and not interpretations.</p>
 <p>Regularization ensures that the images you’re trying to invert don’t overfit. Overfitting occurs if the likeness to the images you generate becomes too similar to the training set. One challenge with textual inversions is the potential loss of editability during inversion, especially with prolonged training. The inclusion of regularization images and adjustments to learning rates helps mitigate this issue.</p>
 <p>In essence, regularization ensures your model stays on course, navigating the delicate balance between fidelity to the training set and adaptability to novel inputs.</p>
-<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Aspect</th>
-<th class="svelte-vl4fv1">Regularization</th>
-<th class="svelte-vl4fv1">No Regularization</th></tr></thead>
-<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Definition</strong></td>
-<td class="svelte-vl4fv1">Defines skateboard class</td>
-<td class="svelte-vl4fv1">No specific class</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Example</strong></td>
-<td class="svelte-vl4fv1">Uses skateboard images</td>
-<td class="svelte-vl4fv1">No specific images</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Purpose</strong></td>
-<td class="svelte-vl4fv1">Prevents drift, focuses on skateboard class</td>
-<td class="svelte-vl4fv1">May drift to unrelated classes</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Overfitting</strong></td>
-<td class="svelte-vl4fv1">Guards against overfitting</td>
-<td class="svelte-vl4fv1">Higher risk of overfitting</td></tr></tbody></table>
-<p>Regularization helps us make sure our models can correctly classify new data points they were not trained on. We call this ability to work well with new data “generalization.” If we don’t use regularization, our models can become too complex and “overfit” to the training data, meaning they won’t work well with new data.</p>
-<p>Using too much regularization can be a problem. It can lead to “underfitting,” which means our model doesn’t work well even with the training data. This happens when we limit our model’s ability too much.</p>
-<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1">Imagine a graph of points. We want to find a function that fits those points well. We could choose a simple function, which might not fit the points very well. Or we could choose a very complex function that fits the points perfectly, but it might not work well with new points we haven’t seen before. The key is to find the right balance between simplicity and complexity to achieve the best performance.</p></blockquote>
+<table class="svelte-1s7xsui"><thead class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><th class="svelte-1s7xsui">Aspect</th>
+<th class="svelte-1s7xsui">Regularization</th>
+<th class="svelte-1s7xsui">No Regularization</th></tr></thead>
+<tbody class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><td class="svelte-1s7xsui"><strong>Definition</strong></td>
+<td class="svelte-1s7xsui">Defines skateboard class</td>
+<td class="svelte-1s7xsui">No specific class</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui"><strong>Example</strong></td>
+<td class="svelte-1s7xsui">Uses skateboard images</td>
+<td class="svelte-1s7xsui">No specific images</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui"><strong>Purpose</strong></td>
+<td class="svelte-1s7xsui">Prevents drift, focuses on skateboard class</td>
+<td class="svelte-1s7xsui">May drift to unrelated classes</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui"><strong>Overfitting</strong></td>
+<td class="svelte-1s7xsui">Guards against overfitting</td>
+<td class="svelte-1s7xsui">Higher risk of overfitting</td></tr></tbody></table>
+<p>Regularization helps us make sure our models can correctly classify new data points they were not trained on. The ability to work well with new data is called “generalization.” If we don’t use regularization, our models can become too complex and “overfit” to the training data, meaning they won’t work well with new data.</p>
+<p>Using too much regularization can be a problem. It can lead to “underfitting,” which means our model doesn’t work well with the training data. This happens when we limit our model’s ability too much.</p>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">Imagine a graph of points. We need a function that fits them well: a simple one might miss the mark, while an overly complex one could fit perfectly but fail with new data. The goal is to balance simplicity and complexity for optimal performance.</p></blockquote>
 <p><strong>Scenario 1</strong>: You have only a few pictures of your cat and no pictures of other cats.  If you train the model on just these few pictures - won’t learn enough to accurately recognize your cat.</p>
 <p><strong>Solution</strong>: consider using regularization images to help the model learn more about cat features.</p>
 <p><strong>Scenario 2</strong>: You have a lot of pictures of other cats, but only a few pictures of your cat.  If you train the model on all of these pictures, it might get confused and not learn how to accurately recognize your cat.</p>
@@ -124,20 +124,20 @@
 <p>Providing too much data leads to <strong>divergence</strong>. Divergence happens when the model produces random outputs that do not accurately represent the subject’s likeness. This can occur because the model is trying to learn from too many images with inconsistent features, causing it to become confused and produce poor results.</p>
 <p>To avoid divergence, we need to ensure the model is focusing on the features that are unique and consistent with your subject.  This starts from carefully curating the dataset by selecting high-quality images that accurately represent the object.</p>
 <p>Training a model to recognize specific objects requires careful consideration of the dataset and the use of regularization techniques to ensure the model is focused on the right features and is not prone to divergence.</p>
-<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Situation</th>
-<th class="svelte-vl4fv1">Outcome</th></tr></thead>
-<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Too many regularization images or inconsistent features</td>
-<td class="svelte-vl4fv1">Model performance suffers, leading to inaccurate predictions.</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Lack of focus on unique and consistent features</td>
-<td class="svelte-vl4fv1">Difficulty learning meaningful patterns, impacting prediction accuracy.</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Need for careful dataset curation</td>
-<td class="svelte-vl4fv1">High-quality image selection to avoid confusion and divergence.</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Importance of regularization techniques</td>
-<td class="svelte-vl4fv1">Proper use ensures model focuses on relevant features for accurate predictions.</td></tr></tbody></table>
+<table class="svelte-1s7xsui"><thead class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><th class="svelte-1s7xsui">Situation</th>
+<th class="svelte-1s7xsui">Outcome</th></tr></thead>
+<tbody class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Too many regularization images or inconsistent features</td>
+<td class="svelte-1s7xsui">Model performance suffers, leading to inaccurate predictions.</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Lack of focus on unique and consistent features</td>
+<td class="svelte-1s7xsui">Difficulty learning meaningful patterns, impacting prediction accuracy.</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Need for careful dataset curation</td>
+<td class="svelte-1s7xsui">High-quality image selection to avoid confusion and divergence.</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Importance of regularization techniques</td>
+<td class="svelte-1s7xsui">Proper use ensures model focuses on relevant features for accurate predictions.</td></tr></tbody></table>
 <h2 id="generating-regularization-images"><a aria-hidden="true" tabindex="-1" href="#generating-regularization-images"><span class="icon icon-link"></span></a>Generating Regularization images</h2>
-<p>Regularization images are generated using model you’re going to train with before training.  These generated images are based on the class name (e.g., <code>1boy</code>).</p>
-<p>According to the Dreambooth technique, <code>200</code> regularization images per training image.  For example, if you have <code>16</code> images: <code>200 * 16 = 3200</code> total regularization images.  When training, the math involved for calculating total steps is:</p>
-<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1"><code>repeats * training images &gt;= repeats * regularization images</code></p></blockquote>
+<p>Regularization images are generated using model you’re going to train with before training.  These generated images are based on the class name (e.g., <code class="svelte-1s7xsui">1boy</code>).</p>
+<p>According to the Dreambooth technique, <code class="svelte-1s7xsui">200</code> regularization images per training image.  For example, if you have <code class="svelte-1s7xsui">16</code> images: <code class="svelte-1s7xsui">200 * 16 = 3200</code> total regularization images.  When training, the math involved for calculating total steps is:</p>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui"><code class="svelte-1s7xsui">repeats * training images &gt;= repeats * regularization images</code></p></blockquote>
 <p>The quality of regularization images impacts the model’s performance, as they are learned during training. Ideally, a few hundred high-quality regularized images should be prepared. Inadequate quantities may hinder generalization of class images, affecting the model’s ability to learn distinctive features.</p>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/fbytgzx431mlr1cirrwa.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853753/blog/syplrg2ay7kbonyjpxxu.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
@@ -151,15 +151,15 @@
 </div>
 <h4 id="generate-using-stable-diffusion-web-ui"><a aria-hidden="true" tabindex="-1" href="#generate-using-stable-diffusion-web-ui"><span class="icon icon-link"></span></a>Generate using Stable Diffusion web UI</h4>
 <p>We’re going to use <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="nofollow">Stable Diffusion web UI</a> to generate all the regularization images.  There are other web UIs available to inference with Stable Diffusion.  Personally preference, I like this better because the application is laid out like a data science tool with many options at your fingertips.</p>
-<p>We’re going to use the <code>X/Y/Z plot</code> script to use <code>Prompt Search &amp; Replace</code> to dynamically build a prompt that will generate hundreds of regularization images.</p>
-<ol><li><p>Select the text 2 image tab.  Enter a generic prompt <code>princeadam, portrait, looking_at_viewer, forest</code></p></li>
-<li><p>In generation parameters and select the <code>X/Y/Z plot</code> script.</p></li>
-<li><p>Select the <code>X</code> parameter and <code>Prompt SR</code> for Prompt Replace.  We’re going to replace <code>portrait</code> with different camera angle tags: <code>close-up</code>, <code>upper_body</code>, <code>from_below</code>, <code>from_above</code>, <code>dutch_angle</code></p></li>
-<li><p>Select the <code>Y</code> parameter and <code>Prompt SR</code> for Prompt Replace.  Replace <code>looking_at_viewer</code>: <code>looking_away</code>, <code>looking_to_the_side</code>, <code>looking_ahead</code>, <code>looking_down</code></p></li>
-<li><p>Select the <code>Z</code> parameter and <code>Prompt SR</code> for Prompt Replace. Replace <code>forest</code> with a vareity of locatinos: <code>castle</code>, <code>mountain</code>, <code>cave</code>, <code>farm</code>, <code>ocean</code></p></li>
-<li><p>Select a fast sampler like <code>DPM2 KARRAS</code></p></li>
-<li><p>CFG Scale set to <code>7</code> and Steps to <code>20</code></p></li></ol>
-<p>After the inference finishes, gather the images that were generated and we’ll start captioning.  We may only need <code>150</code> - <code>200</code> and keep in mind we can add and remove as we try different training settings with different output.</p>
+<p>We’re going to use the <code class="svelte-1s7xsui">X/Y/Z plot</code> script to use <code class="svelte-1s7xsui">Prompt Search &amp; Replace</code> to dynamically build a prompt that will generate hundreds of regularization images.</p>
+<ol><li><p>Select the text 2 image tab.  Enter a generic prompt <code class="svelte-1s7xsui">princeadam, portrait, looking_at_viewer, forest</code></p></li>
+<li><p>In generation parameters and select the <code class="svelte-1s7xsui">X/Y/Z plot</code> script.</p></li>
+<li><p>Select the <code class="svelte-1s7xsui">X</code> parameter and <code class="svelte-1s7xsui">Prompt SR</code> for Prompt Replace.  We’re going to replace <code class="svelte-1s7xsui">portrait</code> with different camera angle tags: <code class="svelte-1s7xsui">close-up</code>, <code class="svelte-1s7xsui">upper_body</code>, <code class="svelte-1s7xsui">from_below</code>, <code class="svelte-1s7xsui">from_above</code>, <code class="svelte-1s7xsui">dutch_angle</code></p></li>
+<li><p>Select the <code class="svelte-1s7xsui">Y</code> parameter and <code class="svelte-1s7xsui">Prompt SR</code> for Prompt Replace.  Replace <code class="svelte-1s7xsui">looking_at_viewer</code>: <code class="svelte-1s7xsui">looking_away</code>, <code class="svelte-1s7xsui">looking_to_the_side</code>, <code class="svelte-1s7xsui">looking_ahead</code>, <code class="svelte-1s7xsui">looking_down</code></p></li>
+<li><p>Select the <code class="svelte-1s7xsui">Z</code> parameter and <code class="svelte-1s7xsui">Prompt SR</code> for Prompt Replace. Replace <code class="svelte-1s7xsui">forest</code> with a vareity of locatinos: <code class="svelte-1s7xsui">castle</code>, <code class="svelte-1s7xsui">mountain</code>, <code class="svelte-1s7xsui">cave</code>, <code class="svelte-1s7xsui">farm</code>, <code class="svelte-1s7xsui">ocean</code></p></li>
+<li><p>Select a fast sampler like <code class="svelte-1s7xsui">DPM2 KARRAS</code></p></li>
+<li><p>CFG Scale set to <code class="svelte-1s7xsui">7</code> and Steps to <code class="svelte-1s7xsui">20</code></p></li></ol>
+<p>After the inference finishes, gather the images that were generated and we’ll start captioning.  We may only need <code class="svelte-1s7xsui">150</code> - <code class="svelte-1s7xsui">200</code> and keep in mind we can add and remove as we try different training settings with different output.</p>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854869/blog/alkw0c8naloochwgb2fp.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/nmlxqfiefc7bzll12ewv.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
 
@@ -177,7 +177,7 @@
 <li><a href="https://huggingface.co/datasets/ProGamerGov/StableDiffusion-v1-5-Regularization-Images" rel="nofollow">Stable Diffusion 1.5 Regularization Images</a>: includes art styles, illustration, landscapes, and many other types and themes of images generated with Stable Diffusion 1.5.  </li>
 <li><a href="https://huggingface.co/Aitrepreneur/SDXL_REGULARIZATION_IMAGES/tree/main" rel="nofollow">Aitrepreneur SDXL image set</a>: a large image set generated with Stable Diffusion SDXL.</li></ul>
 <h4 id="captioning-regularization-images"><a aria-hidden="true" tabindex="-1" href="#captioning-regularization-images"><span class="icon icon-link"></span></a>Captioning Regularization images</h4>
-<p>While not required, you can caption regularization images just like how you can with training images.  Since Stable Diffusion Web UI named all of the images with the prompt within the filename, we can easily exact and create <code>txt</code> files with a shell script:</p>
+<p>While not required, you can caption regularization images just like how you can with training images.  Since Stable Diffusion Web UI named all of the images with the prompt within the filename, we can easily exact and create <code class="svelte-1s7xsui">txt</code> files with a shell script:</p>
 <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell">@echo off
 setlocal EnableDelayedExpansion
 
@@ -193,39 +193,39 @@ setlocal EnableDelayedExpansion
 
     <span class="token builtin class-name">echo</span> <span class="token operator">!</span>caption<span class="token operator">!</span> <span class="token operator">></span> <span class="token string">"!caption_filename!"</span>
 <span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<p>Save this file as <code>filename2txt.bat</code> and place it into the regularization images directory and run: <code>.\filename2txt.bat</code>.  The script extracts the prompt from the filename and outputs a text file with the prompt.  The text file is named the same filename as the image and will be picked up by the text encoder during training.</p>
-<p>Example filename: <code>18967-19144263-izaniak, aburbres, princeadam, 1boy, close-up, purple_vest.png</code></p>
-<p>Output: <code>aburbres,princeadam,1boy,close-up,purple_vest</code> saved in a text file with the same name as image.</p>
+<p>Save this file as <code class="svelte-1s7xsui">filename2txt.bat</code> and place it into the regularization images directory and run: <code class="svelte-1s7xsui">.\filename2txt.bat</code>.  The script extracts the prompt from the filename and outputs a text file with the prompt.  The text file is named the same filename as the image and will be picked up by the text encoder during training.</p>
+<p>Example filename: <code class="svelte-1s7xsui">18967-19144263-izaniak, aburbres, princeadam, 1boy, close-up, purple_vest.png</code></p>
+<p>Output: <code class="svelte-1s7xsui">aburbres,princeadam,1boy,close-up,purple_vest</code> saved in a text file with the same name as image.</p>
 <h2 id="training-a-lora"><a aria-hidden="true" tabindex="-1" href="#training-a-lora"><span class="icon icon-link"></span></a>Training a LoRA</h2>
-<p>Now we’re going to setup all the training data to create a LoRA model.  We’re going to go over how to setup your training data to use regularization images.</p>
-<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1">Learning how to train a LoRA is a completely different subject all on its own.  Learn more about LoRA training: LINK HERE.  </p></blockquote>
+<p>Now we’re going to setup all the training data to create a LoRA model.  We’re going to go over how to setup your training data to use regularization images with <a href="https://github.com/kohya-ss/sd-scripts" rel="nofollow">kohya-ss/sd-scripts</a>.</p>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">Learning how to train a LoRA is a completely different subject all on its own.  See <a href="https://github.com/darkstorm2150/sd-scripts/blob/main/docs/train_README-en.md" rel="nofollow">Kohya SD script documentation</a>.  </p></blockquote>
 <h3 id="directory-setup"><a aria-hidden="true" tabindex="-1" href="#directory-setup"><span class="icon icon-link"></span></a>Directory setup</h3>
-<p>In your configuration json, use <code>reg_data_dir</code> to point to the directory with your regularization images:</p>
+<p>In your configuration json, use <code class="svelte-1s7xsui">reg_data_dir</code> to point to the directory with your regularization images:</p>
 <pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
   <span class="token property">"reg_data_dir"</span><span class="token operator">:</span> <span class="token string">"c:/prince_adam_loras/reg_dir"</span><span class="token punctuation">,</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
 <p>Within that folder, the setup is similar to setting up your train data directory, create directories with the following a repetition count and name:</p>
 <pre class="language-xml"><!-- HTML_TAG_START --><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>repetition</span> <span class="token attr-name">count</span><span class="token punctuation">></span></span>_<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>identifier</span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>class</span><span class="token punctuation">></span></span></code><!-- HTML_TAG_END --></pre>
-<p>Specify the <code>number of iterations</code> so that the number of iterations of training images <code>x</code> =  the number of training images <code>≥</code> the number of iterations of regularization images <code>x</code> the number of regularization images .
-(The number of data in one epoch is “number of repetitions of training images <code>x</code> number of training images”. If the number of regularization images is more than that, the remaining regularization images will not be used.)</p>
-<p>Create folders in the training image folder with the format <code>&lt;repetition count&gt;_&lt;class&gt;</code> multiple times, and similarly create folders in the regularization image folder with the format <code>&lt;repetition count&gt;_&lt;class&gt;</code>.</p>
+<p>Specify the <code class="svelte-1s7xsui">number of iterations</code> so that the number of iterations of training images <code class="svelte-1s7xsui">x</code> =  the number of training images <code class="svelte-1s7xsui">≥</code> the number of iterations of regularization images <code class="svelte-1s7xsui">x</code> the number of regularization images .
+(The number of data in one epoch is “number of repetitions of training images <code class="svelte-1s7xsui">x</code> number of training images”. If the number of regularization images is more than that, the remaining regularization images will not be used.)</p>
+<p>Create folders in the training image folder with the format <code class="svelte-1s7xsui">&lt;repetition count&gt;_&lt;class&gt;</code> multiple times, and similarly create folders in the regularization image folder with the format <code class="svelte-1s7xsui">&lt;repetition count&gt;_&lt;class&gt;</code>.</p>
 <p>If there is only one class with multiple targets, you only need one regularization image folder.  For example, if there is character A and character B in 1girl, it would look like this:</p>
 <ul><li>train_data_dir<ul><li>10_princeadam</li></ul></li>
 <li>reg_dir<ul><li>1_1boy</li></ul></li></ul>
 <p>For example, with the prompt “frog” and not repeating the data (only once), it would look like this:</p>
-<p class="svelte-vl4fv1"><img src="https://user-images.githubusercontent.com/52813779/210770897-329758e5-3675-49f1-b345-c135f1725832.png" alt="image" class="svelte-vl4fv1"></p>
+<p class="svelte-1s7xsui"><img src="https://user-images.githubusercontent.com/52813779/210770897-329758e5-3675-49f1-b345-c135f1725832.png" alt="image" class="svelte-1s7xsui"></p>
 <h3 id="training-settings"><a aria-hidden="true" tabindex="-1" href="#training-settings"><span class="icon icon-link"></span></a>Training Settings</h3>
-<p>The training setup we’re going to use is:  <code>Number of images * repeats * epoch / batch size = total steps</code>.  Based on our training data, we have 45 images and going for 4500 steps:</p>
-<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Number of Images</th>
-<th class="svelte-vl4fv1">Repeats</th>
-<th class="svelte-vl4fv1">Epochs</th>
-<th class="svelte-vl4fv1">Batch Size</th>
-<th class="svelte-vl4fv1">Total Steps</th></tr></thead>
-<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">45</td>
-<td class="svelte-vl4fv1">10</td>
-<td class="svelte-vl4fv1">20</td>
-<td class="svelte-vl4fv1">2</td>
-<td class="svelte-vl4fv1">4500</td></tr></tbody></table>
+<p>The training setup we’re going to use is:  <code class="svelte-1s7xsui">Number of images * repeats * epoch / batch size = total steps</code>.  Based on our training data, we have 45 images and going for 4500 steps:</p>
+<table class="svelte-1s7xsui"><thead class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><th class="svelte-1s7xsui">Number of Images</th>
+<th class="svelte-1s7xsui">Repeats</th>
+<th class="svelte-1s7xsui">Epochs</th>
+<th class="svelte-1s7xsui">Batch Size</th>
+<th class="svelte-1s7xsui">Total Steps</th></tr></thead>
+<tbody class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">45</td>
+<td class="svelte-1s7xsui">10</td>
+<td class="svelte-1s7xsui">20</td>
+<td class="svelte-1s7xsui">2</td>
+<td class="svelte-1s7xsui">4500</td></tr></tbody></table>
 <p>Now let’s focus on these training settings:</p>
 <pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
   <span class="token property">"learning_rate"</span><span class="token operator">:</span> <span class="token string">"5e-4"</span><span class="token punctuation">,</span>
@@ -240,17 +240,17 @@ setlocal EnableDelayedExpansion
   <span class="token property">"noise_offset"</span><span class="token operator">:</span> <span class="token string">"0.1"</span><span class="token punctuation">,</span>
   <span class="token property">"reg_data_dir"</span><span class="token operator">:</span> <span class="token string">"/prince_adam_loras/action/reg_dir"</span><span class="token punctuation">,</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<ul><li><strong>Learning Rate (<code>learning_rate</code>)</strong>: Determines the step size during optimization, influencing how quickly the model adapts to training data.</li>
-<li><strong>Text Encoder Learning Rate (<code>text_encoder_lr</code>)</strong>: Sets the learning rate specifically for the Text Encoder, optimizing its contribution to the model.</li>
-<li><strong>UNet Learning Rate (<code>unet_lr</code>)</strong>: Specifies the learning rate for the UNet component, impacting its performance in the LoRA model.</li>
-<li><strong>Learning Rate Scheduler (<code>lr_scheduler</code>)</strong>: Utilizes a cosine annealing schedule with restarts for dynamic learning rate adjustment during training.</li>
-<li><strong>Number of Cycles in Learning Rate Scheduler (<code>lr_scheduler_num_cycles</code>)</strong>: Sets the number of cycles for the cosine annealing schedule, influencing the frequency of learning rate restarts.</li>
-<li><strong>Network Dimension (<code>network_dim</code>)</strong>: Defines the dimensionality of the latent space in the LoRA model, capturing more complex patterns but increasing computational demand.</li>
-<li><strong>Network Alpha (<code>network_alpha</code>)</strong>: Regulates the strength of regularization in ordinal regression loss, balancing fitting training data closely and preventing overfitting.</li>
-<li><strong>Clip Skip (<code>clip_skip</code>)</strong>: Acts as a safety net during training, skipping updates if the loss remains unchanged for two consecutive iterations, stabilizing the learning process.</li>
-<li><strong>Max Token Length (<code>max_token_length</code>)</strong>: Sets the maximum allowed length for input tokens, enabling training with longer captions.</li>
-<li><strong>Noise Offset (<code>noise_offset</code>)</strong>: Implements a diffusion process with offset noise, enhancing generation results for dark or bright images.</li>
-<li><strong>Regularization Data Directory (<code>reg_data_dir</code>)</strong>: Specifies the directory for regularization data, influencing the quality of regularization images during training.</li></ul>
+<ul><li><strong>Learning Rate (<code class="svelte-1s7xsui">learning_rate</code>)</strong>: Determines the step size during optimization, influencing how quickly the model adapts to training data.</li>
+<li><strong>Text Encoder Learning Rate (<code class="svelte-1s7xsui">text_encoder_lr</code>)</strong>: Sets the learning rate specifically for the Text Encoder, optimizing its contribution to the model.</li>
+<li><strong>UNet Learning Rate (<code class="svelte-1s7xsui">unet_lr</code>)</strong>: Specifies the learning rate for the UNet component, impacting its performance in the LoRA model.</li>
+<li><strong>Learning Rate Scheduler (<code class="svelte-1s7xsui">lr_scheduler</code>)</strong>: Utilizes a cosine annealing schedule with restarts for dynamic learning rate adjustment during training.</li>
+<li><strong>Number of Cycles in Learning Rate Scheduler (<code class="svelte-1s7xsui">lr_scheduler_num_cycles</code>)</strong>: Sets the number of cycles for the cosine annealing schedule, influencing the frequency of learning rate restarts.</li>
+<li><strong>Network Dimension (<code class="svelte-1s7xsui">network_dim</code>)</strong>: Defines the dimensionality of the latent space in the LoRA model, capturing more complex patterns but increasing computational demand.</li>
+<li><strong>Network Alpha (<code class="svelte-1s7xsui">network_alpha</code>)</strong>: Regulates the strength of regularization in ordinal regression loss, balancing fitting training data closely and preventing overfitting.</li>
+<li><strong>Clip Skip (<code class="svelte-1s7xsui">clip_skip</code>)</strong>: Acts as a safety net during training, skipping updates if the loss remains unchanged for two consecutive iterations, stabilizing the learning process.</li>
+<li><strong>Max Token Length (<code class="svelte-1s7xsui">max_token_length</code>)</strong>: Sets the maximum allowed length for input tokens, enabling training with longer captions.</li>
+<li><strong>Noise Offset (<code class="svelte-1s7xsui">noise_offset</code>)</strong>: Implements a diffusion process with offset noise, enhancing generation results for dark or bright images.</li>
+<li><strong>Regularization Data Directory (<code class="svelte-1s7xsui">reg_data_dir</code>)</strong>: Specifies the directory for regularization data, influencing the quality of regularization images during training.</li></ul>
 <h3 id="fine-tuning"><a aria-hidden="true" tabindex="-1" href="#fine-tuning"><span class="icon icon-link"></span></a>Fine Tuning</h3>
 <p>Once training has completed, it’s time to fine tune the model through visual inference with each step saved.  We have 45 LoRAs but we only need to go through the higher steps that were output.  Each represents a different LoRA saved at different epochs of the training session.</p>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853752/blog/rwesmvkg6k7nptpoixc0.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
@@ -265,16 +265,16 @@ setlocal EnableDelayedExpansion
 </div>
 <h4 id="workflow-with-auto1111-webui"><a aria-hidden="true" tabindex="-1" href="#workflow-with-auto1111-webui"><span class="icon icon-link"></span></a>Workflow with Auto1111 WebUI</h4>
 <p>We’re going to use <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="nofollow">Stable Diffusion web UI</a> to interface to fine tune the training output LoRA.  There are other web UIs available to inference with Stable Diffusion.  Personally preference, I like this better because the application is laid out like a data science tool with many options at your fingertips.</p>
-<p>We’re going to use the <code>X/Y/Z plot</code> script to compare different epochs.</p>
+<p>We’re going to use the <code class="svelte-1s7xsui">X/Y/Z plot</code> script to compare different epochs.</p>
 <ul><li>Select the text 2 image tab.  Enter a generic prompt princeadam, portrait, <princeadam0001:0.7></princeadam0001:0.7></li>
 <li>In generation parameters and select the X/Y/Z plot script.</li>
-<li>Select <code>Prompt SR</code> for Prompt Replace.  We’re going to replace <princeadam0001:0.7>with different epoch: <princeadam0001:0.7>, <princeadam0003:0.7>, <princeadam0023:0.7></princeadam0023:0.7></princeadam0003:0.7></princeadam0001:0.7></princeadam0001:0.7></li>
-<li>Select a fast sampler like <code>DPM2 KARRAS</code></li>
-<li>CFG Scale set to <code>7</code> and Steps to <code>20</code></li></ul>
-<p>After the inference finishes, a grid image will be generated.  Use those results to pick which epoch best represents the subject.  From there, we will fine tune more and view the strength of the LoRA.  Test an entire range to get an accutre view using plot grids to figure out a prefered range for your LoRA’s strength.  Recall setting <code>network_dim</code> and <code>network_alpha</code>?  Those are the settings that directly control the output strength mentioned earlier.
+<li>Select <code class="svelte-1s7xsui">Prompt SR</code> for Prompt Replace.  We’re going to replace <code class="svelte-1s7xsui">&lt;princeadam0001:0.7&gt;</code> with different epoch: <code class="svelte-1s7xsui">&lt;princeadam0001:0.7&gt;, &lt;princeadam0003:0.7&gt;, &lt;princeadam0023:0.7&gt;</code></li>
+<li>Select a fast sampler like <code class="svelte-1s7xsui">DPM2 KARRAS</code></li>
+<li>CFG Scale set to <code class="svelte-1s7xsui">7</code> and Steps to <code class="svelte-1s7xsui">20</code></li></ul>
+<p>After the inference finishes, a grid image will be generated.  Use those results to pick which epoch best represents the subject.  From there, we will fine tune more and view the strength of the LoRA.  Test an entire range to get an accutre view using plot grids to figure out a prefered range for your LoRA’s strength.  Recall setting <code class="svelte-1s7xsui">network_dim</code> and <code class="svelte-1s7xsui">network_alpha</code>?  Those are the settings that directly control the output strength mentioned earlier.
 Use another </p>
-<ul><li>Select <code>Prompt SR</code> for Prompt Replace.  We’re going to replace the weights <princeadam12:0.4>,<princeadam12:0.5>, <princeadam12:0.6>, <princeadam12:0.7>, <princeadam12:0.8>, <princeadam12:0.9>, <princeadam12:1.0>`</princeadam12:1.0></princeadam12:0.9></princeadam12:0.8></princeadam12:0.7></princeadam12:0.6></princeadam12:0.5></princeadam12:0.4></li>
-<li>Use Prompt SR to generate a variety of angles: Select <code>Prompt SR</code> for Prompt Replace.  Replace upper_body with different camera angles: from_below, from_above, close_up.</li>
+<ul><li>Select <code class="svelte-1s7xsui">Prompt SR</code> for Prompt Replace.  We’re going to replace the weights <code class="svelte-1s7xsui">&lt;princeadam12:0.4&gt;, &lt;princeadam12:0.5&gt;, &lt;princeadam12:0.6&gt;, &lt;princeadam12:0.7&gt;, &lt;princeadam12:0.8&gt;, &lt;princeadam12:0.9&gt;, &lt;princeadam12:1.0&gt;</code></li>
+<li>Use Prompt SR to generate a variety of angles: Select <code class="svelte-1s7xsui">Prompt SR</code> for Prompt Replace.  Replace upper_body with different camera angles: from_below, from_above, close_up.</li>
 <li>If you found results you liked, keep testing different situations to see if your Lora can be creative and do things not in the training data.</li>
 <li>Use a Z axis and test different Checkpoint models with the LoRA model.  You will still see likeness when using different models due to the weights being the same in the LoRA model.</li></ul>
 <h4 id="issues-to-look-for"><a aria-hidden="true" tabindex="-1" href="#issues-to-look-for"><span class="icon icon-link"></span></a>Issues to look for</h4>
@@ -283,31 +283,31 @@ Use another </p>
 <li><strong>Overfit:</strong> Overly restrictive, consider dataset size, tagging quality, or slight overcooking as possible issues.</li>
 <li><strong>Mismatched:</strong> Doesn’t match expectations, it might be undercooked or have a low-quality dataset.</li></ul>
 <p>If you’re experiencing these issues, it’s not uncommon to throw away the results and start again with a different set of parameters based on the previous setup.  Training a LoRA that consistantly gives great results with each inference requires patience and fine tuning.</p>
-<p class="svelte-vl4fv1"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853753/blog/ewecjb3spk7k9i07somp.png" alt="image" class="svelte-vl4fv1"></p>
+<p class="svelte-1s7xsui"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853753/blog/ewecjb3spk7k9i07somp.png" alt="image" class="svelte-1s7xsui"></p>
 <h4 id="troubleshooting"><a aria-hidden="true" tabindex="-1" href="#troubleshooting"><span class="icon icon-link"></span></a>Troubleshooting</h4>
 <p>If you find your results aren’t what you expected, make note of the results and compare to what you were expecting.  From there, figure out additional options to take when re-training:</p>
-<ul><li>Lower input images, less regularization images needed.  Remember Dreambooth calls for about <code>200</code> regularization images per training image.</li>
-<li>Repeats of regularization images, but may overfit more.  Increasing the <code>repetition_count</code> will cycle through the images more but the results may have results that overfit the model.</li>
+<ul><li>Lower input images, less regularization images needed.  Remember Dreambooth calls for about <code class="svelte-1s7xsui">200</code> regularization images per training image.</li>
+<li>Repeats of regularization images, but may overfit more.  Increasing the <code class="svelte-1s7xsui">repetition_count</code> will cycle through the images more but the results may have results that overfit the model.</li>
 <li>Create more regularization images without increasing repeats will help with the overfitting.</li></ul>
-<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Issue</th>
-<th class="svelte-vl4fv1">Situation</th>
-<th class="svelte-vl4fv1">Recommendation</th></tr></thead>
-<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Varying quality</td>
-<td class="svelte-vl4fv1">Results differ from expectations</td>
-<td class="svelte-vl4fv1">Evaluate the quality and quantity of regularization images. Adjust the number and selection and check for better results.</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Inadequate regularization for input data</td>
-<td class="svelte-vl4fv1">Lower input images, less regularization needed</td>
-<td class="svelte-vl4fv1">Consider reducing the number of input images or increasing the quantity and diversity of regularization images.</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Overfitting due to repetition</td>
-<td class="svelte-vl4fv1">Repeats of regularization images, risk of overfitting</td>
-<td class="svelte-vl4fv1">Adjust the <code>repetition_count</code> to balance cycling through images without overfitting. Monitor results for improvements.</td></tr>
-<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Mitigate overfitting while increasing diversity</td>
-<td class="svelte-vl4fv1">Create more regularization images without repeats</td>
-<td class="svelte-vl4fv1">Generate additional regularization images without increasing repetitions. Enhance model adaptability without overfitting.</td></tr></tbody></table>
+<table class="svelte-1s7xsui"><thead class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><th class="svelte-1s7xsui">Issue</th>
+<th class="svelte-1s7xsui">Situation</th>
+<th class="svelte-1s7xsui">Recommendation</th></tr></thead>
+<tbody class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Varying quality</td>
+<td class="svelte-1s7xsui">Results differ from expectations</td>
+<td class="svelte-1s7xsui">Evaluate the quality and quantity of reg images. Adjust number and selection - check for better results.</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Inadequate regularization for input data</td>
+<td class="svelte-1s7xsui">Lower input images, less regularization needed</td>
+<td class="svelte-1s7xsui">Reduce the number of input images or increasing the quantity of reg images.</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Overfitting due to repetition</td>
+<td class="svelte-1s7xsui">Repeats of reg images, risk of overfitting</td>
+<td class="svelte-1s7xsui">Adjust repetition_count to balance cycling through images without overfitting. Monitor results.</td></tr>
+<tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Mitigate overfitting while increasing diversity</td>
+<td class="svelte-1s7xsui">Create more reg images without repeats</td>
+<td class="svelte-1s7xsui">Generate additional reg images without increasing repetitions. Enhance adaptability without overfitting.</td></tr></tbody></table>
 <h3 id="results"><a aria-hidden="true" tabindex="-1" href="#results"><span class="icon icon-link"></span></a>Results</h3>
 <p>The delicate dance between overfitting and generalization has been choreographed with precision, allowing the model to navigate a nuanced artistic style in combining an action figure and regularization images.</p>
 <p>Thoughtful application of regularization techniques and careful dataset curation are important while preparing to train a model. The results not only showcase the model’s ability to learn and adapt but also emphasize the importance of striking the right balance between simplicity and complexity for artistic performance.</p>
-<p class="svelte-vl4fv1"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853755/blog/ygl92e7oo9dghunhp0dg.png" alt="image" class="svelte-vl4fv1"></p>
+<p class="svelte-1s7xsui"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853755/blog/ygl92e7oo9dghunhp0dg.png" alt="image" class="svelte-1s7xsui"></p>
 <p>The journey doesn’t end here; it extends into the realm of fine-tuning and continuous exploration. Each epoch, each adjustment, contributes to the evolution of the LoRA model, uncovering new dimensions of creativity and paving the way for future experiments in the realm of stable diffusion and generative art.</p>
 <hr>
 	<div class="subscribe svelte-s12rf8"><h2 class="svelte-s12rf8">Training Dataset</h2>
@@ -361,10 +361,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1ftz3ty">
-		import { start } from "/_app/immutable/start-4b655c6a.js";
+		<script type="module" data-sveltekit-hydrate="1uzx34k">
+		import { start } from "/_app/immutable/start-bd9e4106.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1ftz3ty"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1uzx34k"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

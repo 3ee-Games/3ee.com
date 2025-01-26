@@ -17,11 +17,11 @@
 		<script type="application/ld+json" ✂prettier:content✂="CgkJICAke0pTT04uc3RyaW5naWZ5KHNjaGVtYSl9CgkJ">{}</script>
 		<!-- HTML_TAG_END -->
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-0ce23f93.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/action-figure-art.md-1ae8c5d6.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/action-figure-art.md-0e202110.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-a0dba1c8.css">
-	<link rel="modulepreload" href="/_app/immutable/start-03a37488.js">
+	<link rel="modulepreload" href="/_app/immutable/start-4b655c6a.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-6772cc57.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-555f61fe.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-526d3695.js">
@@ -84,7 +84,7 @@
 </picture>
 <h2 id="what-are-regularization-images"><a aria-hidden="true" tabindex="-1" href="#what-are-regularization-images"><span class="icon icon-link"></span></a>What are Regularization Images?</h2>
 <p>Regularization images are used for prior-preservation loss to prevent overfitting in a machine learning model.  To further illustrate: regularization images are extra pictures that are used to help Stable Diffusion learn better. </p>
-<blockquote class="svelte-1lvyfvh"><p class="svelte-1lvyfvh">Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
+<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1">Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/rhor7neqffebs3mkb4jl.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854420/blog/paxaerqrspuqlkckjf0d.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
 
@@ -98,24 +98,24 @@
 <p>By creating regularization images, you’re defining a “class” of what you’re trying to invert. For example, if you’re trying to invert a skateboard, you might want to create a collection of skateboard images for regularization. This is to prevent your training from drifting into another class, let’s say “bike” or “roller skates.” It also helps guard against heading towards a “toy skateboard” if you are using real references and not interpretations.</p>
 <p>Regularization ensures that the images you’re trying to invert don’t overfit. Overfitting occurs if the likeness to the images you generate becomes too similar to the training set. One challenge with textual inversions is the potential loss of editability during inversion, especially with prolonged training. The inclusion of regularization images and adjustments to learning rates helps mitigate this issue.</p>
 <p>In essence, regularization ensures your model stays on course, navigating the delicate balance between fidelity to the training set and adaptability to novel inputs.</p>
-<table class="svelte-1lvyfvh"><thead><tr><th>Aspect</th>
-<th>Regularization</th>
-<th>No Regularization</th></tr></thead>
-<tbody><tr><td class="svelte-1lvyfvh"><strong>Definition</strong></td>
-<td class="svelte-1lvyfvh">Defines skateboard class</td>
-<td class="svelte-1lvyfvh">No specific class</td></tr>
-<tr><td class="svelte-1lvyfvh"><strong>Example</strong></td>
-<td class="svelte-1lvyfvh">Uses skateboard images</td>
-<td class="svelte-1lvyfvh">No specific images</td></tr>
-<tr><td class="svelte-1lvyfvh"><strong>Purpose</strong></td>
-<td class="svelte-1lvyfvh">Prevents drift, focuses on skateboard class</td>
-<td class="svelte-1lvyfvh">May drift to unrelated classes</td></tr>
-<tr><td class="svelte-1lvyfvh"><strong>Overfitting</strong></td>
-<td class="svelte-1lvyfvh">Guards against overfitting</td>
-<td class="svelte-1lvyfvh">Higher risk of overfitting</td></tr></tbody></table>
+<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Aspect</th>
+<th class="svelte-vl4fv1">Regularization</th>
+<th class="svelte-vl4fv1">No Regularization</th></tr></thead>
+<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Definition</strong></td>
+<td class="svelte-vl4fv1">Defines skateboard class</td>
+<td class="svelte-vl4fv1">No specific class</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Example</strong></td>
+<td class="svelte-vl4fv1">Uses skateboard images</td>
+<td class="svelte-vl4fv1">No specific images</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Purpose</strong></td>
+<td class="svelte-vl4fv1">Prevents drift, focuses on skateboard class</td>
+<td class="svelte-vl4fv1">May drift to unrelated classes</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1"><strong>Overfitting</strong></td>
+<td class="svelte-vl4fv1">Guards against overfitting</td>
+<td class="svelte-vl4fv1">Higher risk of overfitting</td></tr></tbody></table>
 <p>Regularization helps us make sure our models can correctly classify new data points they were not trained on. We call this ability to work well with new data “generalization.” If we don’t use regularization, our models can become too complex and “overfit” to the training data, meaning they won’t work well with new data.</p>
 <p>Using too much regularization can be a problem. It can lead to “underfitting,” which means our model doesn’t work well even with the training data. This happens when we limit our model’s ability too much.</p>
-<blockquote class="svelte-1lvyfvh"><p class="svelte-1lvyfvh">Imagine a graph of points. We want to find a function that fits those points well. We could choose a simple function, which might not fit the points very well. Or we could choose a very complex function that fits the points perfectly, but it might not work well with new points we haven’t seen before. The key is to find the right balance between simplicity and complexity to achieve the best performance.</p></blockquote>
+<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1">Imagine a graph of points. We want to find a function that fits those points well. We could choose a simple function, which might not fit the points very well. Or we could choose a very complex function that fits the points perfectly, but it might not work well with new points we haven’t seen before. The key is to find the right balance between simplicity and complexity to achieve the best performance.</p></blockquote>
 <p><strong>Scenario 1</strong>: You have only a few pictures of your cat and no pictures of other cats.  If you train the model on just these few pictures - won’t learn enough to accurately recognize your cat.</p>
 <p><strong>Solution</strong>: consider using regularization images to help the model learn more about cat features.</p>
 <p><strong>Scenario 2</strong>: You have a lot of pictures of other cats, but only a few pictures of your cat.  If you train the model on all of these pictures, it might get confused and not learn how to accurately recognize your cat.</p>
@@ -124,20 +124,20 @@
 <p>Providing too much data leads to <strong>divergence</strong>. Divergence happens when the model produces random outputs that do not accurately represent the subject’s likeness. This can occur because the model is trying to learn from too many images with inconsistent features, causing it to become confused and produce poor results.</p>
 <p>To avoid divergence, we need to ensure the model is focusing on the features that are unique and consistent with your subject.  This starts from carefully curating the dataset by selecting high-quality images that accurately represent the object.</p>
 <p>Training a model to recognize specific objects requires careful consideration of the dataset and the use of regularization techniques to ensure the model is focused on the right features and is not prone to divergence.</p>
-<table class="svelte-1lvyfvh"><thead><tr><th>Situation</th>
-<th>Outcome</th></tr></thead>
-<tbody><tr><td class="svelte-1lvyfvh">Too many regularization images or inconsistent features</td>
-<td class="svelte-1lvyfvh">Model performance suffers, leading to inaccurate predictions.</td></tr>
-<tr><td class="svelte-1lvyfvh">Lack of focus on unique and consistent features</td>
-<td class="svelte-1lvyfvh">Difficulty learning meaningful patterns, impacting prediction accuracy.</td></tr>
-<tr><td class="svelte-1lvyfvh">Need for careful dataset curation</td>
-<td class="svelte-1lvyfvh">High-quality image selection to avoid confusion and divergence.</td></tr>
-<tr><td class="svelte-1lvyfvh">Importance of regularization techniques</td>
-<td class="svelte-1lvyfvh">Proper use ensures model focuses on relevant features for accurate predictions.</td></tr></tbody></table>
+<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Situation</th>
+<th class="svelte-vl4fv1">Outcome</th></tr></thead>
+<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Too many regularization images or inconsistent features</td>
+<td class="svelte-vl4fv1">Model performance suffers, leading to inaccurate predictions.</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Lack of focus on unique and consistent features</td>
+<td class="svelte-vl4fv1">Difficulty learning meaningful patterns, impacting prediction accuracy.</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Need for careful dataset curation</td>
+<td class="svelte-vl4fv1">High-quality image selection to avoid confusion and divergence.</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Importance of regularization techniques</td>
+<td class="svelte-vl4fv1">Proper use ensures model focuses on relevant features for accurate predictions.</td></tr></tbody></table>
 <h2 id="generating-regularization-images"><a aria-hidden="true" tabindex="-1" href="#generating-regularization-images"><span class="icon icon-link"></span></a>Generating Regularization images</h2>
 <p>Regularization images are generated using model you’re going to train with before training.  These generated images are based on the class name (e.g., <code>1boy</code>).</p>
 <p>According to the Dreambooth technique, <code>200</code> regularization images per training image.  For example, if you have <code>16</code> images: <code>200 * 16 = 3200</code> total regularization images.  When training, the math involved for calculating total steps is:</p>
-<blockquote class="svelte-1lvyfvh"><p class="svelte-1lvyfvh"><code>repeats * training images &gt;= repeats * regularization images</code></p></blockquote>
+<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1"><code>repeats * training images &gt;= repeats * regularization images</code></p></blockquote>
 <p>The quality of regularization images impacts the model’s performance, as they are learned during training. Ideally, a few hundred high-quality regularized images should be prepared. Inadequate quantities may hinder generalization of class images, affecting the model’s ability to learn distinctive features.</p>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/fbytgzx431mlr1cirrwa.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853753/blog/syplrg2ay7kbonyjpxxu.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
@@ -198,7 +198,7 @@ setlocal EnableDelayedExpansion
 <p>Output: <code>aburbres,princeadam,1boy,close-up,purple_vest</code> saved in a text file with the same name as image.</p>
 <h2 id="training-a-lora"><a aria-hidden="true" tabindex="-1" href="#training-a-lora"><span class="icon icon-link"></span></a>Training a LoRA</h2>
 <p>Now we’re going to setup all the training data to create a LoRA model.  We’re going to go over how to setup your training data to use regularization images.</p>
-<blockquote class="svelte-1lvyfvh"><p class="svelte-1lvyfvh">Learning how to train a LoRA is a completely different subject all on its own.  Learn more about LoRA training: LINK HERE.  </p></blockquote>
+<blockquote class="svelte-vl4fv1"><p class="svelte-vl4fv1">Learning how to train a LoRA is a completely different subject all on its own.  Learn more about LoRA training: LINK HERE.  </p></blockquote>
 <h3 id="directory-setup"><a aria-hidden="true" tabindex="-1" href="#directory-setup"><span class="icon icon-link"></span></a>Directory setup</h3>
 <p>In your configuration json, use <code>reg_data_dir</code> to point to the directory with your regularization images:</p>
 <pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
@@ -213,19 +213,19 @@ setlocal EnableDelayedExpansion
 <ul><li>train_data_dir<ul><li>10_princeadam</li></ul></li>
 <li>reg_dir<ul><li>1_1boy</li></ul></li></ul>
 <p>For example, with the prompt “frog” and not repeating the data (only once), it would look like this:</p>
-<p class="svelte-1lvyfvh"><img src="https://user-images.githubusercontent.com/52813779/210770897-329758e5-3675-49f1-b345-c135f1725832.png" alt="image" class="svelte-1lvyfvh"></p>
+<p class="svelte-vl4fv1"><img src="https://user-images.githubusercontent.com/52813779/210770897-329758e5-3675-49f1-b345-c135f1725832.png" alt="image" class="svelte-vl4fv1"></p>
 <h3 id="training-settings"><a aria-hidden="true" tabindex="-1" href="#training-settings"><span class="icon icon-link"></span></a>Training Settings</h3>
 <p>The training setup we’re going to use is:  <code>Number of images * repeats * epoch / batch size = total steps</code>.  Based on our training data, we have 45 images and going for 4500 steps:</p>
-<table class="svelte-1lvyfvh"><thead><tr><th>Number of Images</th>
-<th>Repeats</th>
-<th>Epochs</th>
-<th>Batch Size</th>
-<th>Total Steps</th></tr></thead>
-<tbody><tr><td class="svelte-1lvyfvh">45</td>
-<td class="svelte-1lvyfvh">10</td>
-<td class="svelte-1lvyfvh">20</td>
-<td class="svelte-1lvyfvh">2</td>
-<td class="svelte-1lvyfvh">4500</td></tr></tbody></table>
+<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Number of Images</th>
+<th class="svelte-vl4fv1">Repeats</th>
+<th class="svelte-vl4fv1">Epochs</th>
+<th class="svelte-vl4fv1">Batch Size</th>
+<th class="svelte-vl4fv1">Total Steps</th></tr></thead>
+<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">45</td>
+<td class="svelte-vl4fv1">10</td>
+<td class="svelte-vl4fv1">20</td>
+<td class="svelte-vl4fv1">2</td>
+<td class="svelte-vl4fv1">4500</td></tr></tbody></table>
 <p>Now let’s focus on these training settings:</p>
 <pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
   <span class="token property">"learning_rate"</span><span class="token operator">:</span> <span class="token string">"5e-4"</span><span class="token punctuation">,</span>
@@ -266,14 +266,15 @@ setlocal EnableDelayedExpansion
 <h4 id="workflow-with-auto1111-webui"><a aria-hidden="true" tabindex="-1" href="#workflow-with-auto1111-webui"><span class="icon icon-link"></span></a>Workflow with Auto1111 WebUI</h4>
 <p>We’re going to use <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="nofollow">Stable Diffusion web UI</a> to interface to fine tune the training output LoRA.  There are other web UIs available to inference with Stable Diffusion.  Personally preference, I like this better because the application is laid out like a data science tool with many options at your fingertips.</p>
 <p>We’re going to use the <code>X/Y/Z plot</code> script to compare different epochs.</p>
-<ul><li>Select the text 2 image tab.  Enter a generic prompt <code>princeadam, portrait, &lt;princeadam0001:0.7&gt;</code></li>
-<li>In generation parameters and select the <code>X/Y/Z plot</code> script.</li>
-<li>Select <code>Prompt SR</code> for Prompt Replace.  We’re going to replace <code>&lt;princeadam0001:0.7&gt;</code> with different epoch: <code>&lt;princeadam0001:0.7&gt;</code>, <code>&lt;princeadam0003:0.7&gt;</code>, <code>&lt;princeadam0023:0.7&gt;</code></li>
+<ul><li>Select the text 2 image tab.  Enter a generic prompt princeadam, portrait, <princeadam0001:0.7></princeadam0001:0.7></li>
+<li>In generation parameters and select the X/Y/Z plot script.</li>
+<li>Select <code>Prompt SR</code> for Prompt Replace.  We’re going to replace <princeadam0001:0.7>with different epoch: <princeadam0001:0.7>, <princeadam0003:0.7>, <princeadam0023:0.7></princeadam0023:0.7></princeadam0003:0.7></princeadam0001:0.7></princeadam0001:0.7></li>
 <li>Select a fast sampler like <code>DPM2 KARRAS</code></li>
 <li>CFG Scale set to <code>7</code> and Steps to <code>20</code></li></ul>
-<p>After the inference finishes, a grid image will be generated.  Use those results to pick which epoch best represents the subject.  From there, we will fine tune more and view the strength of the LoRA.  Test an entire range to get an accutre view using plot grids to figure out a prefered range for your LoRA’s strength.  Recall setting <code>network_dim</code> and <code>network_alpha</code>?  Those are the settings that directly control the output strength mentioned earlier.</p>
-<ul><li>Select <code>Prompt SR</code> for Prompt Replace.  We’re going to replace the weights <code>&lt;princeadam12:0.4&gt;</code>,<code>&lt;princeadam12:0.5&gt;</code>, <code>&lt;princeadam12:0.6&gt;</code>, <code>&lt;princeadam12:0.7&gt;</code>, <code>&lt;princeadam12:0.8&gt;</code>, <code>&lt;princeadam12:0.9&gt;</code>, <code>&lt;princeadam12:1.0&gt;</code></li>
-<li>Use another <code>Prompt SR</code> to generate a variety of different angles: Select <code>Prompt SR</code> for Prompt Replace.  Replace <code>upper_body</code> with different camera angles: <code>from_below</code>, <code>from_above</code>, <code>close_up</code></li>
+<p>After the inference finishes, a grid image will be generated.  Use those results to pick which epoch best represents the subject.  From there, we will fine tune more and view the strength of the LoRA.  Test an entire range to get an accutre view using plot grids to figure out a prefered range for your LoRA’s strength.  Recall setting <code>network_dim</code> and <code>network_alpha</code>?  Those are the settings that directly control the output strength mentioned earlier.
+Use another </p>
+<ul><li>Select <code>Prompt SR</code> for Prompt Replace.  We’re going to replace the weights <princeadam12:0.4>,<princeadam12:0.5>, <princeadam12:0.6>, <princeadam12:0.7>, <princeadam12:0.8>, <princeadam12:0.9>, <princeadam12:1.0>`</princeadam12:1.0></princeadam12:0.9></princeadam12:0.8></princeadam12:0.7></princeadam12:0.6></princeadam12:0.5></princeadam12:0.4></li>
+<li>Use Prompt SR to generate a variety of angles: Select <code>Prompt SR</code> for Prompt Replace.  Replace upper_body with different camera angles: from_below, from_above, close_up.</li>
 <li>If you found results you liked, keep testing different situations to see if your Lora can be creative and do things not in the training data.</li>
 <li>Use a Z axis and test different Checkpoint models with the LoRA model.  You will still see likeness when using different models due to the weights being the same in the LoRA model.</li></ul>
 <h4 id="issues-to-look-for"><a aria-hidden="true" tabindex="-1" href="#issues-to-look-for"><span class="icon icon-link"></span></a>Issues to look for</h4>
@@ -282,31 +283,31 @@ setlocal EnableDelayedExpansion
 <li><strong>Overfit:</strong> Overly restrictive, consider dataset size, tagging quality, or slight overcooking as possible issues.</li>
 <li><strong>Mismatched:</strong> Doesn’t match expectations, it might be undercooked or have a low-quality dataset.</li></ul>
 <p>If you’re experiencing these issues, it’s not uncommon to throw away the results and start again with a different set of parameters based on the previous setup.  Training a LoRA that consistantly gives great results with each inference requires patience and fine tuning.</p>
-<p class="svelte-1lvyfvh"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853753/blog/ewecjb3spk7k9i07somp.png" alt="image" class="svelte-1lvyfvh"></p>
+<p class="svelte-vl4fv1"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853753/blog/ewecjb3spk7k9i07somp.png" alt="image" class="svelte-vl4fv1"></p>
 <h4 id="troubleshooting"><a aria-hidden="true" tabindex="-1" href="#troubleshooting"><span class="icon icon-link"></span></a>Troubleshooting</h4>
 <p>If you find your results aren’t what you expected, make note of the results and compare to what you were expecting.  From there, figure out additional options to take when re-training:</p>
 <ul><li>Lower input images, less regularization images needed.  Remember Dreambooth calls for about <code>200</code> regularization images per training image.</li>
 <li>Repeats of regularization images, but may overfit more.  Increasing the <code>repetition_count</code> will cycle through the images more but the results may have results that overfit the model.</li>
 <li>Create more regularization images without increasing repeats will help with the overfitting.</li></ul>
-<table class="svelte-1lvyfvh"><thead><tr><th>Issue</th>
-<th>Situation</th>
-<th>Recommendation</th></tr></thead>
-<tbody><tr><td class="svelte-1lvyfvh">Varying quality</td>
-<td class="svelte-1lvyfvh">Results differ from expectations</td>
-<td class="svelte-1lvyfvh">Evaluate the quality and quantity of regularization images. Adjust the number and selection and check for better results.</td></tr>
-<tr><td class="svelte-1lvyfvh">Inadequate regularization for input data</td>
-<td class="svelte-1lvyfvh">Lower input images, less regularization needed</td>
-<td class="svelte-1lvyfvh">Consider reducing the number of input images or increasing the quantity and diversity of regularization images.</td></tr>
-<tr><td class="svelte-1lvyfvh">Overfitting due to repetition</td>
-<td class="svelte-1lvyfvh">Repeats of regularization images, risk of overfitting</td>
-<td class="svelte-1lvyfvh">Adjust the <code>repetition_count</code> to balance cycling through images without overfitting. Monitor results for improvements.</td></tr>
-<tr><td class="svelte-1lvyfvh">Mitigate overfitting while increasing diversity</td>
-<td class="svelte-1lvyfvh">Create more regularization images without repeats</td>
-<td class="svelte-1lvyfvh">Generate additional regularization images without increasing repetitions. Enhance model adaptability without overfitting.</td></tr></tbody></table>
+<table class="svelte-vl4fv1"><thead class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><th class="svelte-vl4fv1">Issue</th>
+<th class="svelte-vl4fv1">Situation</th>
+<th class="svelte-vl4fv1">Recommendation</th></tr></thead>
+<tbody class="svelte-vl4fv1"><tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Varying quality</td>
+<td class="svelte-vl4fv1">Results differ from expectations</td>
+<td class="svelte-vl4fv1">Evaluate the quality and quantity of regularization images. Adjust the number and selection and check for better results.</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Inadequate regularization for input data</td>
+<td class="svelte-vl4fv1">Lower input images, less regularization needed</td>
+<td class="svelte-vl4fv1">Consider reducing the number of input images or increasing the quantity and diversity of regularization images.</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Overfitting due to repetition</td>
+<td class="svelte-vl4fv1">Repeats of regularization images, risk of overfitting</td>
+<td class="svelte-vl4fv1">Adjust the <code>repetition_count</code> to balance cycling through images without overfitting. Monitor results for improvements.</td></tr>
+<tr class="svelte-vl4fv1"><td class="svelte-vl4fv1">Mitigate overfitting while increasing diversity</td>
+<td class="svelte-vl4fv1">Create more regularization images without repeats</td>
+<td class="svelte-vl4fv1">Generate additional regularization images without increasing repetitions. Enhance model adaptability without overfitting.</td></tr></tbody></table>
 <h3 id="results"><a aria-hidden="true" tabindex="-1" href="#results"><span class="icon icon-link"></span></a>Results</h3>
 <p>The delicate dance between overfitting and generalization has been choreographed with precision, allowing the model to navigate a nuanced artistic style in combining an action figure and regularization images.</p>
 <p>Thoughtful application of regularization techniques and careful dataset curation are important while preparing to train a model. The results not only showcase the model’s ability to learn and adapt but also emphasize the importance of striking the right balance between simplicity and complexity for artistic performance.</p>
-<p class="svelte-1lvyfvh"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853755/blog/ygl92e7oo9dghunhp0dg.png" alt="image" class="svelte-1lvyfvh"></p>
+<p class="svelte-vl4fv1"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737853755/blog/ygl92e7oo9dghunhp0dg.png" alt="image" class="svelte-vl4fv1"></p>
 <p>The journey doesn’t end here; it extends into the realm of fine-tuning and continuous exploration. Each epoch, each adjustment, contributes to the evolution of the LoRA model, uncovering new dimensions of creativity and paving the way for future experiments in the realm of stable diffusion and generative art.</p>
 <hr>
 	<div class="subscribe svelte-s12rf8"><h2 class="svelte-s12rf8">Training Dataset</h2>
@@ -360,10 +361,10 @@ setlocal EnableDelayedExpansion
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="cg3xeu">
-		import { start } from "/_app/immutable/start-03a37488.js";
+		<script type="module" data-sveltekit-hydrate="1ftz3ty">
+		import { start } from "/_app/immutable/start-4b655c6a.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="cg3xeu"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1ftz3ty"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

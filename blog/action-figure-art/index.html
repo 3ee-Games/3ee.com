@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-a0dba1c8.css">
-	<link rel="modulepreload" href="/_app/immutable/start-2835e7dd.js">
+	<link rel="modulepreload" href="/_app/immutable/start-b61fba82.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-61301625.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-d4f93016.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-526d3695.js">
@@ -84,7 +84,7 @@
 </picture>
 <h2 id="what-are-regularization-images"><a aria-hidden="true" tabindex="-1" href="#what-are-regularization-images"><span class="icon icon-link"></span></a>What are Regularization Images?</h2>
 <p>Regularization images are used for prior-preservation loss to prevent overfitting in a machine learning model.  To further illustrate: regularization images are extra pictures that are used to help Stable Diffusion learn better. </p>
-<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">📄 Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/rhor7neqffebs3mkb4jl.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854420/blog/paxaerqrspuqlkckjf0d.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
 
@@ -115,7 +115,7 @@
 <td class="svelte-1s7xsui">Higher risk of overfitting</td></tr></tbody></table>
 <p>Regularization helps us make sure our models can correctly classify new data points they were not trained on. The ability to work well with new data is called “generalization.” If we don’t use regularization, our models can become too complex and “overfit” to the training data, meaning they won’t work well with new data.</p>
 <p>Using too much regularization can be a problem. It can lead to “underfitting,” which means our model doesn’t work well with the training data. This happens when we limit our model’s ability too much.</p>
-<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">Imagine a graph of points. We need a function that fits them well: a simple one might miss the mark, while an overly complex one could fit perfectly but fail with new data. The goal is to balance simplicity and complexity for optimal performance.</p></blockquote>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">📄 Imagine a graph of points. We need a function that fits them well: a simple one might miss the mark, while an overly complex one could fit perfectly but fail with new data. The goal is to balance simplicity and complexity for optimal performance.</p></blockquote>
 <p><strong>Scenario 1</strong>: You have only a few pictures of your cat and no pictures of other cats.  If you train the model on just these few pictures - won’t learn enough to accurately recognize your cat.</p>
 <p><strong>Solution</strong>: consider using regularization images to help the model learn more about cat features.</p>
 <p><strong>Scenario 2</strong>: You have a lot of pictures of other cats, but only a few pictures of your cat.  If you train the model on all of these pictures, it might get confused and not learn how to accurately recognize your cat.</p>
@@ -123,7 +123,7 @@
 <h2 id="divergence"><a aria-hidden="true" tabindex="-1" href="#divergence"><span class="icon icon-link"></span></a>Divergence</h2>
 <p>Providing too much data leads to <strong>divergence</strong>. Divergence happens when the model produces random outputs that do not accurately represent the subject’s likeness. This can occur because the model is trying to learn from too many images with inconsistent features, causing it to become confused and produce poor results.</p>
 <p>To avoid divergence, we need to ensure the model is focusing on the features that are unique and consistent with your subject.  This starts from carefully curating the dataset by selecting high-quality images that accurately represent the object.</p>
-<p>Training a model to recognize specific objects requires careful consideration of the dataset and the use of regularization techniques to ensure the model is focused on the right features and is not prone to divergence.</p>
+<p>Training a model to recognize objects requires careful consideration of the dataset and the use of regularization to ensure the model is focused on the right features and is not prone to divergence.</p>
 <table class="svelte-1s7xsui"><thead class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><th class="svelte-1s7xsui">Situation</th>
 <th class="svelte-1s7xsui">Outcome</th></tr></thead>
 <tbody class="svelte-1s7xsui"><tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Too many regularization images or inconsistent features</td>
@@ -135,7 +135,7 @@
 <tr class="svelte-1s7xsui"><td class="svelte-1s7xsui">Importance of regularization techniques</td>
 <td class="svelte-1s7xsui">Proper use ensures model focuses on relevant features for accurate predictions.</td></tr></tbody></table>
 <h2 id="generating-regularization-images"><a aria-hidden="true" tabindex="-1" href="#generating-regularization-images"><span class="icon icon-link"></span></a>Generating Regularization images</h2>
-<p>Regularization images are generated using model you’re going to train with before training.  These generated images are based on the class name (e.g., <code class="svelte-1s7xsui">1boy</code>).</p>
+<p>Regularization images are generated using the model you’re going to train with before training.  These generated images are based on the class name (e.g., <code class="svelte-1s7xsui">1boy</code>).</p>
 <p>According to the Dreambooth technique, <code class="svelte-1s7xsui">200</code> regularization images per training image.  For example, if you have <code class="svelte-1s7xsui">16</code> images: <code class="svelte-1s7xsui">200 * 16 = 3200</code> total regularization images.  When training, the math involved for calculating total steps is:</p>
 <blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui"><code class="svelte-1s7xsui">repeats * training images &gt;= repeats * regularization images</code></p></blockquote>
 <p>The quality of regularization images impacts the model’s performance, as they are learned during training. Ideally, a few hundred high-quality regularized images should be prepared. Inadequate quantities may hinder generalization of class images, affecting the model’s ability to learn distinctive features.</p>
@@ -198,7 +198,7 @@ setlocal EnableDelayedExpansion
 <p>Output: <code class="svelte-1s7xsui">aburbres,princeadam,1boy,close-up,purple_vest</code> saved in a text file with the same name as image.</p>
 <h2 id="training-a-lora"><a aria-hidden="true" tabindex="-1" href="#training-a-lora"><span class="icon icon-link"></span></a>Training a LoRA</h2>
 <p>Now we’re going to setup all the training data to create a LoRA model.  We’re going to go over how to setup your training data to use regularization images with <a href="https://github.com/kohya-ss/sd-scripts" rel="nofollow">kohya-ss/sd-scripts</a>.</p>
-<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">Learning how to train a LoRA is a completely different subject all on its own.  See <a href="https://github.com/darkstorm2150/sd-scripts/blob/main/docs/train_README-en.md" rel="nofollow">Kohya SD script documentation</a>.  </p></blockquote>
+<blockquote class="svelte-1s7xsui"><p class="svelte-1s7xsui">📄 Learning how to train a LoRA is a completely different subject all on its own.  See <a href="https://github.com/darkstorm2150/sd-scripts/blob/main/docs/train_README-en.md" rel="nofollow">Kohya SD script documentation</a>.  </p></blockquote>
 <h3 id="directory-setup"><a aria-hidden="true" tabindex="-1" href="#directory-setup"><span class="icon icon-link"></span></a>Directory setup</h3>
 <p>In your configuration json, use <code class="svelte-1s7xsui">reg_data_dir</code> to point to the directory with your regularization images:</p>
 <pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"><span class="token punctuation">&#123;</span>
@@ -360,10 +360,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="53ufwe">
-		import { start } from "/_app/immutable/start-2835e7dd.js";
+		<script type="module" data-sveltekit-hydrate="1hicxyp">
+		import { start } from "/_app/immutable/start-b61fba82.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="53ufwe"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1hicxyp"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-f62d47ba.js",
+    "file": "start-6d8ebd8f.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -355,7 +355,7 @@
     ]
   },
   "src/routes/blog/action-figure-art.md": {
-    "file": "pages/blog/action-figure-art.md-d4f93016.js",
+    "file": "pages/blog/action-figure-art.md-cb0f6723.js",
     "src": "src/routes/blog/action-figure-art.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -370,7 +370,7 @@
       "_index-16dda89e.js"
     ],
     "css": [
-      "assets/pages/blog/action-figure-art.md-1bb66666.css"
+      "assets/pages/blog/action-figure-art.md-0ea1ead6.css"
     ]
   },
   "src/routes/blog/categories/[category].svelte": {
@@ -390,7 +390,7 @@
     ]
   },
   "src/routes/blog/first-party-experience.md": {
-    "file": "pages/blog/first-party-experience.md-ba2e7263.js",
+    "file": "pages/blog/first-party-experience.md-286720cb.js",
     "src": "src/routes/blog/first-party-experience.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -398,7 +398,7 @@
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
       "_ResponsivePicture-526d3695.js",
-      "_SpaceLabTeaser-deb9e995.js",
+      "_SpaceLabTeaser-62860e05.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
@@ -412,14 +412,14 @@
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {
-    "file": "pages/blog/flappy-jacob-prototype.md-767fa163.js",
+    "file": "pages/blog/flappy-jacob-prototype.md-79a47561.js",
     "src": "src/routes/blog/flappy-jacob-prototype.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-deb9e995.js",
+      "_SpaceLabTeaser-62860e05.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
@@ -430,7 +430,7 @@
     ]
   },
   "src/routes/blog/github-actions-101.md": {
-    "file": "pages/blog/github-actions-101.md-7b14b8ce.js",
+    "file": "pages/blog/github-actions-101.md-dc607c8a.js",
     "src": "src/routes/blog/github-actions-101.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -438,7 +438,7 @@
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
       "_IssueTracker-c6a68b55.js",
-      "_SpaceLabTeaser-deb9e995.js",
+      "_SpaceLabTeaser-62860e05.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
@@ -492,14 +492,14 @@
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
-    "file": "pages/blog/phaser-game-react-ui.md-ed4f98aa.js",
+    "file": "pages/blog/phaser-game-react-ui.md-56a6fcb8.js",
     "src": "src/routes/blog/phaser-game-react-ui.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-deb9e995.js",
+      "_SpaceLabTeaser-62860e05.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
@@ -510,14 +510,14 @@
     ]
   },
   "src/routes/blog/pong-kombat-2.md": {
-    "file": "pages/blog/pong-kombat-2.md-cda6f23d.js",
+    "file": "pages/blog/pong-kombat-2.md-32626ef7.js",
     "src": "src/routes/blog/pong-kombat-2.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-deb9e995.js",
+      "_SpaceLabTeaser-62860e05.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
@@ -544,14 +544,14 @@
     ]
   },
   "src/routes/blog/tiled-level-editor-phaser.md": {
-    "file": "pages/blog/tiled-level-editor-phaser.md-397f5411.js",
+    "file": "pages/blog/tiled-level-editor-phaser.md-b23d817f.js",
     "src": "src/routes/blog/tiled-level-editor-phaser.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-deb9e995.js",
+      "_SpaceLabTeaser-62860e05.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
@@ -852,8 +852,8 @@
       "assets/Grid-12c356fe.css"
     ]
   },
-  "_SpaceLabTeaser-deb9e995.js": {
-    "file": "chunks/SpaceLabTeaser-deb9e995.js",
+  "_SpaceLabTeaser-62860e05.js": {
+    "file": "chunks/SpaceLabTeaser-62860e05.js",
     "imports": [
       "_index-2a82a4a8.js",
       "_accountStore-3492c591.js",
@@ -861,7 +861,7 @@
       "_navigation-0e6511d1.js"
     ],
     "css": [
-      "assets/SpaceLabTeaser-921f865c.css"
+      "assets/SpaceLabTeaser-638170fe.css"
     ]
   },
   "_IssueTracker-c6a68b55.js": {

@@ -18,10 +18,10 @@
 		<!-- HTML_TAG_END -->
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-010d24fc.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/action-figure-art.md-c9c94dcc.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture.svelte_svelte_type_style_lang-cf040f97.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-a0dba1c8.css">
-	<link rel="modulepreload" href="/_app/immutable/start-59110f32.js">
+	<link rel="modulepreload" href="/_app/immutable/start-482fdb86.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,10 +31,9 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-f1f965e0.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-9ffcfec8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-526d3695.js">
 </head>
 
 <body>
@@ -77,13 +76,19 @@
 
 		
 
-		<div class="article"><p>I recently conducted an experiment using action figures to create a LoRA model. During the training process, I noticed that the model was learning to draw the action figures with all the paint flaws and inaccurices in the plastic. While there is nothing inherently wrong with those flaws, I wanted to adjust the model to prevent it from resembling a plastic toy. To achieve this, I decided to experiment with regularization images.</p>
-<picture class="svelte-e5c5nc"><source media="(min-width: 100px) and (max-width: 896.98px)" srcset="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737851601/blog/ovnfxvhmbsh3ctbj0pzn.png" width="484" height="256">
-
-	<img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737851602/blog/nu7xnpfs7m0m4mforrpf.png" alt="Action Figure with reg images" width="968" height="512" class="svelte-e5c5nc">
-</picture>
+		<div class="article"><p>Growing up in the ‘80s, I loved vintage action figures—their bold colors, dynamic poses, worn paint and plastic seams. So when I trained a Stable Diffusion LoRA model using photos of my Masters of the Universe Prince Adam figure, I ran into a problem: the AI was too accurate. It perfectly replicated the figure’s plastic texture, paint flaws, and stiff pose, making the results look more like a toy than a legendary hero.</p>
+<p>I wanted to go further—to transform Prince Adam into different styles, free from his plastic origins. That’s where regularization images came in, helping to prevent overfitting and guide the AI’s creative direction. My goal? Keep his iconic costume (white shirt, pink vest) but reimagine him in nostalgic, artistic styles.</p>
+<h4 id="experiment-1-anime-inspired-heroism"><a aria-hidden="true" tabindex="-1" href="#experiment-1-anime-inspired-heroism"><span class="icon icon-link"></span></a>Experiment 1: Anime-Inspired Heroism</h4>
+<p class="svelte-x2kgxs"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737851602/blog/nu7xnpfs7m0m4mforrpf.png" alt="image" class="svelte-x2kgxs"></p>
+<p>I first generated regularization images of anime-style characters wearing Prince Adam’s outfit. This gave the AI two guides:</p>
+<ul><li>My action figure photos (for costume accuracy).</li>
+<li>Stylized anime references (for anatomy and texture).</li></ul>
+<p>The result? A Prince Adam with flowing hair, fabric-like clothing, and dynamic lighting—bridging the gap between toy and anime hero.</p>
+<h4 id="experiment-2-retro-cartoon-resurrection"><a aria-hidden="true" tabindex="-1" href="#experiment-2-retro-cartoon-resurrection"><span class="icon icon-link"></span></a>Experiment 2: Retro Cartoon Resurrection</h4>
+<p class="svelte-x2kgxs"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1738190889/blog/fiz3ariex9rpsoovdccl.png" alt="image" class="svelte-x2kgxs"></p>
+<p>Next, I used screenshots from the original 1983 Masters of the Universe cartoon as regularization images. This transformed the plastic sheen into cel-shaded vibrancy and replaced his stiff pose with a battle-ready stance, straight out of the show.</p>
 <h2 id="what-are-regularization-images"><a aria-hidden="true" tabindex="-1" href="#what-are-regularization-images"><span class="icon icon-link"></span></a>What are Regularization Images?</h2>
-<p>Regularization images are used for prior-preservation loss to prevent overfitting in a machine learning model. They help maintain class consistency while allowing model adaptation to new concepts.</p>
+<p>Regularization images are used to prevent overfitting and language drifting during model training. They work by implementing prior-preservation loss, which ensures the model retains its understanding of the original class (e.g., “1boy” or “person”) while learning new concepts (e.g., a specific action figure). Without regularization, the model might overfit to the training data, losing its ability to generate diverse, class-consistent outputs or correctly interpret prompts. By including generic images of the original class, regularization keeps the model balanced and prevents it from “forgetting” its prior knowledge.</p>
 <blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Regularization tackles two key challenges with model training: overfitting and preserving class distinctions.</p></blockquote>
 <div class="image-compare-container svelte-s79nww"><div style="display: contents; --handle-size:2.5rem; --handle-background-color:rgba(0, 0, 0, 0.6); --handle-background-image:url(&#39;data:image/svg+xml;utf8,&lt;svg viewBox=&quot;0 0 24 24&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M3 12H21M3 12L7 8M3 12L7 16M21 12L17 16M21 12L17 8&quot; stroke=&quot;white&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;&lt;/svg&gt;&#39;); --handle-border-width:0.125rem; --slider-color:#ffffff; --slider-width:0.125rem;"><div class="svelte-compare-image-container svelte-1po6qlg" style="--slider-position: 50%;" data-testid="svelte-compare-image"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854419/blog/rhor7neqffebs3mkb4jl.png" alt="prince adam without reg" class="left-img svelte-1po6qlg">
   <img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737854420/blog/paxaerqrspuqlkckjf0d.png" alt="prince adam trained with regularization images." class="right-img svelte-1po6qlg">
@@ -97,7 +102,7 @@
 </div>
 <p>By creating regularization images, you’re defining a “class” of what you’re trying to invert. For example, if you’re trying to invert a skateboard, you might want to create a collection of skateboard images for regularization. This is to prevent your training from drifting into another class, let’s say “bike” or “roller skates.” It also helps guard against heading towards a “toy skateboard” if you are using real references and not interpretations.</p>
 <p>Regularization ensures that the images you’re trying to invert don’t overfit. Overfitting occurs if the likeness to the images you generate becomes too similar to the training set. One challenge with textual inversions is the potential loss of editability during inversion, especially with prolonged training. The inclusion of regularization images and adjustments to learning rates helps mitigate this issue.</p>
-<p>In essence, regularization ensures your model stays on course, navigating the delicate balance between fidelity to the training set and adaptability to novel inputs.</p>
+<p>Regularization ensures your model stays on course, navigating the delicate balance between fidelity to the training set and adaptability to novel inputs.</p>
 <table class="svelte-x2kgxs"><thead class="svelte-x2kgxs"><tr class="svelte-x2kgxs"><th class="svelte-x2kgxs">Aspect</th>
 <th class="svelte-x2kgxs">Regularization</th>
 <th class="svelte-x2kgxs">No Regularization</th></tr></thead>
@@ -113,10 +118,14 @@
 <p>Regularization helps us make sure our models can correctly classify new data points they were not trained on. The ability to work well with new data is called “generalization.” If we don’t use regularization, our models can become too complex and “overfit” to the training data, meaning they won’t work well with new data.</p>
 <p>Using too much regularization can be a problem. It can lead to “underfitting,” which means our model doesn’t work well with the training data. This happens when we limit our model’s ability too much.</p>
 <blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Imagine a graph of points. We need a function that fits them well: a simple one might miss the mark, while an overly complex one could fit perfectly but fail with new data. The goal is to balance simplicity and complexity for optimal performance.</p></blockquote>
-<p><strong>Scenario 1</strong>: You have only a few pictures of your cat and no pictures of other cats.  If you train the model on just these few pictures - won’t learn enough to accurately recognize your cat.</p>
-<p><strong>Solution</strong>: consider using regularization images to help the model learn more about cat features.</p>
-<p><strong>Scenario 2</strong>: You have a lot of pictures of other cats, but only a few pictures of your cat.  If you train the model on all of these pictures, it might get confused and not learn how to accurately recognize your cat.</p>
-<p><strong>Solution</strong>: using regularization images to help the model focus more on cat features in general, rather than getting distracted by other cats.</p>
+<h4 id="scenario-1-limited-training-data"><a aria-hidden="true" tabindex="-1" href="#scenario-1-limited-training-data"><span class="icon icon-link"></span></a>Scenario 1: Limited Training Data</h4>
+<p><strong>Situation</strong>: You only have a few images of your cat and no other cat images.</p>
+<p><strong>Problem</strong>: The model lacks sufficient data to learn general “cat” features, making it unable to accurately recognize your cat.</p>
+<p><strong>Solution</strong>: Use regularization images of diverse cats to teach the model general cat characteristics, improving its ability to recognize your specific cat.</p>
+<h4 id="scenario-2-imbalanced-training-data"><a aria-hidden="true" tabindex="-1" href="#scenario-2-imbalanced-training-data"><span class="icon icon-link"></span></a>Scenario 2: Imbalanced Training Data</h4>
+<p><strong>Situation</strong>: You have many images of other cats but only a few of your cat.</p>
+<p><strong>Problem</strong>: The model may focus too much on the other cats, failing to learn the unique features of your cat.</p>
+<p><strong>Solution</strong>: Add regularization images of generic cats to help the model focus on general cat features, ensuring it doesn’t get distracted by irrelevant details from the other cats.</p>
 <h2 id="divergence"><a aria-hidden="true" tabindex="-1" href="#divergence"><span class="icon icon-link"></span></a>Divergence</h2>
 <p><strong>Divergence</strong> occurs when a model becomes unstable and fails to learn meaningful patterns, leading to erratic, low-quality outputs. This instability often arises from overly large or inconsistent datasets that lack clear, generalizable features. Instead of accurately capturing the subject’s likeness, the model produces unpredictable or incorrect results.  </p>
 <p>Preventing divergence starts with <strong>careful dataset curation</strong>—selecting high-quality images with consistent and representative features helps the model focus on relevant patterns. Additionally, <strong>regularization techniques</strong> can reinforce learning stability, reducing the risk of both divergence and overfitting to noisy or inconsistent data.</p>
@@ -588,10 +597,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1tyuzar">
-		import { start } from "/_app/immutable/start-59110f32.js";
+		<script type="module" data-sveltekit-hydrate="122kcy9">
+		import { start } from "/_app/immutable/start-482fdb86.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1tyuzar"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="122kcy9"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

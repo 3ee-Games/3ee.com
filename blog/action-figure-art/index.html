@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture.svelte_svelte_type_style_lang-cf040f97.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
-	<link rel="modulepreload" href="/_app/immutable/start-482fdb86.js">
+	<link rel="modulepreload" href="/_app/immutable/start-f5909cc0.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-9ffcfec8.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-48c84d33.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 </head>
@@ -343,7 +343,11 @@ The resolution of the generated outputs should align with the resolution of the 
 <li><a href="https://huggingface.co/datasets/ProGamerGov/StableDiffusion-v1-5-Regularization-Images" rel="nofollow">Stable Diffusion 1.5 Regularization Images</a>: includes art styles, illustration, landscapes, and many other types and themes of images generated with Stable Diffusion 1.5.  </li>
 <li><a href="https://huggingface.co/Aitrepreneur/SDXL_REGULARIZATION_IMAGES/tree/main" rel="nofollow">Aitrepreneur SDXL image set</a>: a large image set generated with Stable Diffusion SDXL.</li></ul>
 <h4 id="captioning-regularization-images"><a aria-hidden="true" tabindex="-1" href="#captioning-regularization-images"><span class="icon icon-link"></span></a>Captioning Regularization images</h4>
-<p>While not required, you can caption regularization images just like how you can with training images.  Since Stable Diffusion Web UI named all of the images with the prompt within the filename, we can easily exact and create <code class="svelte-x2kgxs">txt</code> files with a shell script:</p>
+<p>While captioning regularization images isn’t strictly required, it significantly improves your model’s ability to learn meaningful patterns. Just like training images, captions help Stable Diffusion understand the relationship between visual features and text prompts—critical for maintaining style consistency.</p>
+<p>Here’s the workflow I used:</p>
+<ul><li><strong>Structured Filenames</strong>: Stable Diffusion Web UI automatically embeds prompts in filenames (e.g., <code class="svelte-x2kgxs">princeadam_1boy_closeup.png</code>).</li>
+<li><strong>Automated Extraction</strong>: I wrote a simple script to convert filenames into .txt captions, preserving key details like <code class="svelte-x2kgxs">1boy</code> or <code class="svelte-x2kgxs">purple_vest</code>.</li>
+<li><strong>Manual Verification</strong>: Spot-checked captions to ensure accuracy.</li></ul>
 <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell">@echo off
 setlocal EnableDelayedExpansion EnableExtensions
 
@@ -392,9 +396,10 @@ echo.
 <span class="token builtin class-name">echo</span> Process complete: <span class="token operator">!</span>count<span class="token operator">!</span> files created, <span class="token operator">!</span>error_count<span class="token operator">!</span> errors.
 pause
 </code><!-- HTML_TAG_END --></pre>
-<p>Save this file as <code class="svelte-x2kgxs">filename2txt.bat</code> and place it into the regularization images directory and run: <code class="svelte-x2kgxs">.\filename2txt.bat</code>.  The script extracts the prompt from the filename and outputs a text file with the prompt.  The text file is named the same filename as the image and will be picked up by the text encoder during training.</p>
-<p>Example filename: <code class="svelte-x2kgxs">18967-19144263-izaniak, aburbres, princeadam, 1boy, close-up, purple_vest.png</code></p>
-<p>Output: <code class="svelte-x2kgxs">aburbres,princeadam,1boy,close-up,purple_vest</code> saved in a text file with the same name as image.</p>
+<ol><li>Save this file as <code class="svelte-x2kgxs">filename2txt.bat</code> and place it into the regularization images directory</li>
+<li>Run: <code class="svelte-x2kgxs">.\filename2txt.bat</code>.  The script extracts the prompt from the filename and outputs a text file with the prompt.  The text file is named the same filename as the image and will be picked up by the text encoder during training.</li></ol>
+<ul><li>Example filename: <code class="svelte-x2kgxs">18967-19144263-izaniak, aburbres, princeadam, 1boy, close-up, purple_vest.png</code></li>
+<li>Output: <code class="svelte-x2kgxs">aburbres,princeadam,1boy,close-up,purple_vest</code> saved in a text file with the same name as image.</li></ul>
 <h2 id="training-a-lora"><a aria-hidden="true" tabindex="-1" href="#training-a-lora"><span class="icon icon-link"></span></a>Training a LoRA</h2>
 <p>Now we’re going to setup all the training data to create a LoRA model.  We’re going to go over how to setup your training data to use regularization images with <a href="https://github.com/kohya-ss/sd-scripts" rel="nofollow">kohya-ss/sd-scripts</a>.</p>
 <blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Learning how to train a LoRA is a completely different subject all on its own.  See <a href="https://github.com/darkstorm2150/sd-scripts/blob/main/docs/train_README-en.md" rel="nofollow">Kohya SD script documentation</a>.  </p></blockquote>
@@ -597,10 +602,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="122kcy9">
-		import { start } from "/_app/immutable/start-482fdb86.js";
+		<script type="module" data-sveltekit-hydrate="1pcjboi">
+		import { start } from "/_app/immutable/start-f5909cc0.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="122kcy9"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1pcjboi"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

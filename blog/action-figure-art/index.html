@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture-a0dba1c8.css">
-	<link rel="modulepreload" href="/_app/immutable/start-c3621a05.js">
+	<link rel="modulepreload" href="/_app/immutable/start-59110f32.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-82571e02.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-f1f965e0.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/ResponsivePicture-526d3695.js">
@@ -123,6 +123,7 @@
 <ul><li><strong>Chaotic outputs</strong> The model generates erratic images that lack structure, coherence, or resemblance to the intended subject. This often results from an excessive learning rate, poor dataset quality, or an imbalance between training and regularization images.  </li>
 <li><strong>Exploding gradients</strong> During backpropagation, weight updates grow exponentially, making the model’s parameters uncontrollably large. This leads to unpredictable updates and renders training ineffective. Techniques like gradient clipping can help mitigate this issue.  </li>
 <li><strong>Loss value instability (NaN/infinity values)</strong> The training loss fluctuates wildly, sometimes becoming <code class="svelte-x2kgxs">NaN</code> (not a number) or reaching infinity. This typically indicates a numerical instability caused by extreme learning rates, batch size mismatches, or insufficient regularization.  </li></ul>
+<blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Backpropagation is considered the cornerstone of training deep neural networks, enabling them to learn complex patterns from large datasets.</p></blockquote>
 <h2 id="overfitting"><a aria-hidden="true" tabindex="-1" href="#overfitting"><span class="icon icon-link"></span></a><strong>Overfitting</strong></h2>
 <p>Overfitting happens when a model memorizes the training data instead of learning generalizable patterns, leading to poor performance on new inputs. Signs of overfitting include:  </p>
 <ul><li><strong>Perfectly replicates training samples</strong> The model reproduces training images with extreme accuracy, capturing even minor details and noise, rather than generalizing the features needed to create new, diverse outputs.  </li>
@@ -186,16 +187,107 @@
 <tr class="svelte-x2kgxs"><td class="svelte-x2kgxs">High variance in training data</td>
 <td class="svelte-x2kgxs">Mode collapse</td>
 <td class="svelte-x2kgxs">Curate focused dataset</td></tr></tbody></table>
-<h3 id="monitoring-tips"><a aria-hidden="true" tabindex="-1" href="#monitoring-tips"><span class="icon icon-link"></span></a>Monitoring Tips</h3>
-<ul><li>Track loss curves with tools like <a href="https://www.tensorflow.org/tensorboard" rel="nofollow">TensorBoard</a></li>
-<li>Generate validation images every 100 steps  </li>
-<li>Use gradient clipping (1.0-2.0 norm)  </li>
-<li>Enable mixed precision training  </li>
-<li>Start with conservative learning rates (1e-5 to 1e-6)  </li></ul>
+<hr>
+<h2 id="monitoring-tips"><a aria-hidden="true" tabindex="-1" href="#monitoring-tips"><span class="icon icon-link"></span></a>Monitoring Tips</h2>
+<p>Before we start training the model, let’s go over how we can monitor the process and preview the results as it trains.  For Stable Diffusion model training, I enjoy using <a href="https://github.com/kohya-ss/sd-scripts" rel="nofollow">kohya-ss/sd-scripts</a>.  These scripts can setup monitoring through TensorBoard as well which we will dive in later.</p>
+<h3 id="track-loss-curves"><a aria-hidden="true" tabindex="-1" href="#track-loss-curves"><span class="icon icon-link"></span></a>Track loss curves</h3>
+<p>Loss curves provide real-time feedback on how well the model is learning. They help identify issues like overfitting, divergence, or stalled training.  Use <a href="https://www.tensorflow.org/tensorboard" rel="nofollow">TensorBoard</a> to create these graphs.</p>
+<pre class="language-bash"><!-- HTML_TAG_START --><code class="language-bash"><span class="token comment"># Install TensorBoard</span>
+pip <span class="token function">install</span> tensorboard
+
+<span class="token comment"># Start TensorBoard (point to your log directory)</span>
+tensorboard --logdir<span class="token operator">=</span>./logs</code><!-- HTML_TAG_END --></pre>
+<h4 id="what-to-monitor"><a aria-hidden="true" tabindex="-1" href="#what-to-monitor"><span class="icon icon-link"></span></a>What to Monitor:</h4>
+<ul><li>Training Loss: Should decrease steadily but not too quickly.</li>
+<li>Validation Loss: Should follow a similar trend to training loss. A growing gap between the two indicates overfitting.</li>
+<li>Gradient Norm: Should remain between 0.1 and 10.0. Values outside this range suggest instability.</li></ul>
+<h4 id="warning-signs"><a aria-hidden="true" tabindex="-1" href="#warning-signs"><span class="icon icon-link"></span></a>Warning Signs:</h4>
+<ul><li>Sudden spikes in loss → Likely divergence.</li>
+<li>Loss plateauing too early → Learning rate may be too low.</li>
+<li>Validation loss increasing while training loss decreases → Overfitting.</li></ul>
+<h3 id="generate-validation-images-every-100-steps"><a aria-hidden="true" tabindex="-1" href="#generate-validation-images-every-100-steps"><span class="icon icon-link"></span></a>Generate validation images every 100 steps</h3>
+<p><strong>Why It Matters</strong> : Validation images provide a visual check of the model’s progress and help catch issues like mode collapse or artifacts early.</p>
+<pre class="language-json"><!-- HTML_TAG_START --><code class="language-json"> <span class="token punctuation">&#123;</span>
+  <span class="token property">"validation_frequency"</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  <span class="token property">"num_validation_images"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token property">"validation_prompts"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"photo of 1boy"</span><span class="token punctuation">,</span>
+    <span class="token string">"portrait of a person"</span><span class="token punctuation">,</span>
+    <span class="token string">"full body shot"</span><span class="token punctuation">,</span>
+    <span class="token string">"close-up face"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
+<h4 id="what-to-look-for"><a aria-hidden="true" tabindex="-1" href="#what-to-look-for"><span class="icon icon-link"></span></a>What to Look For:</h4>
+<ul><li>Consistency: Outputs should align with the training data style.</li>
+<li>Artifacts: Check for distortions, noise, or unnatural features.</li>
+<li>Diversity: Ensure the model isn’t collapsing to a single output mode.</li></ul>
+<blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Use a fixed set of validation prompts and seeds to compare outputs across training runs.</p></blockquote>
+<h4 id="use-gradient-clipping"><a aria-hidden="true" tabindex="-1" href="#use-gradient-clipping"><span class="icon icon-link"></span></a>Use Gradient Clipping</h4>
+<p><strong>Why It Matters</strong>: Gradient clipping prevents exploding gradients, which can cause training instability and divergence.  1.0-2.0 Norm.</p>
+<p>Key Insights:</p>
+<ul><li>Gradient Norm <code class="svelte-x2kgxs">&lt;</code> than 0.1: Training may stall due to tiny updates.</li>
+<li>Gradient Norm &gt; 10.0: Risk of divergence; reduce learning rate or clip gradients.</li>
+<li>Ideal Range: 0.1 to 2.0 for stable training.</li></ul>
+<blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Monitor gradient norms in TensorBoard to fine-tune clipping thresholds.</p></blockquote>
+<h4 id="enable-mixed-precision-training"><a aria-hidden="true" tabindex="-1" href="#enable-mixed-precision-training"><span class="icon icon-link"></span></a>Enable Mixed Precision Training</h4>
+<p><strong>Why It Matters</strong>: Mixed precision training speeds up training and reduces VRAM usage without sacrificing model accuracy.</p>
+<pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token comment"># example in pytorch</span>
+scaler <span class="token operator">=</span> torch<span class="token punctuation">.</span>cuda<span class="token punctuation">.</span>amp<span class="token punctuation">.</span>GradScaler<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">with</span> torch<span class="token punctuation">.</span>cuda<span class="token punctuation">.</span>amp<span class="token punctuation">.</span>autocast<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    outputs <span class="token operator">=</span> model<span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
+    loss <span class="token operator">=</span> criterion<span class="token punctuation">(</span>outputs<span class="token punctuation">,</span> targets<span class="token punctuation">)</span>
+
+scaler<span class="token punctuation">.</span>scale<span class="token punctuation">(</span>loss<span class="token punctuation">)</span><span class="token punctuation">.</span>backward<span class="token punctuation">(</span><span class="token punctuation">)</span>
+scaler<span class="token punctuation">.</span>step<span class="token punctuation">(</span>optimizer<span class="token punctuation">)</span>
+scaler<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
+<p>Benefits:</p>
+<ul><li>2-3x Faster Training: Leverages GPU tensor cores.</li>
+<li>50% Less VRAM Usage: Allows larger batch sizes or models.</li>
+<li>Minimal Accuracy Impact: Maintains FP32 precision for critical operations.</li></ul>
+<blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs">📄 Use torch.cuda.amp for automatic mixed precision (AMP) support.</p></blockquote>
+<h4 id="start-with-conservative-learning-rates"><a aria-hidden="true" tabindex="-1" href="#start-with-conservative-learning-rates"><span class="icon icon-link"></span></a>Start with Conservative Learning Rates</h4>
+<p>Start off with 1e-5 to 1e-6.  <strong>Why It Matters</strong>: A conservative learning rate prevents divergence and ensures stable training, especially during early epochs. </p>
+<pre class="language-yml"><!-- HTML_TAG_START --><code class="language-yml"><span class="token key atrule">Text Encoder</span><span class="token punctuation">:</span> 1e<span class="token punctuation">-</span>6 to 5e<span class="token punctuation">-</span><span class="token number">6</span>
+<span class="token key atrule">UNet</span><span class="token punctuation">:</span> 1e<span class="token punctuation">-</span>5 to 5e<span class="token punctuation">-</span><span class="token number">5</span></code><!-- HTML_TAG_END --></pre>
+<pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token comment"># Cosine Annealing Example</span>
+scheduler <span class="token operator">=</span> torch<span class="token punctuation">.</span>optim<span class="token punctuation">.</span>lr_scheduler<span class="token punctuation">.</span>CosineAnnealingLR<span class="token punctuation">(</span>
+    optimizer<span class="token punctuation">,</span>
+    T_max<span class="token operator">=</span><span class="token number">1000</span><span class="token punctuation">,</span>  <span class="token comment"># Number of iterations per cycle</span>
+    eta_min<span class="token operator">=</span><span class="token number">1e-7</span>  <span class="token comment"># Minimum learning rate</span>
+<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
+<p><strong>Warning Signs</strong>:</p>
+<ul><li>Loss Spikes: Learning rate is too high.</li>
+<li>Slow Convergence: Learning rate is too low.</li>
+<li>Oscillating Loss: Poor scheduling or unstable gradients.</li></ul>
+<table class="svelte-x2kgxs"><thead class="svelte-x2kgxs"><tr class="svelte-x2kgxs"><th class="svelte-x2kgxs">Practice</th>
+<th class="svelte-x2kgxs">Key Benefit</th>
+<th class="svelte-x2kgxs">Tool/Setting</th>
+<th class="svelte-x2kgxs">Warning Signs</th></tr></thead>
+<tbody class="svelte-x2kgxs"><tr class="svelte-x2kgxs"><td class="svelte-x2kgxs">Track Loss Curves</td>
+<td class="svelte-x2kgxs">Detect overfitting/divergence early</td>
+<td class="svelte-x2kgxs">TensorBoard, Weights &amp; Biases</td>
+<td class="svelte-x2kgxs">Spikes, plateaus, growing gaps</td></tr>
+<tr class="svelte-x2kgxs"><td class="svelte-x2kgxs">Generate Validation Images</td>
+<td class="svelte-x2kgxs">Visualize model progress</td>
+<td class="svelte-x2kgxs">Fixed prompts/seeds</td>
+<td class="svelte-x2kgxs">Artifacts, mode collapse</td></tr>
+<tr class="svelte-x2kgxs"><td class="svelte-x2kgxs">Gradient Clipping</td>
+<td class="svelte-x2kgxs">Prevent exploding gradients</td>
+<td class="svelte-x2kgxs">clip<em>grad_norm</em> (1.0-2.0)</td>
+<td class="svelte-x2kgxs">Norm <code class="svelte-x2kgxs">&gt;</code> 10.0 or <code class="svelte-x2kgxs">&lt;</code> 0.1</td></tr>
+<tr class="svelte-x2kgxs"><td class="svelte-x2kgxs">Mixed Precision Training</td>
+<td class="svelte-x2kgxs">Faster training, lower VRAM usage</td>
+<td class="svelte-x2kgxs">PyTorch AMP (torch.cuda.amp)</td>
+<td class="svelte-x2kgxs">NaN values (disable if unstable)</td></tr>
+<tr class="svelte-x2kgxs"><td class="svelte-x2kgxs">Conservative Learning Rates</td>
+<td class="svelte-x2kgxs">Stable training, avoid divergence</td>
+<td class="svelte-x2kgxs">Start at 1e-5 to 1e-6, use scheduler</td>
+<td class="svelte-x2kgxs">Spikes, slow convergence</td></tr></tbody></table>
+<hr>
 <h2 id="generating-regularization-images"><a aria-hidden="true" tabindex="-1" href="#generating-regularization-images"><span class="icon icon-link"></span></a>Generating Regularization images</h2>
 <p>Regularization images are generated using the model you’re going to train with before training.  These generated images are based on the class name (e.g., <code class="svelte-x2kgxs">1boy</code>).</p>
-<p>According to the Dreambooth technique, <code class="svelte-x2kgxs">200</code> regularization images per training image.  For example, if you have <code class="svelte-x2kgxs">16</code> images: <code class="svelte-x2kgxs">200 * 16 = 3200</code> total regularization images.  When training, the math involved for calculating total steps is:</p>
-<blockquote class="svelte-x2kgxs"><p class="svelte-x2kgxs"><code class="svelte-x2kgxs">repeats * training images &gt;= repeats * regularization images</code></p></blockquote>
+<p>According to the Dreambooth technique, <code class="svelte-x2kgxs">200</code> regularization images per training image.  For example, if you have <code class="svelte-x2kgxs">16</code> images: <code class="svelte-x2kgxs">200 * 16 = 3200</code> total regularization images.  When training, the math involved for calculating total steps is: <code class="svelte-x2kgxs">repeats * training images &gt;= repeats * regularization images</code></p>
 <p>The quality of regularization images impacts the model’s performance, as they are learned during training. Ideally, a few hundred high-quality regularized images should be prepared. Inadequate quantities may hinder generalization of class images, affecting the model’s ability to learn distinctive features.</p>
 <h4 id="important-considerations"><a aria-hidden="true" tabindex="-1" href="#important-considerations"><span class="icon icon-link"></span></a>Important considerations</h4>
 <ol><li><p><strong>Use the same base model for regularization images and training</strong><br>
@@ -496,10 +588,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1mmcapw">
-		import { start } from "/_app/immutable/start-c3621a05.js";
+		<script type="module" data-sveltekit-hydrate="1tyuzar">
+		import { start } from "/_app/immutable/start-59110f32.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1mmcapw"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1tyuzar"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

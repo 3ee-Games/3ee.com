@@ -20,10 +20,10 @@
     <loc>https://3ee.com/contact</loc>
   </url>
   <url>
-    <loc>https://3ee.com/spacelab</loc>
+    <loc>https://3ee.com/games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games</loc>
+    <loc>https://3ee.com/spacelab</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/accessibility</loc>
@@ -44,16 +44,16 @@
     <loc>https://3ee.com/account/messages</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/password</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/account/privacy</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/account/new</loc>
   </url>
   <url>
+    <loc>https://3ee.com/account/password</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/account/patch</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/profile</loc>
@@ -62,10 +62,10 @@
     <loc>https://3ee.com/account/terms</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/action-figure-art</loc>
+    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
+    <loc>https://3ee.com/blog/action-figure-art</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/first-party-experience</loc>
@@ -74,43 +74,43 @@
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/github-actions-101</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
+    <loc>https://3ee.com/blog/github-actions-101</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/shenanijam2018</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/shenanijam2018</loc>
+    <loc>https://3ee.com/britelite/library</loc>
   </url>
   <url>
     <loc>https://3ee.com/games/cupids-balance</loc>
   </url>
   <url>
-    <loc>https://3ee.com/britelite/library</loc>
+    <loc>https://3ee.com/games/divine-sun</loc>
   </url>
   <url>
     <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/divine-sun</loc>
+    <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ddraw</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ryan</loc>
@@ -119,19 +119,19 @@
     <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
+    <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/ai training</loc>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/analytics</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/containers</loc>
+    <loc>https://3ee.com/blog/categories/automation</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/automation</loc>
+    <loc>https://3ee.com/blog/categories/containers</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/cookies</loc>
@@ -140,10 +140,10 @@
     <loc>https://3ee.com/blog/categories/docker</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game development</loc>
+    <loc>https://3ee.com/blog/categories/game jams</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game jams</loc>
+    <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/games</loc>
@@ -158,18 +158,18 @@
     <loc>https://3ee.com/blog/categories/pong kombat</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/stable diffusion</loc>
+    <loc>https://3ee.com/blog/categories/react</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/react</loc>
+    <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/web development</loc>
+    <loc>https://3ee.com/blog/categories/videos</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/videos</loc>
+    <loc>https://3ee.com/blog/categories/web development</loc>
   </url>
 </urlset>

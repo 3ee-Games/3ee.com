@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-9eb284b3.js",
+    "file": "start-d3cd43d2.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -50,6 +50,7 @@
       "src/routes/games/zultiki.md",
       "src/routes/index.svelte",
       "src/routes/spacelab/index.svelte",
+      "src/routes/spacelab/learningrate/index.svelte",
       "src/routes/team/adora.md",
       "src/routes/team/ddraw.md",
       "src/routes/team/ryan.md"
@@ -355,7 +356,7 @@
     ]
   },
   "src/routes/blog/action-figure-art.md": {
-    "file": "pages/blog/action-figure-art.md-80fc8065.js",
+    "file": "pages/blog/action-figure-art.md-92ae5618.js",
     "src": "src/routes/blog/action-figure-art.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -369,7 +370,7 @@
       "_index-16dda89e.js"
     ],
     "css": [
-      "assets/pages/blog/action-figure-art.md-c9c94dcc.css",
+      "assets/pages/blog/action-figure-art.md-9b6ccd1f.css",
       "assets/ResponsivePicture.svelte_svelte_type_style_lang-cf040f97.css"
     ]
   },
@@ -702,6 +703,18 @@
     ],
     "css": [
       "assets/pages/spacelab/index.svelte-6ca3da91.css"
+    ]
+  },
+  "src/routes/spacelab/learningrate/index.svelte": {
+    "file": "pages/spacelab/learningrate/index.svelte-9db62934.js",
+    "src": "src/routes/spacelab/learningrate/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js"
+    ],
+    "css": [
+      "assets/pages/spacelab/learningrate/index.svelte-9e133b13.css"
     ]
   },
   "src/routes/team/adora.md": {

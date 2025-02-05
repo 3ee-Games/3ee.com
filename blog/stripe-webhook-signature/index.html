@@ -17,11 +17,12 @@
 		<script type="application/ld+json" ✂prettier:content✂="CgkJICAke0pTT04uc3RyaW5naWZ5KHNjaGVtYSl9CgkJ">{}</script>
 		<!-- HTML_TAG_END -->
 	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-010d24fc.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/blog/stripe-webhook-signature.md-5d299ceb.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/SpaceLabTeaser-638170fe.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/svgMapper-1277e1af.css">
-	<link rel="modulepreload" href="/_app/immutable/start-eadc09d8.js">
+	<link rel="modulepreload" href="/_app/immutable/start-c816c9df.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-2a82a4a8.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-16dda89e.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +32,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-3492c591.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-c2e700c4.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/stripe-webhook-signature.md-6d55730f.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/stripe-webhook-signature.md-d6edac45.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-913f18eb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-9202028c.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/SpaceLabTeaser-a5ec8b93.js">
@@ -78,14 +79,14 @@
 
 		
 
-		<div class="article"><p>In the 3ee Games production setup using Nginx, Gunicorn with Uvicorn workers, and Docker Compose, I encountered an issue where the Stripe webhook handler was raising a <code>SignatureVerificationError</code> because the expected <code>Stripe-Signature</code> header was missing. This article explains the root cause of the issue and the steps to take to resolve it.</p>
+		<div class="article"><p>In the 3ee Games production setup using Nginx, Gunicorn with Uvicorn workers, and Docker Compose, I encountered an issue where the Stripe webhook handler was raising a <code class="svelte-1ou70u9">SignatureVerificationError</code> because the expected <code class="svelte-1ou70u9">Stripe-Signature</code> header was missing. This article explains the root cause of the issue and the steps to take to resolve it.</p>
 <h2 id="the-problem-header-stripping-by-nginx"><a aria-hidden="true" tabindex="-1" href="#the-problem-header-stripping-by-nginx"><span class="icon icon-link"></span></a>The Problem: Header Stripping by Nginx</h2>
-<p>Stripe sends webhook events with a critical header named <code>Stripe-Signature</code> that allows your backend to verify the authenticity of the request. In the original implementation, the Django view (via the <code>drf-stripe</code> package) attempted to access this header via <code>request.META[&#39;HTTP_STRIPE_SIGNATURE&#39;]</code>. However, in production the header was not present, leading to an error.</p>
+<p>Stripe sends webhook events with a critical header named <code class="svelte-1ou70u9">Stripe-Signature</code> that allows your backend to verify the authenticity of the request. In the original implementation, the Django view (via the <code class="svelte-1ou70u9">drf-stripe</code> package) attempted to access this header via <code class="svelte-1ou70u9">request.META[&#39;HTTP_STRIPE_SIGNATURE&#39;]</code>. However, in production the header was not present, leading to an error.</p>
 <h3 id="why-headers-were-missing"><a aria-hidden="true" tabindex="-1" href="#why-headers-were-missing"><span class="icon icon-link"></span></a>Why Headers Were Missing</h3>
-<p>Nginx, by default, may drop or rename headers that contain underscores. In this case, it was stripping out the <code>Stripe-Signature</code> header or not passing it through to the upstream Gunicorn server. Additionally, Gunicorn needed to be configured to correctly handle forwarded headers from Nginx.</p>
+<p>Nginx, by default, may drop or rename headers that contain underscores. In this case, it was stripping out the <code class="svelte-1ou70u9">Stripe-Signature</code> header or not passing it through to the upstream Gunicorn server. Additionally, Gunicorn needed to be configured to correctly handle forwarded headers from Nginx.</p>
 <h2 id="the-fix-proper-header-forwarding"><a aria-hidden="true" tabindex="-1" href="#the-fix-proper-header-forwarding"><span class="icon icon-link"></span></a>The Fix: Proper Header Forwarding</h2>
 <h3 id="1-update-nginx-configuration"><a aria-hidden="true" tabindex="-1" href="#1-update-nginx-configuration"><span class="icon icon-link"></span></a>1. Update Nginx Configuration</h3>
-<p>I modified the Nginx configuration to explicitly forward the <code>Stripe-Signature</code> header to the Django application. In the Nginx <code>location</code> block handling the webhook endpoint:</p>
+<p>I modified the Nginx configuration to explicitly forward the <code class="svelte-1ou70u9">Stripe-Signature</code> header to the Django application. In the Nginx <code class="svelte-1ou70u9">location</code> block handling the webhook endpoint:</p>
 <pre class="language-nginx"><!-- HTML_TAG_START --><code class="language-nginx"><span class="token directive"><span class="token keyword">location</span> /some-webhook/</span> <span class="token punctuation">&#123;</span>
     <span class="token directive"><span class="token keyword">proxy_pass</span> http://your-app-name:8000</span><span class="token punctuation">;</span>
     <span class="token directive"><span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
@@ -94,22 +95,22 @@
     <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-Proto <span class="token variable">$scheme</span></span><span class="token punctuation">;</span>
     <span class="token directive"><span class="token keyword">proxy_set_header</span> Stripe-Signature <span class="token variable">$http_stripe_signature</span></span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<p>This ensured that even if Nginx would normally filter out headers with underscores, it explicitly passes along the <code>Stripe-Signature</code> header.</p>
+<p>This ensured that even if Nginx would normally filter out headers with underscores, it explicitly passes along the <code class="svelte-1ou70u9">Stripe-Signature</code> header.</p>
 <h3 id="2-configure-gunicorn-to-handle-forwarded-headers"><a aria-hidden="true" tabindex="-1" href="#2-configure-gunicorn-to-handle-forwarded-headers"><span class="icon icon-link"></span></a>2. Configure Gunicorn to Handle Forwarded Headers</h3>
-<p>Since 3ee Games is using Gunicorn with Uvicorn workers, I needed to ensure that Gunicorn accepted the forwarded headers from Nginx. The Gunicorn command in the Docker Compose file was updated to include the <code>--forwarded-allow-ips=&quot;*&quot;</code> flag:</p>
+<p>Since 3ee Games is using Gunicorn with Uvicorn workers, I needed to ensure that Gunicorn accepted the forwarded headers from Nginx. The Gunicorn command in the Docker Compose file was updated to include the <code class="svelte-1ou70u9">--forwarded-allow-ips=&quot;*&quot;</code> flag:</p>
 <pre class="language-yaml"><!-- HTML_TAG_START --><code class="language-yaml"><span class="token key atrule">command</span><span class="token punctuation">:</span> gunicorn sockets.asgi<span class="token punctuation">:</span>application <span class="token punctuation">-</span>k uvicorn.workers.UvicornWorker <span class="token punctuation">-</span>b ipaddress<span class="token punctuation">:</span>port <span class="token punctuation">-</span><span class="token punctuation">-</span>forwarded<span class="token punctuation">-</span>allow<span class="token punctuation">-</span>ips="<span class="token important">*"</span></code><!-- HTML_TAG_END --></pre>
-<p>The <code>forwarded-allow-ips</code> flag instructs Gunicorn to trust and process headers such as <code>X-Forwarded-For</code> and custom headers forwarded from Nginx.</p>
+<p>The <code class="svelte-1ou70u9">forwarded-allow-ips</code> flag instructs Gunicorn to trust and process headers such as <code class="svelte-1ou70u9">X-Forwarded-For</code> and custom headers forwarded from Nginx.</p>
 <p>Using the wildcard (*) for Gunicorn’s —forwarded-allow-ips tells Gunicorn to trust any proxy that forwards headers. This is generally safe if your application is only accessible via a trusted proxy (Nginx) and the network configuration prevents direct client access to Gunicorn.</p>
-<p>If your infrastructure ensures that all incoming requests pass through Nginx, then using <code>*</code> is acceptable because you rely on the proxy to sanitize and manage the headers. However, if there’s any risk that clients could bypass your reverse proxy and access Gunicorn directly, trusting all forwarded IPs could allow attackers to spoof headers such as X-Forwarded-For, potentially interfering with logging or other logic that depends on the client’s IP address.</p>
-<p>For production, it’s best practice to restrict trusted proxies to known IP ranges if possible. In containerized environments, internal networking or firewall rules ensure that Gunicorn is only reachable from the proxy, which makes using <code>*</code> is a safe option.</p>
+<p>If your infrastructure ensures that all incoming requests pass through Nginx, then using <code class="svelte-1ou70u9">*</code> is acceptable because you rely on the proxy to sanitize and manage the headers. However, if there’s any risk that clients could bypass your reverse proxy and access Gunicorn directly, trusting all forwarded IPs could allow attackers to spoof headers such as X-Forwarded-For, potentially interfering with logging or other logic that depends on the client’s IP address.</p>
+<p>For production, it’s best practice to restrict trusted proxies to known IP ranges if possible. In containerized environments, internal networking or firewall rules ensure that Gunicorn is only reachable from the proxy, which makes using <code class="svelte-1ou70u9">*</code> is a safe option.</p>
 <h3 id="3-verification"><a aria-hidden="true" tabindex="-1" href="#3-verification"><span class="icon icon-link"></span></a>3. Verification</h3>
 <p>After making these changes, time to push to the staging enviroment where the stack runs locally:</p>
 <ul><li>Restarted Docker containers to apply the new configurations.</li>
 <li>Tested the webhook endpoint by sending test events from Stripe.</li>
-<li>Logging was added to Django view to confirm that the <code>Stripe-Signature</code> header was present and correctly forwarded.</li></ul>
+<li>Logging was added to Django view to confirm that the <code class="svelte-1ou70u9">Stripe-Signature</code> header was present and correctly forwarded.</li></ul>
 <p>Once verified, the webhook signature could be successfully validated by Stripe’s library and the error was resolved without needing monkey patches.</p>
 <h2 id="conclusion"><a aria-hidden="true" tabindex="-1" href="#conclusion"><span class="icon icon-link"></span></a>Conclusion</h2>
-<p>The issue was ultimately caused by Nginx not forwarding headers containing underscores. By explicitly setting <code>proxy_set_header Stripe-Signature $http_stripe_signature;</code> in our Nginx configuration and ensuring Gunicorn accepted forwarded headers, we restored the expected behavior. This approach is generally preferable in production environments as it maintains the integrity of the original library code while properly addressing the environment-specific header handling.</p>
+<p>The issue was ultimately caused by Nginx not forwarding headers containing underscores. By explicitly setting <code class="svelte-1ou70u9">proxy_set_header Stripe-Signature $http_stripe_signature;</code> in our Nginx configuration and ensuring Gunicorn accepted forwarded headers, we restored the expected behavior. This approach is generally preferable in production environments as it maintains the integrity of the original library code while properly addressing the environment-specific header handling.</p>
 <p>This experience underscores the importance of verifying header transmission in a multi-tiered deployment, especially when dealing with external services like Stripe that rely on header-based security.</p>
 <hr>
 
@@ -167,10 +168,10 @@
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="q61l2s">
-		import { start } from "/_app/immutable/start-eadc09d8.js";
+		<script type="module" data-sveltekit-hydrate="7b094k">
+		import { start } from "/_app/immutable/start-c816c9df.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="q61l2s"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="7b094k"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

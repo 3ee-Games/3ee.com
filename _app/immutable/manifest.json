@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-04286b4c.js",
+    "file": "start-ed4a4ea3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -41,6 +41,7 @@
       "src/routes/blog/phaser2-migration.md",
       "src/routes/blog/pong-kombat-2.md",
       "src/routes/blog/shenanijam2018.md",
+      "src/routes/blog/spritesheet-frames.md",
       "src/routes/blog/stripe-webhook-signature.md",
       "src/routes/blog/tiled-level-editor-phaser.md",
       "src/routes/britelite/index.svelte",
@@ -105,13 +106,13 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-7cbb68fb.js",
+    "file": "pages/about.svelte-18197513.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_paths-396f020f.js"
     ],
     "css": [
@@ -131,14 +132,14 @@
     ]
   },
   "src/routes/account/conduct.md": {
-    "file": "pages/account/conduct.md-f410427f.js",
+    "file": "pages/account/conduct.md-dab10c4f.js",
     "src": "src/routes/account/conduct.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-c17c7585.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
     ],
@@ -230,14 +231,14 @@
     ]
   },
   "src/routes/account/messages/response/index.svelte": {
-    "file": "pages/account/messages/response/index.svelte-f841d201.js",
+    "file": "pages/account/messages/response/index.svelte-db186dc8.js",
     "src": "src/routes/account/messages/response/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "_config-201c2df4.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_accountStore-3492c591.js",
       "_messagingStore-7daf7769.js",
       "_navigation-0e6511d1.js",
@@ -279,7 +280,7 @@
     ]
   },
   "src/routes/account/patch/index.svelte": {
-    "file": "pages/account/patch/index.svelte-70e9d9af.js",
+    "file": "pages/account/patch/index.svelte-f5db72c6.js",
     "src": "src/routes/account/patch/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -288,7 +289,7 @@
       "_navigation-0e6511d1.js",
       "_config-201c2df4.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_singletons-d1fb5791.js",
       "_index-16dda89e.js"
     ],
@@ -341,14 +342,14 @@
     ]
   },
   "src/routes/blog/3ee-games-youtube-channel.md": {
-    "file": "pages/blog/3ee-games-youtube-channel.md-6f1a2977.js",
+    "file": "pages/blog/3ee-games-youtube-channel.md-a41fa864.js",
     "src": "src/routes/blog/3ee-games-youtube-channel.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js"
@@ -377,23 +378,23 @@
     ]
   },
   "src/routes/blog/categories/[category].svelte": {
-    "file": "pages/blog/categories/_category_.svelte-466de11d.js",
+    "file": "pages/blog/categories/_category_.svelte-da093de8.js",
     "src": "src/routes/blog/categories/[category].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
-      "_Grid-6114f459.js",
+      "_Grid-2b58dbee.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_accountStore-3492c591.js",
       "_index-16dda89e.js"
     ]
   },
   "src/routes/blog/first-party-experience.md": {
-    "file": "pages/blog/first-party-experience.md-95ad223f.js",
+    "file": "pages/blog/first-party-experience.md-02e91896.js",
     "src": "src/routes/blog/first-party-experience.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -401,12 +402,12 @@
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
       "_ResponsivePicture-234896f7.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ],
@@ -416,25 +417,25 @@
     ]
   },
   "src/routes/blog/flappy-jacob-prototype.md": {
-    "file": "pages/blog/flappy-jacob-prototype.md-ddfd78ae.js",
+    "file": "pages/blog/flappy-jacob-prototype.md-8eabb7b1.js",
     "src": "src/routes/blog/flappy-jacob-prototype.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ]
   },
   "src/routes/blog/github-actions-101.md": {
-    "file": "pages/blog/github-actions-101.md-5275bd93.js",
+    "file": "pages/blog/github-actions-101.md-c76813d7.js",
     "src": "src/routes/blog/github-actions-101.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -442,28 +443,28 @@
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
       "_IssueTracker-c6a68b55.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-45a60a31.js",
+    "file": "pages/blog/index.svelte-a6cfb931.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
-      "_Grid-6114f459.js",
+      "_Grid-2b58dbee.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_accountStore-3492c591.js",
       "_index-16dda89e.js"
     ]
@@ -499,19 +500,19 @@
     ]
   },
   "src/routes/blog/phaser-game-react-ui.md": {
-    "file": "pages/blog/phaser-game-react-ui.md-020a2c36.js",
+    "file": "pages/blog/phaser-game-react-ui.md-fe2d1538.js",
     "src": "src/routes/blog/phaser-game-react-ui.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ]
@@ -530,19 +531,19 @@
     ]
   },
   "src/routes/blog/pong-kombat-2.md": {
-    "file": "pages/blog/pong-kombat-2.md-5c475b0c.js",
+    "file": "pages/blog/pong-kombat-2.md-678fa7b8.js",
     "src": "src/routes/blog/pong-kombat-2.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ],
@@ -563,20 +564,38 @@
       "_index-16dda89e.js"
     ]
   },
+  "src/routes/blog/spritesheet-frames.md": {
+    "file": "pages/blog/spritesheet-frames.md-e5bf0ff2.js",
+    "src": "src/routes/blog/spritesheet-frames.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2a82a4a8.js",
+      "__post-913f18eb.js",
+      "_SpaceLabTeaser-785340fb.js",
+      "_Player-9202028c.js",
+      "_menuContextStore-c2e700c4.js",
+      "_index-16dda89e.js",
+      "_accountStore-3492c591.js",
+      "_svgMapper-a9862cae.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
   "src/routes/blog/stripe-webhook-signature.md": {
-    "file": "pages/blog/stripe-webhook-signature.md-d6edac45.js",
+    "file": "pages/blog/stripe-webhook-signature.md-179d2d38.js",
     "src": "src/routes/blog/stripe-webhook-signature.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ],
@@ -585,19 +604,19 @@
     ]
   },
   "src/routes/blog/tiled-level-editor-phaser.md": {
-    "file": "pages/blog/tiled-level-editor-phaser.md-aef05b45.js",
+    "file": "pages/blog/tiled-level-editor-phaser.md-5cb96cc8.js",
     "src": "src/routes/blog/tiled-level-editor-phaser.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2a82a4a8.js",
       "__post-913f18eb.js",
-      "_SpaceLabTeaser-a5ec8b93.js",
+      "_SpaceLabTeaser-785340fb.js",
       "_Player-9202028c.js",
       "_menuContextStore-c2e700c4.js",
       "_index-16dda89e.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js",
       "_singletons-d1fb5791.js"
     ]
@@ -816,8 +835,8 @@
       "_index-16dda89e.js"
     ]
   },
-  "_svgMapper-02b39f71.js": {
-    "file": "chunks/svgMapper-02b39f71.js",
+  "_svgMapper-a9862cae.js": {
+    "file": "chunks/svgMapper-a9862cae.js",
     "imports": [
       "_index-2a82a4a8.js"
     ],
@@ -883,13 +902,13 @@
       "assets/Player-713e4035.css"
     ]
   },
-  "_Grid-6114f459.js": {
-    "file": "chunks/Grid-6114f459.js",
+  "_Grid-2b58dbee.js": {
+    "file": "chunks/Grid-2b58dbee.js",
     "imports": [
       "_index-2a82a4a8.js",
       "_paths-396f020f.js",
       "_navigation-0e6511d1.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_accountStore-3492c591.js"
     ],
     "css": [
@@ -905,12 +924,12 @@
       "assets/ResponsivePicture.svelte_svelte_type_style_lang-cf040f97.css"
     ]
   },
-  "_SpaceLabTeaser-a5ec8b93.js": {
-    "file": "chunks/SpaceLabTeaser-a5ec8b93.js",
+  "_SpaceLabTeaser-785340fb.js": {
+    "file": "chunks/SpaceLabTeaser-785340fb.js",
     "imports": [
       "_index-2a82a4a8.js",
       "_accountStore-3492c591.js",
-      "_svgMapper-02b39f71.js",
+      "_svgMapper-a9862cae.js",
       "_navigation-0e6511d1.js"
     ],
     "css": [

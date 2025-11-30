@@ -20,8 +20,8 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/SpaceLabTeaser-638170fe.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/svgMapper-1277e1af.css">
-	<link rel="modulepreload" href="/_app/immutable/start-09172246.js">
+	<link rel="stylesheet" href="/_app/immutable/assets/svgMapper-deecae17.css">
+	<link rel="modulepreload" href="/_app/immutable/start-4ef2b79f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-1a0dec53.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-d1a0a354.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,11 +31,11 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-82ba4abb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-d04baed7.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/spritesheet-frames.md-15923321.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/spritesheet-frames.md-7b54d70b.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-6c503c51.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-3f5a2f8b.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/SpaceLabTeaser-b10de4c6.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/svgMapper-b26eaefc.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/SpaceLabTeaser-8609d299.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/svgMapper-29f5da0c.js">
 </head>
 
 <body>
@@ -90,10 +90,10 @@ Browse your files and upload your spritesheet image. For example, in my demo vid
 Press the “Generate Overlay” button and you’ll see a grid breaking your spritesheet into individual frames based on the sprite size you set.</p></li>
 <li><p><strong>Find Frame Numbers</strong><br>
 Hover over any frame to see the frame number.</p></li></ol>
-<blockquote><p>📄 Spritesheets often have empty or transparent frames, and using the wrong one can cause bugs—like loading an invisible texture in your game.</p></blockquote>
+<blockquote><p>📄 Spritesheets often have empty or transparent frames, and using the wrong one can cause bugs, like loading an invisible texture in your game.</p></blockquote>
 <h2 id="examples-of-usage"><a aria-hidden="true" tabindex="-1" href="#examples-of-usage"><span class="icon icon-link"></span></a>Examples of Usage</h2>
 <p>I built this tool to avoid the guesswork involved in managing frame numbers, especially when working with layered sprites. Let me give you a real example from my own project.</p>
-<p>I’m working on a game with a character that has separate spritesheets for the body, eyes, accessories, and outfits. Each layer needs to animate in sync, but manually tracking frame numbers across multiple sheets was a nightmare. With the <strong>Frame Overlay Tool</strong>, I can hover over any frame and see its number. For instance, in my player body sheet, frame <code>887</code> is transparent—using it by mistake would make the player invisible. The tool helps me dodge mistakes like that and keeps my workflow smooth.</p>
+<p>I’m working on a game with a character that has separate spritesheets for the body, eyes, accessories, and outfits. Each layer needs to animate in sync, but manually tracking frame numbers across multiple sheets was a nightmare. With the <strong>Frame Overlay Tool</strong>, I can hover over any frame and see its number. For instance, in my player body sheet, frame <code>887</code> is transparent.  Using it by mistake would make the player invisible. The tool helps me dodge mistakes like that and keeps my workflow smooth.</p>
 <h2 id="using-spritesheets-for-layered-sprites"><a aria-hidden="true" tabindex="-1" href="#using-spritesheets-for-layered-sprites"><span class="icon icon-link"></span></a>Using Spritesheets for Layered Sprites</h2>
 <p>Layered sprites allow you to build customizable characters where you can swap out assets like outfits without loading an entire spritesheet that has the character in that specific outfit.</p>
 <p>I’ve got separate spritesheets for:</p>
@@ -162,8 +162,8 @@ Hover over any frame to see the frame number.</p></li></ol>
 <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">playLayerAnimation</span><span class="token punctuation">(</span><span class="token string">'walk'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code><!-- HTML_TAG_END --></pre>
 <h2 id="spritesheet-vs-sprite-atlas"><a aria-hidden="true" tabindex="-1" href="#spritesheet-vs-sprite-atlas"><span class="icon icon-link"></span></a>Spritesheet vs. Sprite Atlas</h2>
-<p>I use sprite atlases all the time—they’re awesome for animations where you can reference frames by name, like <code>idle_1</code> or <code>walk_2.</code> In fact, I use them all the time.</p>
-<p>But for my character creator, layered spritesheets provided a better path that allows me to maintain all the elements together. Since all layers have identical frame layouts, using numerical indices keeps everything in sync without needing complex mapping. If I used a sprite atlas, I’d have to name and map frames for each layer separately, which would be a pain to maintain — especially if I made changes later on. By sticking with layered spritesheets and the <strong>Frame Overlay Tool</strong>, I streamlined both the character creator and the player loading process.</p>
+<p>I use sprite atlases all the time.  They’re awesome for animations where you can reference frames by name, like <code>idle_1</code> or <code>walk_2.</code> In fact, I use them all the time.</p>
+<p>But for my character creator, layered spritesheets provided a better path that allows me to maintain all the elements together. Since all layers have identical frame layouts, using numerical indices keeps everything in sync without needing complex mapping. If I used a sprite atlas, I’d have to name and map frames for each layer separately, which would be a pain to maintain, especially if I made changes later on. By sticking with layered spritesheets and the <strong>Frame Overlay Tool</strong>, I streamlined both the character creator and the player loading process.</p>
 <hr>
 <p>🔗 <strong>Resources:</strong></p>
 <ul><li>GitHub Repo: <a href="https://github.com/3ee-Games/spritesheet-frame-overlay/" rel="nofollow">https://github.com/3ee-Games/spritesheet-frame-overlay/</a></li>
@@ -224,10 +224,10 @@ Hover over any frame to see the frame number.</p></li></ol>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="1l0amud">
-		import { start } from "/_app/immutable/start-09172246.js";
+		<script type="module" data-sveltekit-hydrate="lvghk5">
+		import { start } from "/_app/immutable/start-4ef2b79f.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1l0amud"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="lvghk5"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

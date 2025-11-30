@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/_app/immutable/assets/ResponsivePicture.svelte_svelte_type_style_lang-cf040f97.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/_post-26be357b.css">
 	<link rel="stylesheet" href="/_app/immutable/assets/Player-713e4035.css">
-	<link rel="modulepreload" href="/_app/immutable/start-09172246.js">
+	<link rel="modulepreload" href="/_app/immutable/start-4ef2b79f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-1a0dec53.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-d1a0a354.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/paths-396f020f.js">
@@ -31,7 +31,7 @@
 	<link rel="modulepreload" href="/_app/immutable/chunks/accountStore-82ba4abb.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/navigation-0e6511d1.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/menuContextStore-d04baed7.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-5d1b9170.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/blog/action-figure-art.md-efa0945f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/_post-6c503c51.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/Player-3f5a2f8b.js">
 </head>
@@ -76,14 +76,14 @@
 
 		
 
-		<div class="article"><p>Growing up in the ‘80s, I loved vintage action figures—their bold colors, dynamic poses, worn paint and plastic seams. So when I trained a Stable Diffusion LoRA model using photos of my Masters of the Universe Prince Adam figure, I ran into a problem: the AI was too accurate. It perfectly replicated the figure’s plastic texture, paint flaws, and stiff pose, making the results look more like a toy than a legendary hero.</p>
-<p>I wanted to go further—to transform Prince Adam into different styles, free from his plastic origins. That’s where regularization images came in, helping to prevent overfitting and guide the AI’s creative direction. My goal? Keep his iconic costume (white shirt, pink vest) but reimagine him in nostalgic, artistic styles.</p>
+		<div class="article"><p>Growing up in the ‘80s, I loved vintage action figures: their bold colors, dynamic poses, worn paint and plastic seams. So when I trained a Stable Diffusion LoRA model using photos of my Masters of the Universe Prince Adam figure, I ran into a problem: the AI was too accurate. It perfectly replicated the figure’s plastic texture, paint flaws, and stiff pose, making the results look more like a toy than a legendary hero.</p>
+<p>I wanted to go further to transform Prince Adam into different styles, free from his plastic origins. That’s where regularization images came in, helping to prevent overfitting and guide the AI’s creative direction. My goal? Keep his iconic costume (white shirt, pink vest) but reimagine him in nostalgic, artistic styles.</p>
 <h4 id="experiment-1-anime-inspired-heroism"><a aria-hidden="true" tabindex="-1" href="#experiment-1-anime-inspired-heroism"><span class="icon icon-link"></span></a>Experiment 1: Anime-Inspired Heroism</h4>
 <p class="svelte-1nszpqs"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1737851602/blog/nu7xnpfs7m0m4mforrpf.png" alt="image" class="svelte-1nszpqs"></p>
 <p>I first generated regularization images of anime-style characters wearing Prince Adam’s outfit. This gave the AI two guides:</p>
 <ul><li>My action figure photos (for costume accuracy).</li>
 <li>Stylized anime references (for anatomy and texture).</li></ul>
-<p>The result? A Prince Adam with flowing hair, fabric-like clothing, and dynamic lighting—bridging the gap between toy and anime hero.</p>
+<p>The result? A Prince Adam with flowing hair, fabric-like clothing, and dynamic lighting.  Bridging the gap between toy and anime hero.</p>
 <h4 id="experiment-2-retro-cartoon-resurrection"><a aria-hidden="true" tabindex="-1" href="#experiment-2-retro-cartoon-resurrection"><span class="icon icon-link"></span></a>Experiment 2: Retro Cartoon Resurrection</h4>
 <p class="svelte-1nszpqs"><img src="https://res.cloudinary.com/dxgyuy0iu/image/upload/v1738190889/blog/fiz3ariex9rpsoovdccl.png" alt="image" class="svelte-1nszpqs"></p>
 <p>Next, I used screenshots from the original 1983 Masters of the Universe cartoon as regularization images. This transformed the plastic sheen into cel-shaded vibrancy and replaced his stiff pose with a battle-ready stance, straight out of the show.</p>
@@ -128,7 +128,7 @@
 <p><strong>Solution</strong>: Add regularization images of generic cats to help the model focus on general cat features, ensuring it doesn’t get distracted by irrelevant details from the other cats.</p>
 <h2 id="divergence"><a aria-hidden="true" tabindex="-1" href="#divergence"><span class="icon icon-link"></span></a>Divergence</h2>
 <p><strong>Divergence</strong> occurs when a model becomes unstable and fails to learn meaningful patterns, leading to erratic, low-quality outputs. This instability often arises from overly large or inconsistent datasets that lack clear, generalizable features. Instead of accurately capturing the subject’s likeness, the model produces unpredictable or incorrect results.  </p>
-<p>Preventing divergence starts with <strong>careful dataset curation</strong>—selecting high-quality images with consistent and representative features helps the model focus on relevant patterns. Additionally, <strong>regularization techniques</strong> can reinforce learning stability, reducing the risk of both divergence and overfitting to noisy or inconsistent data.</p>
+<p>Preventing divergence starts with <strong>careful dataset curation</strong> selecting high-quality images with consistent and representative features helps the model focus on relevant patterns. Additionally, <strong>regularization techniques</strong> can reinforce learning stability, reducing the risk of both divergence and overfitting to noisy or inconsistent data.</p>
 <ul><li><strong>Chaotic outputs</strong> The model generates erratic images that lack structure, coherence, or resemblance to the intended subject. This often results from an excessive learning rate, poor dataset quality, or an imbalance between training and regularization images.  </li>
 <li><strong>Exploding gradients</strong> During backpropagation, weight updates grow exponentially, making the model’s parameters uncontrollably large. This leads to unpredictable updates and renders training ineffective. Techniques like gradient clipping can help mitigate this issue.  </li>
 <li><strong>Loss value instability (NaN/infinity values)</strong> The training loss fluctuates wildly, sometimes becoming <code class="svelte-1nszpqs">NaN</code> (not a number) or reaching infinity. This typically indicates a numerical instability caused by extreme learning rates, batch size mismatches, or insufficient regularization.  </li></ul>
@@ -197,9 +197,9 @@
 <tr class="svelte-1nszpqs"><td class="svelte-1nszpqs">High variance in training data</td>
 <td class="svelte-1nszpqs">Mode collapse</td>
 <td class="svelte-1nszpqs">Curate focused dataset</td></tr></tbody></table>
-<p>This table outlines key AI training challenges, their risks, and solutions. A high learning rate with a small batch size can cause divergence, leading to chaotic outputs—fix this by lowering the learning rate and increasing the batch size. </p>
-<p>Inconsistent features (e.g., lighting, poses) lead to overfitting, which a curated dataset prevents. Too few regularization images cause class leakage, making it harder to distinguish subjects—adding 100-300 images helps. </p>
-<p>High variance in training data can result in mode collapse, producing repetitive outputs—keeping the dataset focused ensures consistency. Each row offers a direct solution for better model performance.</p>
+<p>This table outlines key AI training challenges, their risks, and solutions. A high learning rate with a small batch size can cause divergence, leading to chaotic outputs: fix this by lowering the learning rate and increasing the batch size. </p>
+<p>Inconsistent features (e.g., lighting, poses) lead to overfitting, which a curated dataset prevents. Too few regularization images cause class leakage, making it harder to distinguish subjects, adding 100-300 images helps. </p>
+<p>High variance in training data can result in mode collapse, producing repetitive outputs.  Keeping the dataset focused ensures consistency. Each row offers a direct solution for better model performance.</p>
 <hr>
 <h2 id="monitoring-tips"><a aria-hidden="true" tabindex="-1" href="#monitoring-tips"><span class="icon icon-link"></span></a>Monitoring Tips</h2>
 <p>Before we start training the model, let’s go over how we can monitor the process and preview the results as it trains.  For Stable Diffusion model training, I enjoy using <a href="https://github.com/kohya-ss/sd-scripts" rel="nofollow">kohya-ss/sd-scripts</a>.  These scripts can setup monitoring through TensorBoard as well which we will dive in later.</p>
@@ -291,7 +291,7 @@ scaler<span class="token punctuation">.</span>update<span class="token punctuati
 <p>The Unet acts as the model’s “visual memory,” handling image structure, detail, and relationships between elements.</p>
 <ul><li><strong>Default Value</strong>: 1e-4 (avoid changing unless necessary).</li>
 <li><strong>Issues &amp; Fixes</strong>:<ul><li><strong>Overfitting</strong>: Reduce learning rate, steps, or use dampeners.</li>
-<li><strong>Visual Noise (blobs)</strong>: Learning rate is too high—divide by at least 8.</li>
+<li><strong>Visual Noise (blobs)</strong>: Learning rate is too high: divide by at least 8.</li>
 <li><strong>Weak Details</strong>: Increase learning rate or train for more steps.</li></ul></li></ul>
 <p>The Unet works progressively, starting with broad shapes and adding finer details. Overcooking it can lead to misplaced or excessive features (e.g., eyes everywhere).</p>
 <ul><li><strong>Visualization</strong>: Think of it as zooming in from a blurry silhouette to pixel-level detail.</li>
@@ -375,7 +375,7 @@ The resolution of the generated outputs should align with the resolution of the 
 <li><a href="https://huggingface.co/datasets/ProGamerGov/StableDiffusion-v1-5-Regularization-Images" rel="nofollow">Stable Diffusion 1.5 Regularization Images</a>: includes art styles, illustration, landscapes, and many other types and themes of images generated with Stable Diffusion 1.5.  </li>
 <li><a href="https://huggingface.co/Aitrepreneur/SDXL_REGULARIZATION_IMAGES/tree/main" rel="nofollow">Aitrepreneur SDXL image set</a>: a large image set generated with Stable Diffusion SDXL.</li></ul>
 <h4 id="captioning-regularization-images"><a aria-hidden="true" tabindex="-1" href="#captioning-regularization-images"><span class="icon icon-link"></span></a>Captioning Regularization images</h4>
-<p>While captioning regularization images isn’t strictly required, it significantly improves your model’s ability to learn meaningful patterns. Just like training images, captions help Stable Diffusion understand the relationship between visual features and text prompts—critical for maintaining style consistency.</p>
+<p>While captioning regularization images isn’t strictly required, it significantly improves your model’s ability to learn meaningful patterns. Just like training images, captions help Stable Diffusion understand the relationship between visual features and text prompts.  Critical for maintaining style consistency.</p>
 <p>Here’s the workflow I used:</p>
 <ul><li><strong>Structured Filenames</strong>: Stable Diffusion Web UI automatically embeds prompts in filenames</li>
 <li><strong>Automated Extraction</strong>: I wrote a simple script to convert filenames into .txt captions, preserving key details like <code class="svelte-1nszpqs">1boy</code> or <code class="svelte-1nszpqs">purple_vest</code>.</li>
@@ -635,10 +635,10 @@ Use another </p>
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="ce2999d5-1ac8-4c93-b775-e76c96c916d1"></script>
 
 
-		<script type="module" data-sveltekit-hydrate="qee7xf">
-		import { start } from "/_app/immutable/start-09172246.js";
+		<script type="module" data-sveltekit-hydrate="1krglpr">
+		import { start } from "/_app/immutable/start-4ef2b79f.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="qee7xf"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1krglpr"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,

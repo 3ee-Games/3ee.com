@@ -83,10 +83,10 @@
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
+    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/ornamental-santa-diffusion</loc>
+    <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/phaser2-migration</loc>
@@ -128,10 +128,10 @@
     <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/messages/response</loc>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/ai training</loc>
+    <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/analytics</loc>
@@ -143,7 +143,7 @@
     <loc>https://3ee.com/blog/categories/containers</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
+    <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/cookies</loc>
@@ -152,22 +152,22 @@
     <loc>https://3ee.com/blog/categories/docker</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/game jams</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/game development</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/games</loc>
+    <loc>https://3ee.com/blog/categories/game jams</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/github</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/pixel</loc>
+    <loc>https://3ee.com/blog/categories/games</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/phaser</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/pixel</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/pong kombat</loc>
@@ -188,9 +188,18 @@
     <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/categories/web development</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/categories/videos</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/web development</loc>
+    <loc>https://3ee.com/spacelab/cancel/+page</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/spacelab/cancelled/+page</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/spacelab/success/+page</loc>
   </url>
 </urlset>

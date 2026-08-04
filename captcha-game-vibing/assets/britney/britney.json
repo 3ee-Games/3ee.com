@@ -1,0 +1,440 @@
+{
+	"textures": [
+		{
+			"image": "britney.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 508,
+				"h": 1150
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "character_femaleAdventurer_down.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 109,
+						"w": 175,
+						"h": 147
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 175,
+						"h": 147
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_slide.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 107,
+						"w": 176,
+						"h": 149
+					},
+					"frame": {
+						"x": 178,
+						"y": 1,
+						"w": 176,
+						"h": 149
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_duck.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 32,
+						"y": 95,
+						"w": 121,
+						"h": 161
+					},
+					"frame": {
+						"x": 356,
+						"y": 1,
+						"w": 121,
+						"h": 161
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_think.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 36,
+						"y": 74,
+						"w": 119,
+						"h": 182
+					},
+					"frame": {
+						"x": 1,
+						"y": 150,
+						"w": 119,
+						"h": 182
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 68,
+						"w": 129,
+						"h": 188
+					},
+					"frame": {
+						"x": 122,
+						"y": 152,
+						"w": 129,
+						"h": 188
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 68,
+						"w": 131,
+						"h": 188
+					},
+					"frame": {
+						"x": 253,
+						"y": 164,
+						"w": 131,
+						"h": 188
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_behindBack.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 64,
+						"w": 109,
+						"h": 192
+					},
+					"frame": {
+						"x": 386,
+						"y": 164,
+						"w": 109,
+						"h": 192
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 35,
+						"y": 64,
+						"w": 118,
+						"h": 192
+					},
+					"frame": {
+						"x": 1,
+						"y": 334,
+						"w": 118,
+						"h": 192
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_idle.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 64,
+						"w": 130,
+						"h": 192
+					},
+					"frame": {
+						"x": 121,
+						"y": 342,
+						"w": 130,
+						"h": 192
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 35,
+						"y": 64,
+						"w": 118,
+						"h": 192
+					},
+					"frame": {
+						"x": 253,
+						"y": 354,
+						"w": 118,
+						"h": 192
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_side.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 63,
+						"w": 109,
+						"h": 193
+					},
+					"frame": {
+						"x": 373,
+						"y": 358,
+						"w": 109,
+						"h": 193
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_cheer0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 65,
+						"w": 157,
+						"h": 191
+					},
+					"frame": {
+						"x": 1,
+						"y": 536,
+						"w": 157,
+						"h": 191
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 64,
+						"w": 149,
+						"h": 192
+					},
+					"frame": {
+						"x": 160,
+						"y": 548,
+						"w": 149,
+						"h": 192
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_talk.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 62,
+						"w": 157,
+						"h": 194
+					},
+					"frame": {
+						"x": 311,
+						"y": 553,
+						"w": 157,
+						"h": 194
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 60,
+						"w": 149,
+						"h": 195
+					},
+					"frame": {
+						"x": 1,
+						"y": 729,
+						"w": 149,
+						"h": 195
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 60,
+						"w": 128,
+						"h": 196
+					},
+					"frame": {
+						"x": 152,
+						"y": 742,
+						"w": 128,
+						"h": 196
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_walk7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 60,
+						"w": 129,
+						"h": 196
+					},
+					"frame": {
+						"x": 282,
+						"y": 749,
+						"w": 129,
+						"h": 196
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_cheer1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 50,
+						"w": 157,
+						"h": 201
+					},
+					"frame": {
+						"x": 1,
+						"y": 940,
+						"w": 157,
+						"h": 201
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_fall.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 54,
+						"w": 185,
+						"h": 201
+					},
+					"frame": {
+						"x": 160,
+						"y": 947,
+						"w": 185,
+						"h": 201
+					}
+				},
+				{
+					"filename": "character_femaleAdventurer_jump.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 54,
+						"w": 160,
+						"h": 202
+					},
+					"frame": {
+						"x": 347,
+						"y": 947,
+						"w": 160,
+						"h": 202
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:cdac996f7af72272620829883d5a13bb:a1e3ac01e91303031286695dd7a069da:6f082b2335fb225cdcfb8121cd8ab8f5$"
+	}
+}

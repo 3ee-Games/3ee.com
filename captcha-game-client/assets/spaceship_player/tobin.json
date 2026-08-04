@@ -1,0 +1,159 @@
+{
+"skeleton": {
+	"hash": "RvU1Rvr2GqU",
+	"spine": "3.8-from-4.0.64",
+	"x": -167.32,
+	"y": -29.95,
+	"width": 284.3,
+	"height": 256.96,
+	"images": "./Images/",
+	"audio": "/Users/ryguy/Downloads/Space Adventure/Spine/Main Planes/Plane05"
+},
+"bones": [
+	{ "name": "root", "rotation": 0.44 },
+	{ "name": "body", "parent": "root", "x": -15.78, "y": 119.72 },
+	{ "name": "cannon_top", "parent": "body", "rotation": 18.73, "x": -54.75, "y": 13.69 },
+	{ "name": "bone3", "parent": "root", "rotation": 7.88, "x": 2.41, "y": 134.61 },
+	{ "name": "bone4", "parent": "bone3", "x": 40.76, "y": 6.23 },
+	{ "name": "bone5", "parent": "bone3", "x": -38.04, "y": 12.82 },
+	{ "name": "bone6", "parent": "bone3", "rotation": 60.15, "x": -13.76, "y": -19.64 },
+	{ "name": "bone7", "parent": "bone3", "rotation": 17.87, "x": -18.46, "y": -57.18 },
+	{ "name": "bone8", "parent": "root", "x": 54.99, "y": 109.53 },
+	{ "name": "bone9", "parent": "root", "x": -68.98, "y": 167.26 },
+	{ "name": "Wing", "parent": "body", "rotation": 3.99, "x": -26.59, "y": -52.1 },
+	{ "name": "Missile", "parent": "body", "rotation": 14.04, "x": 53.41, "y": -98.05 }
+],
+"slots": [
+	{ "name": "Misile", "bone": "Missile", "attachment": "Misile" },
+	{ "name": "Body", "bone": "body", "attachment": "Body" },
+	{ "name": "Canon", "bone": "cannon_top", "attachment": "Canon" },
+	{ "name": "Wing-Canon", "bone": "Wing", "attachment": "Wing-Canon" },
+	{ "name": "Piece-1", "bone": "bone4" },
+	{ "name": "Piece-2", "bone": "bone5" },
+	{ "name": "Piece-3", "bone": "bone6" },
+	{ "name": "Piece-4", "bone": "bone7" },
+	{ "name": "Dfx1", "bone": "bone8" },
+	{ "name": "Dfx2", "bone": "bone9" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Body": {
+				"Body": { "x": -8.29, "y": 21.88, "width": 283, "height": 169 }
+			},
+			"Canon": {
+				"Canon": { "x": 21.82, "y": 1.9, "rotation": 0.76, "width": 134, "height": 54 }
+			},
+			"Dfx1": {
+				"Dfx1": { "width": 123, "height": 95 },
+				"Dfx2": { "width": 162, "height": 128 },
+				"Dfx3": { "width": 179, "height": 171 },
+				"Dfx4": { "width": 196, "height": 195 },
+				"Dfx5": { "width": 209, "height": 214 },
+				"Dfx6": { "width": 219, "height": 221 },
+				"Dfx7": { "width": 229, "height": 231 }
+			},
+			"Dfx2": {
+				"Dfx1": { "width": 123, "height": 95 },
+				"Dfx2": { "width": 162, "height": 128 },
+				"Dfx3": { "width": 179, "height": 171 },
+				"Dfx4": { "width": 196, "height": 195 },
+				"Dfx5": { "width": 209, "height": 214 },
+				"Dfx6": { "width": 219, "height": 221 },
+				"Dfx7": { "width": 229, "height": 231 }
+			},
+			"Misile": {
+				"Misile": { "x": -24.82, "y": 26.63, "width": 142, "height": 111 }
+			},
+			"Piece-1": {
+				"Piece-1": { "x": -10.36, "y": -7.39, "width": 95, "height": 114 }
+			},
+			"Piece-2": {
+				"Piece-2": { "x": -0.82, "y": 7.59, "width": 93, "height": 72 }
+			},
+			"Piece-3": {
+				"Piece-3": { "x": 0.91, "y": 3.27, "width": 35, "height": 33 }
+			},
+			"Piece-4": {
+				"Piece-4": { "x": -0.31, "y": 1.31, "width": 29, "height": 22 }
+			},
+			"Wing-Canon": {
+				"Wing-Canon": { "x": 31.07, "y": 7.28, "width": 162, "height": 53 }
+			}
+		}
+	}
+],
+"animations": {
+	"GetHit": {
+		"slots": {
+			"Body": {
+				"color": [
+					{ "color": "ff8475ff" },
+					{ "time": 0.4, "color": "979a9999" }
+				]
+			},
+			"Canon": {
+				"color": [
+					{ "color": "ff8052ff" },
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"Misile": {
+				"color": [
+					{ "color": "ff8052ff" },
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"Wing-Canon": {
+				"color": [
+					{ "color": "ff8052ff" },
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"body": {
+				"rotate": [
+					{ "angle": 4.24 },
+					{ "time": 0.5 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.2667, "y": 5.81 },
+					{ "time": 0.5 }
+				]
+			},
+			"cannon_top": {
+				"rotate": [
+					{ "angle": -9.96 },
+					{ "time": 0.5 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.2667, "y": 12 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"MovingNIdle": {
+		"bones": {
+			"body": {
+				"translate": [
+					{},
+					{ "time": 1, "y": 5.81 },
+					{ "time": 2 }
+				]
+			},
+			"cannon_top": {
+				"translate": [
+					{},
+					{ "time": 1.0667, "y": 12 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

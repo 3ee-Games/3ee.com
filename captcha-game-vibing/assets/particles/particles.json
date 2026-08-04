@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "particles.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 124,
+				"h": 123
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "musicOn.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 21,
+						"w": 57,
+						"h": 64
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 57,
+						"h": 64
+					}
+				},
+				{
+					"filename": "symbol_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 154,
+						"h": 154
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 49,
+						"w": 64,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 67,
+						"w": 64,
+						"h": 55
+					}
+				},
+				{
+					"filename": "star_01.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 56
+					},
+					"frame": {
+						"x": 60,
+						"y": 1,
+						"w": 56,
+						"h": 56
+					}
+				},
+				{
+					"filename": "symbol_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 154,
+						"h": 154
+					},
+					"spriteSourceSize": {
+						"x": 49,
+						"y": 51,
+						"w": 56,
+						"h": 52
+					},
+					"frame": {
+						"x": 67,
+						"y": 59,
+						"w": 56,
+						"h": 52
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f9f315ce4a7c394f594be5b20648ad1d:b95ccce4418a114e75a9573187aaecbb:767f0aa26e08023d62afa20c0c952bea$"
+	}
+}

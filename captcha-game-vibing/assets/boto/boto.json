@@ -1,0 +1,440 @@
+{
+	"textures": [
+		{
+			"image": "boto.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1001,
+				"h": 552
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "character_robot_fall.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 64,
+						"w": 187,
+						"h": 191
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 187,
+						"h": 191
+					}
+				},
+				{
+					"filename": "character_robot_jump.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 65,
+						"w": 165,
+						"h": 191
+					},
+					"frame": {
+						"x": 1,
+						"y": 194,
+						"w": 165,
+						"h": 191
+					}
+				},
+				{
+					"filename": "character_robot_slide.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 105,
+						"w": 178,
+						"h": 151
+					},
+					"frame": {
+						"x": 1,
+						"y": 387,
+						"w": 178,
+						"h": 151
+					}
+				},
+				{
+					"filename": "character_robot_cheer1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 61,
+						"w": 160,
+						"h": 190
+					},
+					"frame": {
+						"x": 168,
+						"y": 194,
+						"w": 160,
+						"h": 190
+					}
+				},
+				{
+					"filename": "character_robot_walk3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 70,
+						"w": 131,
+						"h": 186
+					},
+					"frame": {
+						"x": 190,
+						"y": 1,
+						"w": 131,
+						"h": 186
+					}
+				},
+				{
+					"filename": "character_robot_walk7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 70,
+						"w": 131,
+						"h": 186
+					},
+					"frame": {
+						"x": 323,
+						"y": 1,
+						"w": 131,
+						"h": 186
+					}
+				},
+				{
+					"filename": "character_robot_duck.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 105,
+						"w": 118,
+						"h": 151
+					},
+					"frame": {
+						"x": 181,
+						"y": 386,
+						"w": 118,
+						"h": 151
+					}
+				},
+				{
+					"filename": "character_robot_down.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 121,
+						"w": 172,
+						"h": 135
+					},
+					"frame": {
+						"x": 301,
+						"y": 386,
+						"w": 172,
+						"h": 135
+					}
+				},
+				{
+					"filename": "character_robot_walk0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 70,
+						"w": 152,
+						"h": 185
+					},
+					"frame": {
+						"x": 330,
+						"y": 189,
+						"w": 152,
+						"h": 185
+					}
+				},
+				{
+					"filename": "character_robot_talk.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 30,
+						"y": 73,
+						"w": 160,
+						"h": 183
+					},
+					"frame": {
+						"x": 456,
+						"y": 1,
+						"w": 160,
+						"h": 183
+					}
+				},
+				{
+					"filename": "character_robot_think.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 34,
+						"y": 85,
+						"w": 119,
+						"h": 171
+					},
+					"frame": {
+						"x": 475,
+						"y": 376,
+						"w": 119,
+						"h": 171
+					}
+				},
+				{
+					"filename": "character_robot_idle.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 30,
+						"y": 73,
+						"w": 132,
+						"h": 183
+					},
+					"frame": {
+						"x": 484,
+						"y": 186,
+						"w": 132,
+						"h": 183
+					}
+				},
+				{
+					"filename": "character_robot_cheer0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 76,
+						"w": 160,
+						"h": 180
+					},
+					"frame": {
+						"x": 596,
+						"y": 371,
+						"w": 160,
+						"h": 180
+					}
+				},
+				{
+					"filename": "character_robot_walk4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 74,
+						"w": 153,
+						"h": 182
+					},
+					"frame": {
+						"x": 758,
+						"y": 1,
+						"w": 153,
+						"h": 182
+					}
+				},
+				{
+					"filename": "character_robot_walk2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 74,
+						"w": 120,
+						"h": 182
+					},
+					"frame": {
+						"x": 618,
+						"y": 185,
+						"w": 120,
+						"h": 182
+					}
+				},
+				{
+					"filename": "character_robot_walk6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 74,
+						"w": 120,
+						"h": 182
+					},
+					"frame": {
+						"x": 618,
+						"y": 1,
+						"w": 120,
+						"h": 182
+					}
+				},
+				{
+					"filename": "character_robot_side.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 74,
+						"w": 111,
+						"h": 182
+					},
+					"frame": {
+						"x": 740,
+						"y": 185,
+						"w": 111,
+						"h": 182
+					}
+				},
+				{
+					"filename": "character_robot_behindBack.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 75,
+						"w": 109,
+						"h": 181
+					},
+					"frame": {
+						"x": 758,
+						"y": 369,
+						"w": 109,
+						"h": 181
+					}
+				},
+				{
+					"filename": "character_robot_walk5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 78,
+						"w": 132,
+						"h": 178
+					},
+					"frame": {
+						"x": 853,
+						"y": 185,
+						"w": 132,
+						"h": 178
+					}
+				},
+				{
+					"filename": "character_robot_walk1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 78,
+						"w": 131,
+						"h": 178
+					},
+					"frame": {
+						"x": 869,
+						"y": 365,
+						"w": 131,
+						"h": 178
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:1d2d72372c8aca13e412af9870a82542:daa504274498d3d7125acb9f50fd0cd7:080de882775a809c010df7c277aa152e$"
+	}
+}

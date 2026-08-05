@@ -1,0 +1,1 @@
+function e(){return{serviceUrl:"https://api.3ee.com",websocketUrl:"wss://api.3ee.com",analytics:!0,monthlyPriceId:"price_1U0qePDIBgITuK1l73j7MDOU",yearlyPriceId:"price_1U0qcxDIBgITuK1loY4zyWzr",pinPriceId:"price_1U0qgVDIBgITuK1lo2ErrLZo",publishableKey:"pk_live_51MCQ73DIBgITuK1lGNQPH09cIVblNwhxfF2qVVOiVLMgztkSJtouQUZ0cOW0ZLHvG5SHNYbYRUNQtuZGC9nOb8P4000xWAwvkf"}}export{e as g};

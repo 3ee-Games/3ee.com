@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-71f81861.js",
+    "file": "start-c264d9e9.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -265,7 +265,7 @@
     ]
   },
   "src/routes/account/new/index.svelte": {
-    "file": "pages/account/new/index.svelte-378f645f.js",
+    "file": "pages/account/new/index.svelte-4a5e0639.js",
     "src": "src/routes/account/new/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -273,9 +273,11 @@
       "_index-a58663b3.js",
       "_StarField-72bf8f6b.js",
       "_navigation-0e6511d1.js",
+      "_api-759ad70e.js",
       "_accountStore-67061c87.js",
       "_index-f9b57ff1.js",
-      "_singletons-d1fb5791.js"
+      "_singletons-d1fb5791.js",
+      "_config-72c42271.js"
     ],
     "css": [
       "assets/pages/account/new/index.svelte-c3d66d05.css"
@@ -362,7 +364,7 @@
     ]
   },
   "src/routes/auth/callback/index.svelte": {
-    "file": "pages/auth/callback/index.svelte-136cc988.js",
+    "file": "pages/auth/callback/index.svelte-44cfb20c.js",
     "src": "src/routes/auth/callback/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

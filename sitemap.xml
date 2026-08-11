@@ -59,10 +59,10 @@
     <loc>https://3ee.com/account/patch</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/privacy</loc>
+    <loc>https://3ee.com/account/profile</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/profile</loc>
+    <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/terms</loc>
@@ -71,10 +71,10 @@
     <loc>https://3ee.com/auth/callback</loc>
   </url>
   <url>
-    <loc>https://3ee.com/britelite/library</loc>
+    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
+    <loc>https://3ee.com/britelite/library</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/action-figure-art</loc>
@@ -83,10 +83,10 @@
     <loc>https://3ee.com/blog/first-party-experience</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/github-actions-101</loc>
+    <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
+    <loc>https://3ee.com/blog/github-actions-101</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/no-ads-in-our-games</loc>
@@ -122,19 +122,19 @@
     <loc>https://3ee.com/games/cupids-balance</loc>
   </url>
   <url>
+    <loc>https://3ee.com/games/divine-sun</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/games/zultiki</loc>
   </url>
   <url>
     <loc>https://3ee.com/spacelab/cancel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/divine-sun</loc>
+    <loc>https://3ee.com/spacelab/cancelled</loc>
   </url>
   <url>
     <loc>https://3ee.com/spacelab/learningrate</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/spacelab/cancelled</loc>
   </url>
   <url>
     <loc>https://3ee.com/spacelab/success</loc>
@@ -143,10 +143,10 @@
     <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
-    <loc>https://3ee.com/team/ddraw</loc>
+    <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
-    <loc>https://3ee.com/team/ryan</loc>
+    <loc>https://3ee.com/team/ddraw</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/messages/response</loc>
@@ -158,19 +158,19 @@
     <loc>https://3ee.com/blog/categories/analytics</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/categories/automation</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/containers</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
+    <loc>https://3ee.com/blog/categories/cookies</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/docker</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/cookies</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/game development</loc>
@@ -188,10 +188,10 @@
     <loc>https://3ee.com/blog/categories/github</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/platform</loc>
+    <loc>https://3ee.com/blog/categories/pixel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/pixel</loc>
+    <loc>https://3ee.com/blog/categories/platform</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/pong kombat</loc>

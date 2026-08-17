@@ -5,16 +5,16 @@
     <loc>https://3ee.com</loc>
   </url>
   <url>
-    <loc>https://3ee.com/about</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/account</loc>
   </url>
   <url>
-    <loc>https://3ee.com/britelite</loc>
+    <loc>https://3ee.com/about</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/britelite</loc>
   </url>
   <url>
     <loc>https://3ee.com/captcha-game-client</loc>
@@ -59,25 +59,16 @@
     <loc>https://3ee.com/account/patch</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/profile</loc>
+    <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/privacy</loc>
+    <loc>https://3ee.com/account/profile</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/terms</loc>
   </url>
   <url>
     <loc>https://3ee.com/auth/callback</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/britelite/library</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/action-figure-art</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/first-party-experience</loc>
@@ -98,19 +89,22 @@
     <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/phaser2-migration</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/shenanijam2018</loc>
+    <loc>https://3ee.com/blog/phaser2-migration</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/social-login</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/3ee-games-youtube-channel</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/spritesheet-frames</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/action-figure-art</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/stripe-webhook-signature</loc>
@@ -119,10 +113,19 @@
     <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/shenanijam2018</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/britelite/library</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/games/harmony-estates</loc>
   </url>
   <url>
     <loc>https://3ee.com/spacelab/cancel</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/spacelab/cancelled</loc>
   </url>
   <url>
     <loc>https://3ee.com/spacelab/learningrate</loc>
@@ -140,13 +143,13 @@
     <loc>https://3ee.com/team/edoardo</loc>
   </url>
   <url>
-    <loc>https://3ee.com/spacelab/cancelled</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/messages/response</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/ai training</loc>
@@ -156,9 +159,6 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/automation</loc>
-  </url>
-  <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/containers</loc>
@@ -185,16 +185,16 @@
     <loc>https://3ee.com/blog/categories/phaser</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/pixel</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/categories/platform</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/python</loc>
+    <loc>https://3ee.com/blog/categories/pixel</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/pong kombat</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/categories/python</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/react</loc>

@@ -11,13 +11,10 @@
     <loc>https://3ee.com/account</loc>
   </url>
   <url>
-    <loc>https://3ee.com/britelite</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog</loc>
   </url>
   <url>
-    <loc>https://3ee.com/captcha-game-client</loc>
+    <loc>https://3ee.com/britelite</loc>
   </url>
   <url>
     <loc>https://3ee.com/captcha-game-vibing</loc>
@@ -26,10 +23,13 @@
     <loc>https://3ee.com/contact</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games</loc>
+    <loc>https://3ee.com/spacelab</loc>
   </url>
   <url>
-    <loc>https://3ee.com/spacelab</loc>
+    <loc>https://3ee.com/captcha-game-client</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games</loc>
   </url>
   <url>
     <loc>https://3ee.com/account/accessibility</loc>
@@ -59,16 +59,13 @@
     <loc>https://3ee.com/account/patch</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/profile</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/terms</loc>
+    <loc>https://3ee.com/account/profile</loc>
   </url>
   <url>
-    <loc>https://3ee.com/britelite/library</loc>
+    <loc>https://3ee.com/account/terms</loc>
   </url>
   <url>
     <loc>https://3ee.com/auth/callback</loc>
@@ -78,6 +75,9 @@
   </url>
   <url>
     <loc>https://3ee.com/blog/action-figure-art</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/blog/first-party-experience</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
@@ -98,9 +98,6 @@
     <loc>https://3ee.com/blog/phaser2-migration</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/first-party-experience</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
@@ -119,7 +116,7 @@
     <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
   </url>
   <url>
-    <loc>https://3ee.com/games/harmony-estates</loc>
+    <loc>https://3ee.com/britelite/library</loc>
   </url>
   <url>
     <loc>https://3ee.com/spacelab/cancel</loc>
@@ -132,6 +129,9 @@
   </url>
   <url>
     <loc>https://3ee.com/spacelab/success</loc>
+  </url>
+  <url>
+    <loc>https://3ee.com/games/harmony-estates</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/adora</loc>
@@ -152,10 +152,10 @@
     <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/analytics</loc>
+    <loc>https://3ee.com/blog/categories/ai training</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/ai training</loc>
+    <loc>https://3ee.com/blog/categories/analytics</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/automation</loc>
@@ -188,10 +188,10 @@
     <loc>https://3ee.com/blog/categories/pixel</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/pong kombat</loc>
+    <loc>https://3ee.com/blog/categories/platform</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/platform</loc>
+    <loc>https://3ee.com/blog/categories/pong kombat</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/python</loc>

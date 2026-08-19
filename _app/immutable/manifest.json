@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d0019963.js",
+    "file": "start-bcdc7de8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -689,7 +689,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-e8469fd6.js",
+    "file": "pages/britelite/index.svelte-3fb18ce3.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -703,10 +703,11 @@
       "_Saos-323af9e3.js",
       "_index-0847a771.js",
       "_Player-e46b3f73.js",
+      "_BlogImageCompare-4ac1cd44.js",
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-fe80e819.css"
+      "assets/pages/britelite/index.svelte-d857cc64.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {

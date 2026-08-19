@@ -59,13 +59,10 @@
     <loc>https://3ee.com/account/patch</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/privacy</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/account/profile</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/terms</loc>
+    <loc>https://3ee.com/account/privacy</loc>
   </url>
   <url>
     <loc>https://3ee.com/auth/callback</loc>
@@ -80,10 +77,10 @@
     <loc>https://3ee.com/blog/action-figure-art</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/first-party-experience</loc>
+    <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/flappy-jacob-prototype</loc>
+    <loc>https://3ee.com/account/terms</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/github-actions-101</loc>
@@ -101,6 +98,9 @@
     <loc>https://3ee.com/blog/pong-kombat-2</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/first-party-experience</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/blog/phaser-game-react-ui</loc>
   </url>
   <url>
@@ -116,6 +116,9 @@
     <loc>https://3ee.com/blog/stripe-webhook-signature</loc>
   </url>
   <url>
+    <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
+  </url>
+  <url>
     <loc>https://3ee.com/games/harmony-estates</loc>
   </url>
   <url>
@@ -125,16 +128,13 @@
     <loc>https://3ee.com/spacelab/cancelled</loc>
   </url>
   <url>
-    <loc>https://3ee.com/spacelab/learningrate</loc>
-  </url>
-  <url>
     <loc>https://3ee.com/spacelab/success</loc>
   </url>
   <url>
-    <loc>https://3ee.com/team/adora</loc>
+    <loc>https://3ee.com/spacelab/learningrate</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/tiled-level-editor-phaser</loc>
+    <loc>https://3ee.com/team/adora</loc>
   </url>
   <url>
     <loc>https://3ee.com/team/ddraw</loc>
@@ -146,7 +146,7 @@
     <loc>https://3ee.com/team/ryan</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/advertisements</loc>
+    <loc>https://3ee.com/account/messages/response</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/ai training</loc>
@@ -158,7 +158,7 @@
     <loc>https://3ee.com/blog/categories/automation</loc>
   </url>
   <url>
-    <loc>https://3ee.com/account/messages/response</loc>
+    <loc>https://3ee.com/blog/categories/advertisements</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/containers</loc>
@@ -206,10 +206,10 @@
     <loc>https://3ee.com/blog/categories/stable diffusion</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/tiled</loc>
+    <loc>https://3ee.com/blog/categories/videos</loc>
   </url>
   <url>
-    <loc>https://3ee.com/blog/categories/videos</loc>
+    <loc>https://3ee.com/blog/categories/tiled</loc>
   </url>
   <url>
     <loc>https://3ee.com/blog/categories/web development</loc>

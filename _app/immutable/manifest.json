@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-61630838.js",
+    "file": "start-fd13c0af.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -66,7 +66,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-8677e7ad.js",
+    "file": "pages/__layout.svelte-74bac187.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -188,7 +188,7 @@
     ]
   },
   "src/routes/account/login/index.svelte": {
-    "file": "pages/account/login/index.svelte-039c99b1.js",
+    "file": "pages/account/login/index.svelte-98a1e0ac.js",
     "src": "src/routes/account/login/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -419,7 +419,7 @@
     ]
   },
   "src/routes/blog/britelite.md": {
-    "file": "pages/blog/britelite.md-08f691d6.js",
+    "file": "pages/blog/britelite.md-8552c478.js",
     "src": "src/routes/blog/britelite.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -428,7 +428,7 @@
       "__post-01fd8a95.js",
       "_SpaceLabTeaser-8697eadc.js",
       "_BlogImageCompare-f011cee5.js",
-      "_BalanceSlider-c4fd705f.js",
+      "_ThreeImages-eff45a31.js",
       "_navigation-0e6511d1.js",
       "_config-12cde341.js",
       "_Player-e5ac81d0.js",
@@ -439,7 +439,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/blog/britelite.md-82f60b0e.css"
+      "assets/pages/blog/britelite.md-fe4cc0f9.css"
     ]
   },
   "src/routes/blog/categories/[category].svelte": {
@@ -716,7 +716,7 @@
     ]
   },
   "src/routes/britelite/index.svelte": {
-    "file": "pages/britelite/index.svelte-914161f3.js",
+    "file": "pages/britelite/index.svelte-a055753a.js",
     "src": "src/routes/britelite/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -728,7 +728,7 @@
       "_api-751f970e.js",
       "_briteliteStore-b8bba06e.js",
       "_Saos-0f8c2944.js",
-      "_BalanceSlider-c4fd705f.js",
+      "_ThreeImages-eff45a31.js",
       "_index-62f49d9b.js",
       "_Player-e5ac81d0.js",
       "_BlogImageCompare-f011cee5.js",
@@ -736,7 +736,7 @@
       "_singletons-d1fb5791.js"
     ],
     "css": [
-      "assets/pages/britelite/index.svelte-9b4ed7a0.css"
+      "assets/pages/britelite/index.svelte-26c5af80.css"
     ]
   },
   "src/routes/britelite/library/index.svelte": {
@@ -1096,13 +1096,13 @@
       "assets/SpaceLabTeaser-7b840e77.css"
     ]
   },
-  "_BalanceSlider-c4fd705f.js": {
-    "file": "chunks/BalanceSlider-c4fd705f.js",
+  "_ThreeImages-eff45a31.js": {
+    "file": "chunks/ThreeImages-eff45a31.js",
     "imports": [
       "_index-ac8c0c76.js"
     ],
     "css": [
-      "assets/BalanceSlider-f1052050.css"
+      "assets/ThreeImages-39a6157d.css"
     ]
   },
   "_Grid-eecee8d7.js": {

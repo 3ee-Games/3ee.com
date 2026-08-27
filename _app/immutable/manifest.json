@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-1b5f464a.js",
+    "file": "start-3de1baa1.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -67,7 +67,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-bd092e5f.js",
+    "file": "pages/__layout.svelte-9a18d34f.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -279,14 +279,14 @@
     ]
   },
   "src/routes/account/new/index.svelte": {
-    "file": "pages/account/new/index.svelte-db7d06fd.js",
+    "file": "pages/account/new/index.svelte-88ef1d25.js",
     "src": "src/routes/account/new/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-ac8c0c76.js",
       "_config-12cde341.js",
-      "_StarField-0aa762ff.js",
+      "_StarField-f8c74c0e.js",
       "_navigation-0e6511d1.js",
       "_api-751f970e.js",
       "_accountStore-b5b845cd.js",
@@ -926,7 +926,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-69da82b7.js",
+    "file": "pages/index.svelte-8cafce0d.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -934,7 +934,7 @@
       "_index-ac8c0c76.js",
       "_navigation-0e6511d1.js",
       "_Saos-0f8c2944.js",
-      "_StarField-0aa762ff.js",
+      "_StarField-f8c74c0e.js",
       "_config-12cde341.js",
       "_Insight-a4869f14.js",
       "_svgMapper-d16855d9.js",
@@ -1156,8 +1156,8 @@
       "_index-62f49d9b.js"
     ]
   },
-  "_StarField-0aa762ff.js": {
-    "file": "chunks/StarField-0aa762ff.js",
+  "_StarField-f8c74c0e.js": {
+    "file": "chunks/StarField-f8c74c0e.js",
     "imports": [
       "_index-ac8c0c76.js",
       "_accountStore-b5b845cd.js"

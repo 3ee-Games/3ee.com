@@ -1,5 +1,7 @@
 # 🚀 3ee.com static site
 
+# Now using cloudflare workers instead of Github!
+
 ## Compiled with [SvelteKit](https://kit.svelte.dev/)
 
 🧩 3ee Games frontend
